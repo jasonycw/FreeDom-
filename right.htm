@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<style type="text/css">
+<!--
+.l{ background-color: silver; }
+caption {text-align:left;font-size:medium;font-weight:bold;padding-bottom:0}
+table.cal td {text-align:center;}
+td {border-color:#c0c0c0;} /*FF,Operaの罫線対応*/
+a:link,a:visited {color:blue;}
+a:hover {color:red;}
+a:active {color:black;}
+.al,.al a:link,.al a:visited {color:red;}
+.sen1 {border-left:1px solid silver;}
+.sen2 {border-left:2px solid silver;}
+-->
+</style>
+<title>表紙</title>
+<base target="_blank">
+</head>
+<body>
+<p>原頁面為在ＭＯＮＳＴＥＲ　ＨＵＮＴＥＲ　Ｆｒｏｎｔｉｅｒ Ｏｎｌｉｎｅ【日服】PC服務器活動的
+<br>獵團ＦｒｅｅＤｏｍ の小道具部屋
+</p><p>
+<p>漢化 by 渣渣村長（所屬獵團：科科特村居民委員會 企鵝號23878537）</p><p>
+確認為IE8/IE11/Firefox25/GoogleChrome30 顯示。<small>渣渣</small>
+<span id=ie8></span>
+<!--<br>現状<span style="color:crimson;">G5</span>前後の情報です。-->
+</p>
+<div id=calendar style="float:left;"></div>
+
+<!--<div style="clear: both;"><strong>·狩人祭</strong>
+<div style="font-size:80%;">
+<table border=1 cellspacing=0 cellpadding=2 style="float:left">
+<tr class=l><th colspan=2>狩猟</th></tr>
+<tr><td>迅猛龍王</td><td>1魂</td></tr>
+<tr><td>野豬王</td><td>1魂</td></tr>
+<tr><td>怪鳥</td><td>2魂</td></tr>
+<tr><td>怪鳥亜種</td><td>2魂</td></tr>
+<tr><td>砂龍王</td><td>3魂</td></tr>
+<tr><td>毒怪鳥</td><td>3魂</td></tr>
+<tr><td>毒怪鳥亜種</td><td>4魂</td></tr>
+<tr><td>大名蟹</td><td>4魂</td></tr>
+<tr><td>將軍蟹</td><td>4魂</td></tr>
+<tr><td>岩龍</td><td>5魂</td></tr>
+<tr><td>桃毛獸王</td><td>5魂</td></tr>
+<tr><td>跳緋獣</td><td>5魂</td></tr>
+<tr><td>雌火龍</td><td>5魂</td></tr>
+<tr><td>雌火龍亜種</td><td>5魂</td></tr>
+<tr><td>電龍</td><td>5魂</td></tr>
+<tr><td>電龍亜種</td><td>5魂</td></tr>
+<tr><td>眠鳥</td><td>5魂</td></tr>
+<tr><td>眠鳥繁殖期</td><td>5魂</td></tr>
+<tr><td>雪獅子王</td><td>6魂</td></tr>
+<tr><td>鎧龍</td><td>6魂</td></tr>
+<tr><td>水龍</td><td>6魂</td></tr>
+<tr><td>鎧龍亜種</td><td>7魂</td></tr>
+<tr><td>一角龍</td><td>7魂</td></tr>
+<tr><td>角龍</td><td>7魂</td></tr>
+<tr><td>火龍</td><td>7魂</td></tr>
+<tr><td>角龍亜種</td><td>8魂</td></tr>
+</table>
+<table border=1 cellspacing=0 cellpadding=2 style="float:left">
+<tr class=l><th colspan=2>狩猟</th></tr>
+<tr><td>火龍亜種</td><td>8魂</td></tr>
+<tr><td>黑狼鳥</td><td>8魂</td></tr>
+<tr><td>轟龍</td><td>8魂</td></tr>
+<tr><td>吞龍</td><td>8魂</td></tr>
+<tr><td>氷狐龍</td><td>8魂</td></tr>
+<tr><td>蠻龍</td><td>8魂</td></tr>
+<tr><td>熔岩龍</td><td>8魂</td></tr>
+<tr><td>雄·響狼</td><td>8魂</td></tr>
+<tr><td>雌·響狼</td><td>8魂</td></tr>
+<tr><td>鬥獣</td><td>8魂</td></tr>
+<tr><td>金獅子</td><td>9魂</td></tr>
+<tr><td>棘龍</td><td>9魂</td></tr>
+<tr><td>雌火龍希少種</td><td>9魂</td></tr>
+<tr><td>棘龍亜種</td><td>10魂</td></tr>
+<tr><td>火龍希少種</td><td>10魂</td></tr>
+<tr><td>棘龍希少種</td><td>10魂</td></tr>
+<tr><td>舞雷龍</td><td>11魂</td></tr>
+<tr><td>冥雷龍</td><td>11魂</td></tr>
+<tr><td>喰血龍</td><td>11魂</td></tr>
+<tr><td>華鳳鳥</td><td>11魂</td></tr>
+<tr><td>凍海獣</td><td>12魂</td></tr>
+<tr><td>傾雷鳥</td><td>12魂</td></tr>
+<tr><td>針纏龍</td><td>13魂</td></tr>
+<tr><td>爆狼</td><td>13魂</td></tr>
+<tr><td>氷獰龍</td><td>13魂</td></tr>
+<tr><td>暴鋸龍</td><td>14魂</td></tr>
+</table>
+<table border=1 cellspacing=0 cellpadding=2 style="float:left">
+<tr class=l><th colspan=2>討伐</th></tr>
+<tr><td>麒麟</td><td>6魂</td></tr>
+<tr><td>獰龍</td><td>8魂</td></tr>
+<tr><td>黄金魚龍</td><td>8魂</td></tr>
+<tr><td>白銀魚龍</td><td>8魂</td></tr>
+<tr><td>尾晶蠍</td><td>8魂</td></tr>
+<tr><td>灰晶蠍</td><td>10魂</td></tr>
+<tr><td>鋼龍</td><td>10魂</td></tr>
+<tr><td>霞龍</td><td>10魂</td></tr>
+<tr><td>炎妃龍</td><td>10魂</td></tr>
+<tr><td>炎王龍</td><td>10魂</td></tr>
+<tr><td>霸龍</td><td>10魂</td></tr>
+<tr><td>浮岳龍</td><td>10魂</td></tr>
+<tr><td>砦蟹</td><td>10魂</td></tr>
+<tr><td>老山龍</td><td>10魂</td></tr>
+<tr><td>老山龍亜種</td><td>11魂</td></tr>
+<tr><td>極龍</td><td>11魂</td></tr>
+<tr><td>黑龍</td><td>11魂</td></tr>
+<tr><td>輝界龍</td><td>11魂</td></tr>
+<tr><td>黑穿龍</td><td>11魂</td></tr>
+<tr><td>雷轟龍</td><td>11魂</td></tr>
+<tr><td>雅翁龍</td><td>13魂</td></tr>
+<tr><td>金塵龍</td><td>14魂</td></tr>
+<tr><td>弩岩龍</td><td>15魂</td></tr>
+<tr><td>雷極龍</td><td>15魂</td></tr>
+<tr><td>赤黑龍</td><td>15魂</td></tr>
+<tr><td>祖龍</td><td>15魂</td></tr>
+</table>
+<table border=1 cellspacing=0 cellpadding=2 style="float:left">
+<tr class=l><th colspan=2>捕獲</th></tr>
+<tr><td>痺猛龍王</td><td>1魂</td></tr>
+<tr><td>毒猛龍王</td><td>1魂</td></tr>
+<tr><td>多殻蟹</td><td>5魂</td></tr>
+<tr><td>水龍亜種</td><td>7魂</td></tr>
+<tr><td>一角龍亜種</td><td>8魂</td></tr>
+<tr><td>熔岩龍亜種</td><td>9魂</td></tr>
+<tr><td>晶龍</td><td>9魂</td></tr>
+<tr><td>眠鳥希少種</td><td>10魂</td></tr>
+<tr class=l><th colspan=2>納品</th></tr>
+<tr><td>飛竜の卵</td><td>1魂</td></tr>
+<tr><td>草食竜の卵</td><td>1魂</td></tr>
+<tr><td>肉食竜の卵</td><td>1魂</td></tr>
+<tr><td>火薬岩</td><td>1魂</td></tr>
+<tr><td>灰水晶の原石</td><td>1魂</td></tr>
+<tr><td>白水晶の原石</td><td>1魂</td></tr>
+</table>
+</div>
+<small style="font-size:70%;">
+	今回はシクレは99魂のみ！祭點數３倍！勝てば新防具もつくれる！
+<br>また今回から獵團の総入魂に応じてお得道具もGETできます＾＾がんばろー
+</small></div>-->
+
+<!--<tr><th colspan=2><a href="http://cog-members.mh-frontier.jp/information/news/info/6983.html">シクレ配信スケジュール</a></th></tr>
+<tr class=l><th colspan=2>試練専有</th></tr>
+<tr><td colspan=2>金/土 12時～18時</td></tr>
+<tr><td colspan=2>日/月 18時～24時</td></tr>
+黑龍　赤黑龍　祖龍</td><td>15魂</td></tr>
+-->
+<div style="clear: both;margin-top:1em;"><strong>·新着</strong>
+<div style="width:650px;; height:7em; overflow:auto;font-size:80%;">
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><td rowspan=2>2014/10/08</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>武器</td><td>プテリュクスを追加</td></tr>
+<tr><td rowspan=1>2014/10/04</td><td>任務情報</td><td>韋駄天クエを追加</td></tr>
+<tr><td rowspan=5>2014/10/01</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>魔物</td><td>G級眠鳥を追加</td></tr>
+<tr>	<td>武器</td><td>相互スチマ式放雷弓、黒鎧鎚【破】、ゴールデンエイジ、フォトレス銃槍、Gヒプ系他を追加</td></tr>
+<tr>	<td>防具</td><td>ハーゼ、ヒプノを追加</td></tr>
+<tr>	<td>獵團</td><td>料理、トレジャー、冒険貓追加</td></tr>
+<tr><td rowspan=6>2014/09/28</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>魔物</td><td>至天刻龍を追加</td></tr>
+<tr>	<td>武器</td><td>ビオラ·ヴァイト、セリスィ系を追加</td></tr>
+<tr>	<td>防具</td><td>キニオルを追加</td></tr>
+<tr>	<td>傷害シミュ</td><td>支援と砲撃強化を追加</td></tr>
+<tr>	<td>パートナー</td><td>覚える技能を追加</td></tr>
+<tr><td rowspan=1>2014/09/17</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr><td rowspan=3>2014/09/10</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>武器</td><td>ＧＬＳ,黒鉄製機械重槍等各活動武器を追加</td></tr>
+<tr>	<td>防具</td><td>キャリッジを追加</td></tr>
+<tr><td rowspan=3>2014/09/03</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>武器</td><td>各活動武器を追加</td></tr>
+<tr>	<td>防具</td><td>デゾルトを追加</td></tr>
+<tr><td rowspan=3>2014/08/27</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>武器</td><td>唐辛子銃槍を追加</td></tr>
+<tr>	<td>防具</td><td>ズィベイ、オユンを追加</td></tr>
+<tr><td rowspan=1>2014/08/25</td><td>傷害シミュ</td><td>大錘の威力を変更</td></tr>
+<tr><td rowspan=2>2014/08/24</td><td>任務情報</td><td>韋駄天クエを追加</td></tr>
+<tr>	<td>武器</td><td>失われた武具系を追加</td></tr>
+<tr><td rowspan=3>2014/08/21</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>武器</td><td>FG系を追加</td></tr>
+<tr>	<td>防具</td><td>ズィベイ、オユンを追加</td></tr>
+<tr><td rowspan=4>2014/08/13</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>魔物</td><td>金塵龍を追加</td></tr>
+<tr>	<td>武器</td><td>金塵翔龍系,ノーベル系,シュメルナッソを追加</td></tr>
+<tr>	<td>防具</td><td>ガルバ、黑茶髦、ブレオG、Ｇ支援カフＳＡ１を追加</td></tr>
+<tr><td rowspan=3>2014/08/07</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>武器</td><td>ジョニーカルテットを追加</td></tr>
+<tr>	<td>防具</td><td>剣煌珠Ｇを追加</td></tr>
+<tr><td rowspan=2>2014/08/02</td><td>任務情報</td><td>韋駄天クエを追加</td></tr>
+<tr>	<td>武器</td><td>地雷棒ダスティーンを追加</td></tr>
+<tr><td rowspan=3>2014/07/30</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>武器</td><td>無式大筒重砲【欠番】,サン·ヘティマ,プラド·<br>アグル,トルム·アード,アブスロウソード等を追加</td></tr>
+<tr>	<td>防具</td><td>貓耳環等を追加</td></tr>
+<tr><td rowspan=5>2014/07/27</td><td>任務情報</td><td>新規分を追加</td></tr>
+<tr>	<td>魔物</td><td>雅翁龍等G5魔物を追加(部位等は仮)</td></tr>
+<tr>	<td>武器</td><td>新規武器を追加</td></tr>
+<tr>	<td>防具</td><td>新規防具を追加</td></tr>
+<tr>	<td>店</td><td>祭P,NP,GPの交換を変更</td></tr>
+</table>
+<a href="backno.html">過去の履歴</a>
+</div>
+<br><strong>·活動/特典の期限</strong>
+<div id=ive style="width:600px; height:6em; overflow:auto;font-size:80%;">
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><td class=al><a href="http://cog-members.mhf-g.jp/sp/news/9087.html">すやすや稜角羚</a></td><td>
+	プテリュクス</td><td>～2014/10/15</td><td></td></tr>
+<tr><td class=al><a href="http://cog-members.mhf-g.jp/sp/news/9057.html">謎の発光体</a></td><td>
+	蒸氣式機工弓</td><td>～2014/10/15</td><td></td></tr>
+<tr><td class=al><a href="http://cog-members.mhf-g.jp/sp/news/9023.html">黒き因縁</a></td><td>
+	黒鎧鎚</td><td>～2014/10/15</td><td></td></tr>
+<tr><td class=al><a href="http://cog-members.mhf-g.jp/sp/news/9060.html">
+	立ち上がれ[ヒプ]</a></td><td>-</td><td>～2014/10/15</td><td></td></tr>
+<tr><td class=al><a href="http://cog-members.mhf-g.jp/sp/news/8959.html">HL継続</a></td><td>
+	キャリッジ胴</td><td>～2014/10/15</td><td>HL継続</td></tr>
+<tr><td>ファミ通20140807</td><td>ロンアキュート</td><td>～2014/10/29</td><td></td></tr>
+<tr><td><a href="http://cog-members.mhf-g.jp/sp/news/9031.html">絆の紫石</a></td><td>
+	ビオラ·ヴァイト</td><td>～2014/11/19</td><td></td></tr>
+<tr><td o><a href="http://members.mhf-g.jp/goods/books/1310_frontier-volG3.html">
+	フロンティア通信号G3</a></td><td>パキシーローム</td><td>～2014/11/21</td><td>購入</td></tr>
+<tr><td><a href="http://cog-members.mhf-g.jp/sp/news/7521.html">ロジクール キーボード</a></td><td>
+	装備</td><td>～2014/11/26</td><td>購入</td></tr>
+<tr><td o><a href="http://members.mhf-g.jp/topic/eb_hunting2013/index.html">
+	ハンティングマニュアル2013PS3対応</a></td><td>ガンドシュレディング</td><td>～2014/12/10</td><td>
+	購入</td></tr>
+<tr><td><a href="http://cog-members.mhf-g.jp/sp/news/8650.html">2014パッケ早期購入</a></td><td>
+	カフ</td><td>～2015/1/14</td><td>購入</td></tr>
+<tr><td o><a href="http://members.mhf-g.jp/goods/books/1401_frontier-volG2014.html">
+	フロンティア通信号G号外2014</a></td><td>ハユリュネード</td><td>～2015/03/04</td><td>購入</td></tr>
+<tr><td class=al o>2013パッケ</td><td>装備他</td><td>～2015/03/25</td><td>購入</td></tr>
+<tr><td o>G1パッケ</td><td>装備他</td><td>～2015/03/25</td><td>購入</td></tr>
+<tr><td o>G2パッケ</td><td>装備他</td><td>～2015/03/25</td><td>購入</td></tr>
+<tr><td o>G3パッケ</td><td>装備他</td><td>～2015/03/25</td><td>購入</td></tr>
+<tr><td o><a href="http://cog-members.mhf-g.jp/sp/news/7972.html">サウンドトラック</td><td>
+	英雄の証</td><td>～2015/05/13</td><td>購入</td></tr>
+<tr><td o><a href="http://members.mhf-g.jp/goods/books/1404_frontier-volGG.html">
+	フロンティア通信号GG</a></td><td>ぺたぺた咕咕鴨</td><td>～2015/05/20</td><td>購入</td></tr>
+<tr><td><a href="http://members.mhf-g.jp/goods/books/1407_frontier-volG5.html">
+	G5ガイド</a></td><td>チェースチクレースト</td><td>～2015/08/19</td><td></td></tr>
+<tr><td o>GGパッケ</td><td>装備他</td><td>～2015/09/30</td><td>購入</td></tr>
+<tr><td><a href="http://members.mh-frontier.jp/campaign/recopc/">PC購入2弾</a></td><td>
+	フィディ等</td><td>-</td><td>PC購入</td></tr>
+<tr><td><a href="http://members.mhf-g.jp/goods/books/0710_anthology.html">
+	コミックアンソロジー</a></td><td>アプソロンジーク</td><td>～2014/10/29</td><td></td></tr>
+</table>
+</div>
+<table border=0 cellspacing=2 cellpadding=0 style="margin-top:1em;font-size:80%;">
+<caption>·雑記</caption>
+<tr><td>·ログイン<td>2013/01/10にCOGユーザのパスワードがリセットされています。→<a href="http://cog-members.mh-frontier.jp/information/news/info/6371.html">内容</a>　　復帰方法　<a href="http://www.capcom-onlinegames.jp/pc/forgot">メアドが有効な人</a>　<a href="http://www.capcom-onlinegames.jp/pc/ask?m=1">メアドが無効な人</a></td></tr>
+<tr><td>·統合<td>2013/09/18にサーバ１，２，３がサーバ１に統合されます。→<a href="http://cog-members.mh-frontier.jp/information/news/info/7217.html">詳細</a>　さらに2014/04/23にPS3とも統合→<a href="http://members.mhf-g.jp/contents/server_integration201404/">詳細</a></td></tr>
+<!--<tr><td>·料金表</td><td>月額料金:1,400円(追加:600円) キャラ追加:1体1,000円 お得方案:3日980円 扭蛋:300円</td></tr>
+<tr><td>·１日の訪問者</td><td>2008年度 5月:1.2　6月:1.2　7月:1.5　8月:1.4　9月:1.9　10月:1.9　11月:1.89　12月:2.36　1月:2.28　2月:2.47　3月:2.24  (万人)</td></tr>
+<tr><td>·１日の訪問者</td><td>2009年度 4月:2.62 5月:2.93 6月:2.95 7月:2.92 8月:2.51 9月:2.81 10月:2.91 11月:2.60 12月:2.81 1月:3.04 2月:3.23 3月:3.19(万人)</td></tr>
+<tr><td>·１日の訪問者</td><td>2010年度 4月:3.50 5月:3.61 6月:3.53 7月:3.91 8月:4.10 9月:4.28 10月:4.51 11月:3.92 12月:2.78 1月:3.03 2月:3.55 3月:3.34(万人)</td></tr>
+-->
+<tr><td>·１日の訪問者</td><td>2011年度 4月:3.85 5月:4.11 6月:3.86 7月:3.68 8月:3.92 9月:3.64 
+	10月:4.00 11月:3.68 12月:3.39 1月:3.34 2月:3.83 3月:3.74(万人)</td></tr>
+<tr><td></td><td>2012年度 4月:3.67 5月:3.68 6月:3.78 7月:3.30 8月:3.40 9月:3.45 10月:3.67 
+	11月:3.71 12月:3.40 1月:3.33 2月:3.23 3月:2.94(万人)</td></tr>
+<tr><td></td><td>2013年度 4月:3.21 5月:2.96 6月:2.47 7月:2.44 8月:2.37 9月:2.03 10月:1.91 
+	11月:1.91 12月:1.98 1月:1.84 2月:1.89 3月:1.69(万人)</td></tr>
+<tr><td></td><td>2014年度 4月:1.17 5月:2.12 6月:1.78 7月:1.72 8月:1.83(万人)</td></tr>
+<!--
+<tr><td></td><td>2月1週:2.07  (万人)</td></tr>
+<tr><td>·OS</td><td>Windows 7:56.0%　Windows XP:22.9%　Windows Vista:3.6%Android:3.6%　　iPhone:2.1%　Macintosh:1.4%　Windows 2000:0.1%</td></tr>
+<tr><td>·ブラウザ</td><td>IE8.0:43.2%　IE8.0[互換]:18.4%　FireFox3.6:15.8%　IE7.0:8.4%　Chrome9.0:4.2%　IE6.0:3.2%　Opera9.8:1.6%　Safari5.0:1.4%<br>IE6,7はジリジリ落ちてる.その分Chromeに流れたみたい　<small>IE6撲滅キャンペーンなんてやってるけど、、まだ、まだ大丈夫。絶対に諦めない</small></td></tr>
+-->
+</table>
+<p style="font-size:80%;">
+<!--獵團ＦｒｅｅＤｏｍでは新規団員を募集してます。団部屋は16になりました。料理貓、冒険貓完備ノノ
+<br>入団希望の方はまずはメールを。あ、サブはダメですので＞＜-->
+</p>
+<ul type=square style="font-size:80%;line-height: 1.0;margin-top:2em;margin-left:1em;">
+<li>顯示内容來自“暇人的解析情報”様(更新停止)、“Monster Hunter ２ 解析情報”様<small>《<A href="http://mh2kaiseki.web.fc2.com/index.html" target="_blank">複製</a>》</small>、某掲示板的各種帖子、還有其他各種情報的匯總。
+<li>各頁面的佈局參考了“Monster Hunter ２ 解析情報”様。
+<li>閲讀本小屋内容后可能會減少遊戲的娛樂性（劇透）。在轉給他人時請務必注意一下。還有，請注意對照內容和實際運營的相關性。
+<li>無法保證小屋內容的正確性（何況是漢化的呢），過於相信的話是危險的。指摘·情報什麽的請點擊<a href="http://ferias.bbs.coocan.jp/">建議和錯誤到這裡來</a>。
+<li>魔物獵人Frontier / Monster Hunter Frontier 為株式会社CAPCOM的商標。<br>
+　　　(c) CAPCOM CO., LTD. 2007, 2014 ALL RIGHTS RESERVED
+</ul>
+<script type="text/javascript">
+<!--
+(function (){
+	/*@cc_on@*/
+	if (document.documentMode){
+		var t = document.getElementById("ie8");
+		/*@if (@_jscript_version >= 9)
+			if (document.documentMode < 9){
+				t.innerHTML += "<br><small>現在、IE" + document.documentMode + "モードで見ています。F12を押してドキュメントモードをIE9標準にしてください。スプリクトが正常に動作しません。<\/small>";
+			}
+		@elif (@_jscript_version < 9)
+			if (document.documentMode < 8){
+				t.innerHTML += "<br><small>現在、IE" + document.documentMode + "モードで見ています。一部機能が使用できません。<\/small>";
+			}
+		@end@*/
+	}
+})();
+
+var ck = 0,book = 0,nowhi = new Date();
+for (var i = 0,cookies = document.cookie.split("; "); i < cookies.length; i++) {
+	var str = cookies[i].split("=");
+	if (str[0] === "ck") {
+		ck = decodeURI(str[1]);
+//	} else if (str[0] === "book") {
+//		book = decodeURI(str[1]);
+	}
+}
+//カレンダー
+(function (){
+var youbi = ["日","月","火","水","木","金","土"],
+	kouro = ["属性萬歲！","黑龍三重奏","大集合！","火龍方案","ＭＨＦ！×２","勝地遊覽","ＢＩＧ４！","火龍方案","ＭＨＦ！×２","大集合！","ＢＩＧ４！","黑龍三重奏","属性萬歲！","勝地遊覽","大集合！","黑龍三重奏","属性萬歲！","ＢＩＧ４！","ＭＨＦ！×２","勝地遊覽","火龍方案","真赤"],
+	soul1 = ["桃毛獸王","眠鳥","火龍亜種","熔岩龍","霞龍","角龍亜種","麒麟","電龍亜種","毒怪鳥","雪獅子王","將軍蟹","雌火龍亜種","氷狐龍","怪鳥亜種","岩龍"],
+	soul2 = ["炎王龍","眠鳥繁殖期","電龍亜種","冥雷龍","金獅子","雌火龍亜種","怪鳥亜種","棘龍亜種","雄·響狼","鎧龍","鋼龍","轟龍","角龍亜種","霸龍","雌·響狼","棘龍"],
+	soul3 = ["霸龍","轟龍","岩龍","金獅子","眠鳥","電龍","桃毛獸王","怪鳥","熔岩龍","鎧龍","將軍蟹","角龍","棘龍"],
+	soul4 = ["氷狐龍","炎王龍","冥雷龍","錆鋼龍","響狼","麒麟","蠻龍","鋼龍"],
+	soulG1 = ["怪鳥","毒怪鳥","大名蟹","砂龍王","桃毛獸王"],
+	soulG2 = ["水龍","岩龍","電龍","將軍蟹"],
+	soulG3 = ["雌火龍希少種","棘龍","鬥獣","氷狐龍","金獅子","蠻龍","熔岩龍","轟龍","喰血龍","鎧龍亜種","舞雷龍"];
+
+var hi = new Date();
+hi.setDate(hi.getDate() + (hi.getHours() >= 0 && hi.getHours() < 12 ? -1:0));
+hiduke = parseInt((hi.getTime() + 9 * 3600 * 1000) / 24 / 3600 / 1000);
+var weekT = "", kouroT = "", festaT = "", setuT = "",yuuT = "",ck="";
+for (var i=0; i<21; i++) {
+	var n = youbi[hi.getDay()];
+	//日付
+	weekT += "<td class=l style='text-align:right;width:1.2em' colspan=2>" + hi.getDate() + "<div style='font-size:60%;";
+	//曜日
+	switch ((hi.getMonth()+1) + "/" + hi.getDate()) {
+	case "1/14": //成人の日　　　変動
+	case "2/11": //建国記念の日
+	case "3/20": //春分の日　　　変動
+	case "4/29": //昭和の日
+	case "5/3": //憲法記念日
+	case "5/4": //みどりの日
+	case "5/5": //こどもの日
+	case "7/15": //海の日　　　変動
+	case "9/16": //敬老の日　　　変動
+//	case "9/22": //国民の休日
+	case "9/23": //秋分の日
+	case "10/14": //体育の日　　　変動
+	case "11/3": //文化の日
+	case "11/23": //勤労感謝の日
+	case "12/23": //天皇誕生の日
+		weekT += "color:red'>" + n + "<\/div><\/td>";
+		yuuT += "<tr><td style='color:red'>" + hi.getDate();
+		break;
+	default:
+		if (n === "土") {
+			weekT += "color:blue'>" + n + "<\/div><\/td>";
+			yuuT += "<tr><td style='color:blue'>" + hi.getDate();
+		} else if (n === "日") {
+			weekT += "color:red'>" + n + "<\/div><\/td>";
+			yuuT += "<tr><td style='color:red'>" + hi.getDate();
+		} else {
+			weekT += "'>" + n + "<\/div><\/td>";
+			yuuT += "<tr><td>" + hi.getDate();
+		}
+		break;
+	}
+	//フェスタ
+	switch ((hiduke + i) % 8) {
+	case 0:
+		festaT += "<td title='調合屋の商品が豊富に' colspan=2>調<\/td>";
+		break;
+	case 2:
+		festaT += "<td title='商品·調合が半額' colspan=2>祭<\/td>";
+		break;
+	case 4:
+		festaT += "<td title='食材屋の商品が豊富に' colspan=2>食<\/td>";
+		break;
+	case 6:
+		festaT += "<td title='食材屋の商品が豊富に' colspan=2>食<\/td>";
+		break;
+	default:
+		festaT += "<td colspan=2><br><\/td>";
+		break;
+	}
+	//元節
+	switch ((hiduke + i-2) % 12) {
+	case 0:
+		//setuT += "<td colspan=2 style='color:Orange;background-color:silver' title='大推挙節(知名度1.5倍)'>推<\/td>";
+		setuT += "<td colspan=2 title='大推挙節(知名度1.5倍)'>推<\/td>";
+		break;
+	case 3:
+		//setuT += "<td colspan=2 style='color:Fuchsia;background-color:silver' title='大報酬節(任務報酬で素材GET)'>報<\/td>";
+		setuT += "<td colspan=2 title='大報酬節(任務報酬で素材GET)'>報<\/td>";
+		break;
+	case 6:
+		//setuT += "<td colspan=2 style='color:Lime;background-color:silver' title='大還元節(ミッションで道具GET)'>還<\/td>";
+		setuT += "<td colspan=2 title='大還元節(ミッションで道具GET)'>還<\/td>";
+		break;
+	case 9:
+		//setuT += "<td colspan=2 style='color:Aqua;background-color:silver' title='大錬珠節(パーティボイント1.5倍)'>錬<\/td>";
+		setuT += "<td colspan=2 title='大錬珠節(パーティボイント1.5倍)'>錬<\/td>";
+		break;
+	default:
+		setuT += "<td colspan=2><br><\/td>";
+		break;
+	}
+	//航路
+	kouroT += "<td style='border-top-style:dashed;' colspan=2 title='"+kouro[((hiduke + i + 7) % 22)]+"'><small>"+kouro[((hiduke + i + 7) % 22)].charAt(0)+"<\/small><\/td>";
+	//優先依頼
+	yuuT += " 12時" +
+			"<td class=sen2>" + soul1[(hiduke+i+7) % soul1.length] +
+			"<td class=sen1>" + soul2[(hiduke+i+2) % soul2.length] +
+			"<td class=sen1>" + soul3[(hiduke+i+4) % soul3.length] +
+			"<td class=sen1>" + soul4[(hiduke+i+1) % soul4.length] +
+			"<td class=sen2>" + soulG1[(hiduke+i+3) % soulG1.length] +
+			"<td class=sen1>" + soulG2[(hiduke+i) % soulG2.length] +
+			"<td class=sen1>" + soulG3[(hiduke+i+2) % soulG3.length];
+
+	hi.setDate(hi.getDate() + 1);
+}
+
+var t = document.getElementById("calendar");
+t.innerHTML = "<table border=1 class=cal cellspacing=0 cellpadding=2 style='table-layout:fixed;'>" +
+			"<caption>·日曆<\/caption>" +
+			"<tr><td width=2em><\/td>" + weekT + "<\/tr><tr><td width=2em><\/td>" + festaT + "<\/tr><tr>" + setuT +"<\/tr><tr>" + kouroT+"<\/tr>" +
+			"<\/table>" +
+			"<table border=1 cellspacing=0 style='height:3.5em;width:60em;table-layout:fixed;font-size:80%;'>" +
+			"<tr><th class=l style='width:3em;'>秘伝優先<\/th><td><div style='height:3.5em;overflow:auto;'>" + 
+				"<table border=0 cellspacing=0 cellpadding=0>" + 
+				"<tr><th><th class=sen2>魂·序<th class=sen1>魂·中<th class=sen1>魂·極<th class=sen1>魂·天<th class=sen2>綬·序<th class=sen1>綬·中<th class=sen1>綬·極" + 
+				yuuT + "<\/table>" +
+			"<\/div><\/td><\/tr>" +
+			"<\/table>";
+})();
+// -->
+</script>
+</body>
+</html>

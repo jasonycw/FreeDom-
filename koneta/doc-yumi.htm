@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<style type="text/css">
+<!--
+th {white-space:nowrap;font-weight:normal;background-color:silver;}
+tr.top td {vertical-align:top}
+td.n {text-align:right}
+td.c {text-align:center}
+table,p {font-size:85%}
+h4 {clear:both;margin-top:1em;background-color:silver;}
+.hosoku {float:left;margin-right:3em;}
+.ex {font-size:70%}
+ul.ttop {margin:0;padding:1px 0;width:60em;list-style-type:none;}
+ul.ttop li {font-size:100%;float:left;padding:2px 5px 2px 5px;border:1px solid silver;}
+-->
+</style>
+<title>來自魔物的攻擊　【弓編】</title>
+</head>
+<body>
+<ul class=ttop>
+<li>來自魔物的攻擊　<a href="doc-sword.htm">【近接武器編】</a>
+／<a href="doc-gun.htm">【弩編】</a>
+／<a href="doc-yumi.htm">【弓編】</a>
+<li><a href="doc-spec.htm">武器性能</a>
+<li><a href="doc-kensyo.htm">劍晶技能</a>
+<li><a href="doc-buki.htm">武器的種類</a>
+<li><a href="doc-bougu.htm">防具的種類</a>
+<li><a href="doc-feature.htm">FEATURE</a>
+</ul>
+<hr style="clear:both">
+<h3>來自魔物的攻擊　【弓編】</h3>
+
+<h4>●　武器倍率</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>武器的種類</th><th>倍率</th></tr>
+<tr><td>大劍/太刀</td><td class=c>4.8</td></tr>
+<tr><td>單手劍/雙劍</td><td class=c>1.4</td></tr>
+<tr><td>大錘/狩獵笛</td><td class=c>5.2</td></tr>
+<tr><td>長槍/銃槍</td><td class=c>2.3</td></tr>
+<tr><td>穿龍棍</td><td class=c>1.8</td></tr>
+<tr><td>弩/弓</td><td class=c>1.2</td></tr>
+</table>
+<p>武器倍率是表示武器強度的内部數值，也是計算給予魔物傷害的基本數值。
+<br>在“個人狀態”裏表示的攻撃力為該武器的倍率乘以一定係數得到的結果。
+<br>各武器的倍率見左表。
+<br><small>※左表的數值乘以在“個人狀態”裏表示的攻撃力就能得到武器倍率</small>
+<br>
+<br>用餐效果或者道具使用等讓攻撃力上升的情況全部以武器倍率加算。
+<br>不同種類武器在“個人狀態”裏表示的攻撃力的上升量是不同的。
+</p>
+<h4>●　箭矢的威力</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>タイプ</th><th>威力</th><th>曲射</th><th>威力</th><th>属性</th><th>氣絶</th></tr>
+<tr><td>連射LV1</td><td class=c>12</td><td>放散型</td><td class=c>18×7HIT</td><td class=c>
+	0.7倍</td><td class=c>3</td></tr>
+<tr><td>連射LV2</td><td class=c>12·5</td><td>集中型</td><td class=c>16×5HIT</td><td class=c>
+	0.7倍</td><td class=c>2</td></tr>
+<tr><td>連射LV3</td><td class=c>12·5·4</td><td>爆裂型</td><td class=c>15·無19</td><td class=c>
+	0.2倍</td><td class=c>30</td></tr>
+<tr><td>連射LV4</td><td class=c>12·5·4·2</td><td>切断型</td><td class=c>12×7HIT</td><td class=c>
+	0.7倍</td><td class=c>-</td></tr>
+<tr><td>拡散LV1</td><td class=c>4·5·4</td></tr>
+<tr><td>拡散LV2</td><td class=c>5·6·5</td></tr>
+<tr><td>拡散LV3</td><td class=c>4·5·5·5·4</td></tr>
+<tr><td>拡散LV4</td><td class=c>4·5·6·5·4</td></tr>
+<tr><td>貫通LV1</td><td class=c>6×3HIT</td></tr>
+<tr><td>貫通LV2</td><td class=c>6×4HIT</td></tr>
+<tr><td>貫通LV3</td><td class=c>6×5HIT</td></tr>
+<tr><td>貫通LV4</td><td class=c>6×6HIT</td></tr>
+<tr><td>光箭（蹲射）</td><td class=c>12×5倍</td></tr>
+</table>
+<p>弓的箭矢共有連射、擴散、貫通３種類型，每种分爲LV1～LV4四种級別。
+<br>　　連射：　每瓶同時放出1～4支箭矢（縱向）。隨著連射等級升高箭矢的支数增加
+<br>　　擴散：　放射状放出複數的箭矢（橫向）。隨著擴散等級升高箭矢的支数增加
+<br>　　貫通：　放出貫通矢。隨著貫通等級升高HIT数増加
+<br>曲射共有放散、集中、爆裂、切断４種類類型。
+<br>　　放散：　矢的攻撃力比通常要高
+<br>　　集中：　状態異常的蓄積値比通常要高
+<br>　　爆裂：　氣絶値更高、具備無視肉質的傷害
+<br>　　切断：　計算彈肉質時，按照切断属性的攻撃計算
+<br>根據弓的種類來決定是何等類型/等級。
+<br>不同類型的箭矢威力詳見左表。
+<br>用武器倍率乘以箭矢威力％，即為其基本威力。
+<br>
+<br>装着強擊瓶的箭矢，威力變爲 1.5倍。
+<br>（弓技【弓鬼】發動或者裝備剛種武器為1.6倍、弓技【弓鬼】發動時裝備剛種武器的情况1.7倍、
+<br>　剛種/覇種任務中，天嵐防具２部位以上以及覇種武器的情況為1.7倍）
+<br>装着打擊瓶的箭矢，按照打肉質計算，積蓄眩暈値。
+</p>
+<h4>●　受蓄力階段影響的倍率</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>蓄力段階</th><th>基本威力倍率</th><th>属性倍率</th><th>状態異常倍率</th></tr>
+<tr><td class=c>1</td><td class=c>0.4 倍</td><td class=c>0.5 倍</td><td class=c>
+	0.5 倍</td></tr>
+<tr><td class=c>2</td><td class=c>1.0 倍</td><td class=c>0.75 倍</td><td class=c>
+	1.0 倍</td></tr>
+<tr><td class=c>3</td><td class=c>1.5 倍</td><td class=c>1.0 倍</td><td class=c>
+	1.0 倍</td></tr>
+<tr><td class=c>4</td><td class=c>1.8 倍</td><td class=c>1.125 倍</td><td class=c>
+	1.0 倍</td></tr>
+<tr><td class=c>光箭4</td><td class=c>1.0 倍</td><td class=c>1.0 倍</td><td class=c>
+	1.0 倍</td></tr>
+<tr><td class=c>光箭5</td><td class=c>1.125 倍</td><td class=c>1.1 倍</td><td class=c>
+	1.1 倍</td></tr>
+</table>
+<p>相同類型/等級的箭矢，根據蓄力階段不同，其基本威力也有所変化。
+<br>左表為不同蓄力階段與基本威力倍率的對照。
+<br>　（蓄力階段４只有在装填数UP技能發動的時候才可以使用）
+</p>
+<h4>●　受時間經過影響的基本威力修正</h4>
+
+<p>箭矢隨著射出后的經過時間，按照下圖發生威力的変化。
+</p>
+<div><img src="../img/doc-yumi.gif" alt="減衰"></div>
+
+<h4>●　受技能影響的基本威力·属性値的修正</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>技能</th><th>效果</th></tr>
+<tr><td>連射矢威力UP</td><td>連射矢的威力為 1.1倍</td></tr>
+<tr><td>貫通矢威力UP</td><td>貫通矢的威力為 1.1倍</td></tr>
+<tr><td>拡散矢威力UP</td><td>拡散矢的威力為 1.3倍</td></tr>
+<tr><td>○屬性攻擊強化</td><td>各属性的威力UP</td></tr>
+<tr><td>狀態異常攻擊強化</td><td>各瓶的属性値為 1.125倍</td></tr>
+</table>
+<p>左表表示的技能発動的時候，箭矢的威力或者属性値將増加。
+</p>
+<h4>●　会心率</h4>
+
+<p>会心率是指在攻撃時出現判定攻擊（暴擊）的概率。
+<br>發生判定攻擊時，必殺率為大於0％的情況下，基本威力變為 1.25倍；會心率為負値的情況下，基本威力為變爲0.75倍。</p>
+<br>
+
+<h4>●　受属性影響的追加傷害</h4>
+
+<p>附加通常属性（火/水/雷/龍/氷）武器進行攻撃時，在通常傷害基礎上會追加属性傷害。
+<br>複合属性為複数的属性包含在一把武器中。○属性強化的技能根據不同情況適用。
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>複合属性</th><th>火</th><th>水</th><th>雷</th><th>龍</th><th>氷</th></tr>
+<tr><td>炎</td><td class=c>70%</td><td class=c>-</td><td class=c>-</td><td class=c>
+	70%</td><td class=c>-</td></tr>
+<tr><td>光</td><td class=c>70%</td><td class=c>-</td><td class=c>70%</td><td class=c>
+	-</td><td class=c>-</td></tr>
+<tr><td>雷極</td><td class=c>-</td><td class=c>-</td><td class=c>70%</td><td class=c>
+	70%</td><td class=c>-</td></tr>
+<tr><td>天翔</td><td class=c>30%</td><td class=c>100%</td><td class=c>70%</td><td class=c>
+	-</td><td class=c>-</td></tr>
+<tr><td>熾凍</td><td class=c>80%</td><td class=c>-</td><td class=c>-</td><td class=c>
+	40%</td><td class=c>80%</td></tr>
+<tr><td>黒焔</td><td class=c>50%</td><td class=c>-</td><td class=c>-</td><td class=c>
+	150%</td><td class=c>-</td></tr>
+<tr><td>奏</td><td class=c>-</td><td class=c>100%</td><td class=c>-</td><td class=c>
+	-</td><td class=c>100%</td></tr>
+<tr><td>闇</td><td class=c>-</td><td class=c>-</td><td class=c>-</td><td class=c>
+	80%</td><td class=c>80%</td></tr>
+<tr><td>紅魔</td><td class=c>150%</td><td class=c>-</td><td class=c>-</td><td class=c>
+	50%</td><td class=c>-</td></tr>
+<tr><td>風</td><td class=c>-</td><td class=c>-</td><td class=c>80%</td><td class=c>
+	-</td><td class=c>80%</td></tr>
+<tr><td>響</td><td class=c>-</td><td class=c>100%</td><td class=c>-</td><td class=c>
+	100%</td><td class=c>-</td></tr>
+</table>
+<br>在“個人狀態”裏表示的屬性值為外部數值，是実際属性値的10倍，傷害計算的時候要乘以1/10
+<br>由此，属性傷害量為　表示属性値÷10×蓄力倍率。
+</p>
+<h4>●　瓶的装着</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>類型</th><th>状態異常瓶</th><th>＋１</th><th>＋２</th><th>＋３</th><th>爆擊瓶</th><th>
+	打擊瓶<br>氣絶値</th></tr>
+<tr><td>連射LV1</td><td class=c>13</td><td class=c>14</td><td class=c>17</td><td class=c>
+	19</td><td class=c>70</td><td class=c>3-4</td></tr>
+<tr><td>連射LV2</td><td class=c>7×2本</td><td class=c>8</td><td class=c>9</td><td class=c>
+	10</td><td class=c>40×2本</td><td class=c>3-4</td></tr>
+<tr><td>連射LV3</td><td class=c>5×3本</td><td class=c>5</td><td class=c>6</td><td class=c>
+	7</td><td class=c>32×3本</td><td class=c>3-4</td></tr>
+<tr><td>連射LV4</td><td class=c>4×4本</td><td class=c>4</td><td class=c>5</td><td class=c>
+	6</td><td class=c>28×4本</td><td class=c>3-4</td></tr>
+<tr><td>拡散LV1</td><td class=c>5×3本</td><td class=c>5</td><td class=c>6</td><td class=c>
+	7</td><td class=c>26×3本</td><td class=c>3-4</td></tr>
+<tr><td>拡散LV2</td><td class=c>6×3本</td><td class=c>6</td><td class=c>7</td><td class=c>
+	9</td><td class=c>32×3本</td><td class=c>3-4</td></tr>
+<tr><td>拡散LV3</td><td class=c>5×5本</td><td class=c>5</td><td class=c>6</td><td class=c>
+	7</td><td class=c>22×5本</td><td class=c>3-4</td></tr>
+<tr><td>拡散LV4</td><td class=c>5×5本</td><td class=c>5</td><td class=c>6</td><td class=c>
+	7</td><td class=c>24×5本</td><td class=c>3-4</td></tr>
+<tr><td>貫通LV1</td><td class=c>5×3HIT</td><td class=c>5</td><td class=c>6</td><td class=c>
+	7</td><td class=c>28×3HIT</td><td class=c>3-4</td></tr>
+<tr><td>貫通LV2</td><td class=c>4×4HIT</td><td class=c>4</td><td class=c>5</td><td class=c>
+	6</td><td class=c>28×4HIT</td><td class=c>3-4</td></tr>
+<tr><td>貫通LV3</td><td class=c>4×5HIT</td><td class=c>4</td><td class=c>5</td><td class=c>
+	6</td><td class=c>28×5HIT</td><td class=c>3-4</td></tr>
+<tr><td>貫通LV4</td><td class=c>4×6HIT</td><td class=c>4</td><td class=c>5</td><td class=c>
+	6</td><td class=c>28×6HIT</td><td class=c>3-4</td></tr>
+<tr><td>光箭</td><td class=c>25</td><td class=c></td><td class=c></td><td class=c></td><td class=c>
+	37×5倍<br>55×5倍(火事場)</td><td class=c>20</td></tr>
+<tr><td>放散型</td><td class=c>2×7HIT</td><td class=c>3</td><td class=c>4</td><td class=c>
+	5</td><td class=c>26×7HIT</td><td class=c></td></tr>
+<tr><td>集中型</td><td class=c>6×5HIT</td><td class=c>7</td><td class=c>8</td><td class=c>
+	9</td><td class=c>28×5HIT</td><td class=c></td></tr>
+<tr><td>爆裂型</td><td class=c>-</td><td class=c>-</td><td class=c>-</td><td class=c>
+	-</td><td class=c>50·100</td><td class=c></td></tr>
+<tr><td>切断型</td><td class=c>2×7HIT</td><td class=c>3</td><td class=c>4</td><td class=c>
+	5</td><td class=c>24×7HIT</td><td class=c></td></tr>
+</table>
+<p>装着状態異常属性（毒·麻痺·睡眠）瓶時，放出的箭矢會附加状態異常属性。
+<br>装着状態異常属性瓶時，弓本身附加的通常属性無効化。
+<br>属性値見左表所記。 發射複数箭矢時，每支箭矢都附加属性値。
+<br>與接近武器不一樣，此為必然發動。
+<br>
+<br>状態異常攻撃強化 技能發動時，属性値變為 1.125倍。
+<br>此外，只有蓄力階段１時属性値減半。毒瓶的情況，蓄力階段３以上為１．５倍。
+<br>
+<br>爆擊瓶的情況，無属性的傷害將給予固定數値的傷害。
+<br>
+<br>打擊瓶的情況，蓄力1時暈眩値為一半。
+<br>對應距離，眩暈值按照0.7倍、1.0倍、0.8變化。
+</p>
+<h4>●　弓的接近攻撃</h4>
+
+<p>在<a href="doc-sword.htm">接近</a>里記載。
+</p>
+<h4>●　HIT的效果</h4>
+
+<p>弓的HIT效果，根據發射後威力変化存在差異。
+<br>效果按照1.5倍 &#8658; 1.0倍　&#8658; 0.8倍 &#8658; 0.5倍的順序逐級變小。
+<br><small>(由於不受給予傷害的影響，有時候也會出現傷害幾乎不通過的部位也有較大效果)</small>
+</p>
+<h4>●　給予傷害的増大</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>状態</th><th>倍率</th></tr>
+<tr><td>麻痺状態中</td><td class=n>1.1倍</td></tr>
+<tr><td>岩石擬態中　（岩龍）</td><td class=n>1.1倍</td></tr>
+<tr><td>地洞　（只有從落入之後<br>到開始掙扎之間）</td><td class=n>1.1倍</td></tr>
+<tr><td>睡眠中　（受到的第一擊）</td><td class=n>3.0倍</td></tr>
+</table>
+<p>魔物在特定的状態受到攻撃時，按照左表的數據增加傷害。
+<br><small>(増大的只是無属性傷害，属性傷害不變)</small>
+<br>在麻痺陷阱中掙扎時，不會再進入麻痺状態。
+<br>未發覺的状態落入地洞，效果時間延長約1.7倍。如果是發怒時的話，就變成約0.7倍。(未發覚為優先)
+<br><small>(金獅子睡覺時落入陷阱，效果時間為6秒)</small>
+<br>魔物在瀕死睡覺時和中睡眠狀態一樣。只不過，魔物的体力會徐徐回復。
+<br><small>(棘龍在任務開始時的状態除外)</small>
+</p>
+<h4>●　肉質與全体防御率造成傷害減輕</h4>
+
+<p>魔物肉質的設定，目的就是減輕傷害。
+<br>通常傷害和属性傷害全都因爲肉質而軽減。
+<br>再者，在魔物的肉質和全体防御率設定之下，減輕総傷害値。
+<br>發怒状態之下，絕大部分魔物的全体防御率會發生補正。
+</p>
+<h4>●　玩家的攻撃力上升</h4>
+
+<p>使玩家的攻撃力上升的手段大致分爲以下３組。
+<br>　　１：發動使攻撃力上升的技能，持有使攻撃力上升的道具（力量之護符·力量之爪）
+<br>　　２：通過用餐效果使之上升，使用鬼人藥、鬼人藥·大
+<br>　　３：使用怪力種子、怪力藥丸、鬼人笛
+<br>
+<br>第１組、不會因爲在任務中貓車而造成效果消失。
+<br>第２組、任務中一直有効，不過貓車之後效果消失。
+<br>第３組、一定的時間經過后效果消失。
+<br>
+<br>第２、３組，每組内的各效果不可疊加。強制疊加的話，按照順序效果較大的優先。
+</body></html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="robots" content="NOINDEX,NOFOLLOW">
+<base target="bdy">
+<style type="text/css">
+<!--
+select{font-size: 70%;}
+p {margin-bottom:0;margin-top:0.5em;}
+p.bk {margin-top:0.9em;}
+.c{color: blue; cursor:pointer;}
+-->
+</style>
+<script type="text/javascript">
+<!--
+var link = function (e) {
+	var w = document.getElementById("DS");
+	w.href = "damage/_damageK.htm?"+e;
+	top.bdy.location.href = "damage/_damageK.htm?"+e;
+	return false;
+}
+var mclick = function (no){
+var i = document.getElementById("m"+no);
+var w = document.getElementById("m"+no+"l");
+	if (w.style.display == "none"){
+		i.src = "img/close.gif";
+		w.style.display = "";
+	} else {
+		i.src = "img/open.gif";
+		w.style.display = "none";
+	}
+}
+//-->
+</script>
+<title>目錄</title>
+</head>
+<body style="margin-right: 0px;">
+<div><a href="right.htm">TOP PAGE</a></div>
+<p><a href="skill/skillsimu.htm">技能模擬器</a><br>
+└<a href="koneta/skill.htm">技能説明</a>/<a href="koneta/skillno.htm">順位</a></p>
+
+<p><a href="damage/damageT.htm">傷害模擬器</a><br>
+├<a href="damage/_damageK.htm" id="DS">傷害比較</a><select name=suu onchange="link(this.value)"><option value=2 selected>
+2<option value=3>3<option value=4>4</select><br>
+└<a href="damage/bowgun.htm">弩関連</a></p>
+
+<p><a href="buki/_bukiF.htm">武器一覧</a>／<a href="buki/fue.htm">楽譜</a></p>
+<p><a href="bougu/_tree.htm">防具一覧</a>／<a href="bougu/_bouguF.htm">装飾他</a></p>
+
+<p>魔物情報<br>
+<a href="hagi/_monsF.htm">剝取</a>／
+<a href="niku/_monsF.htm">肉質</a><!--|<a href="niku/0mons_hF.htm">凄腕</a></p>-->
+
+<p>任務情報<br>
+<a href="quest/_hrF.htm">下位/上位/凄腕</a>
+/<a href="quest/_grF.htm">Ｇ</a></p>
+<p>採取情報<br>
+<a href="saisyu/_kaiF.htm">下位</a>
+/<a href="saisyu/_zyouiF.htm">上位</a>
+/<a href="saisyu/_sugoF.htm">凄腕</a>
+/<a href="saisyu/_gF.htm">Ｇ</a>
+/<a href="saisyu/_enF.htm">演習</a>
+/<a href="saisyu/hiroba.htm">廣場</a></p>
+
+<p class=bk><a href="sozai/itemlist.htm">素材搜索</a>：<a href="sozai/equip.htm">装備</a></p>
+<p><a href="mesi/syokuji.htm">用餐一覧</a>（<a href="mesi/mesion.htm">推薦</a>）</p>
+
+<p><img id="m21" src="img/open.gif" Onclick="mclick(21)">
+<span Onclick="mclick(21)" class=c>くじ/特別報酬</span><br>
+<span id="m21l" style="display: none;">
+├<a href="quest/lot_l.htm">摺扇貓くじ</a><br>
+├<a href="koneta/pay_quest.htm">其他報酬</a><br>
+└<a href="koneta/pay_special.htm">特別報酬</a><br>
+</span>
+
+<p><img id="m20" src="img/open.gif" Onclick="mclick(20)">
+<span Onclick="mclick(20)" class=c>花園</span><br>
+<span id="m20l" style="display: none;">
+├<a href="mygarden/mygarden.htm">説明</a><br>
+├<a href="mygarden/mizumaki.htm">澆水</a><br>
+├<a href="mygarden/souji.htm">打掃</a><br>
+├<a href="mygarden/nikuyaki.htm">烤肉</a><br>
+├<a href="mygarden/saikutu.htm">採掘</a><br>
+├<a href="mygarden/musi.htm">照顧蟲</a><br>
+├<a href="mygarden/tubo.htm">喵卡醃壺</a><br>
+├<a href="mygarden/horidasi.htm">發掘物</a><br>
+├<a href="mygarden/otosimono.htm">落物貓</a><br>
+└<img id="m23" src="img/open.gif" Onclick="mclick(23)">
+	<span Onclick="mclick(23)" class=c>咕咕鴨</span><br>
+	<span id="m23l" style="display: none;">
+	　├<a href="mygarden/gook-doc.htm">説明</a><br>
+	　├<a href="mygarden/gook-food.htm">饵</a><br>
+	　├<a href="mygarden/gook-rusu.htm">留守番</a><br>
+	　├<a href="mygarden/gook-nabe.htm">鍋</a><br>
+	　└<a href="mygarden/gook-saisyu.htm">採取</a><br>
+	</span>
+</span>
+<img id="m15" src="img/open.gif" Onclick="mclick(15)">
+<span Onclick="mclick(15)" class=c>萬能園地</span><br>
+<span id="m15l" style="display: none;">
+├<a href="mytre/mytre.htm">説明</a><br>
+├<a href="mytre/kanri.htm">管理人</a><br>
+├<a href="mytre/mytrebuta.htm">噗吱豬</a><br>
+├<a href="mytre/mytreneko.htm">艾路</a><br>
+├<a href="shop/mytre.htm">雜貨店</a><br>
+├<a href="mytre/cyougou.htm">調合店</a><br>
+├<a href="mytre/bouken.htm">冒險物</a><br>
+├<a href="mytre/fuku.htm">服飾店</a><br>
+└<a href="mytre/nomi.htm">酒館</a><br>
+</span>
+
+<img id="m13" src="img/open.gif" Onclick="mclick(13)">
+<span Onclick="mclick(13)" class=c>展示間</span><br>
+<span id="m13l" style="display: none;">
+├<a href="mygallery/galleryS.htm">展示模擬器</a><br>
+├<a href="mygallery/kihon.htm">大会的知識</a><br>
+├<a href="mygallery/syouhin.htm">大会賞品</a><br>
+├<a href="mygallery/kagu.htm">家具一覧</a><br>
+└<a href="mygallery/60000.htm">組合推薦</a><br>
+</span>
+
+<a href="koneta/myhouse.htm" style="text-decoration:none;margin-left:0.8em">
+我的小屋</a><br>
+
+<img id="m22" src="img/open.gif" Onclick="mclick(22)">
+<span Onclick="mclick(22)" class=c>我的支援</span><br>
+<span id="m22l" style="display: none;">
+	　<img id="m221" src="img/open.gif" Onclick="mclick(221)">
+	<span Onclick="mclick(221)" class=c>狩獵鷹</span><br>
+	<span id="m221l" style="display: none;">
+	　├<a href="koneta/myholk-doc.htm">説明</a><br>
+	　├<a href="koneta/myholk-book.htm">學習之書</a><br>
+	　└<a href="koneta/myholk-food.htm">餌</a><br>
+	</span>
+	　<img id="m222" src="img/open.gif" Onclick="mclick(222)">
+	<span Onclick="mclick(222)" class=c>夥伴喵</span><br>
+	<span id="m222l" style="display: none;">
+	　├<a href="koneta/partnya-doc.htm">説明</a><br>
+	　├<a href="koneta/partnya-skill.htm">技能</a><br>
+	　├<a href="buki/_buki_partnyaF.htm">武器一覧</a><br>
+	　└<a href="bougu/_bougu_partnyaF.htm">防具一覧</a><br>
+	</span>
+</span>
+
+<a href="koneta/mymission.htm" style="text-decoration:none;margin-left:0.8em">
+我的挑戰</a>
+
+<p><img id="m11" src="img/open.gif" Onclick="mclick(11)">
+<span Onclick="mclick(11)" class=c>摩卡/交換/調合</span><br>
+<span id="m11l" style="display: none;">
+├<a href="koneta/maka.htm">摩卡醃壺</a><br>
+├<a href="koneta/koukan.htm">山菜爺交換</a><br>
+├<a href="koneta/mix.htm">調合</a><br>
+├<a href="koneta/mix-gp.htm">貢献度P調合</a><br>
+├<a href="koneta/mix-cp.htm">CP調合</a><br>
+└<a href="koneta/mix-pr.htm">特別調合</a>
+</span></p>
+
+<p><img id="m12" src="img/open.gif" Onclick="mclick(12)">
+<span Onclick="mclick(12)" class=c>店</span><br>
+<span id="m12l" style="display: none;">
+├<a href="shop/tougou.htm">総合</a><br>
+├<a href="shop/koukan.htm">交換</a><br>
+├<a href="shop/machi.htm">街</a><br>
+├<a href="shop/gofu.htm">護符</a><br>
+├<a href="shop/ryoudan.htm">獵團</a><br>
+├<a href="shop/mytre.htm">萬能園地</a><br>
+└<a href="shop/caravan.htm">商隊</a>
+</span></p>
+
+<p><img id="m16" src="img/open.gif" Onclick="mclick(16)">
+<span Onclick="mclick(16)" class=c>獵團</span><br>
+<span id="m16l" style="display: none;">
+├<a href="ryodan/ryodan.htm">説明</a><br>
+├<a href="ryodan/buta.htm">噗吱豬</a><br>
+├<a href="ryodan/butaesa.htm">噗吱豬餌</a><br>
+├<a href="shop/ryoudan.htm">雑貨屋</a><br>
+├<a href="ryodan/addquest.htm">追加依頼</a><br>
+├<a href="ryodan/carnival.htm">狩人祭</a><br>
+├<a href="ryodan/cooking.htm">料理</a><br>
+├<a href="ryodan/bouken.htm">冒険貓</a><br>
+└<a href="ryodan/treasure.htm">トレジャー</a>
+</span></p>
+
+<p><img id="m18" src="img/open.gif" Onclick="mclick(18)">
+<span Onclick="mclick(18)" class=c>商隊</span><br>
+<span id="m18l" style="display: none;">
+├<a href="caravan/caravan.htm">説明</a><br>
+├<a href="caravan/hunterdec.htm">狩人珠</a><br>
+├<a href="caravan/quest.htm">任務</a><br>
+├<a href="caravan/daikouro.htm">大航祭</a><br>
+├<a href="caravan/daitoubatu.htm">大討伐</a><br>
+├<a href="caravan/kaitaku.htm">開拓遊戲</a><br>
+├<a href="shop/caravan.htm">店</a><br>
+├<a href="caravan/lounge.htm">迎賓邸</a><br>
+└<a href="koneta/mix-cp.htm">CP調合</a>
+</span></p>
+
+<p><img id="m19" src="img/open.gif" Onclick="mclick(19)">
+<span Onclick="mclick(19)" class=c>賴狩人/夥伴</span><br>
+<span id="m19l" style="display: none;">
+├<a href="rasta/partner_doc.htm">夥伴説明</a><br>
+├<a href="rasta/partner_skill.htm">夥伴技能</a><br>
+├<a href="rasta/partner_skill_tree.htm">　派生系列</a><br>
+├<a href="rasta/rasta_doc.htm">賴狩人説明</a><br>
+├<a href="rasta/rasta_lvup.htm">賴狩人強化</a><br>
+├<a href="rasta/rasta_skill.htm">賴狩人技能</a><br>
+├<a href="rasta/quest.htm">任務中的行動</a><br>
+├<a href="rasta/item.htm">道具貸出</a><br>
+└<a href="koneta/mix-gp.htm">貢献度P調合</a>
+</span></p>
+
+<p><img id="m14" src="img/open.gif" Onclick="mclick(14)">
+<span Onclick="mclick(14)" class=c>大闘技会</span><br>
+<span id="m14l" style="display: none;">
+├<a href="pet/readme.htm">大会的知識</a><br>
+├<a href="pet/lv.htm">強度</a><br>
+├<a href="pet/yukou.htm">友好度</a><br>
+└<a href="pet/petesa.htm">餌/攻撃方法</a>
+</span></p>
+
+<p><img id="m17" src="img/open.gif" Onclick="mclick(17)">
+<span Onclick="mclick(17)" class=c>小捏他等</span><br>
+<span id="m17l" style="display: none;">
+├<a href="koneta/doc-sword.htm">武器性能等</a><br>
+├<a href="koneta/item_bomb.htm">道具的威力</a><br>
+├<a href="koneta/item_kouka.htm">道具的效果</a><br>
+├<a href="koneta/item_kireaji.htm">銳利度的増減</a><br>
+├<a href="koneta/hrp.htm">ＨＲ</a>/<a href="koneta/srp.htm">ＳＲ</a>/<a href="koneta/grp.htm">ＧＲ</a><br>
+├<a href="koneta/tourina.htm">暱稱/称号/色</a><br>
+<!--├<a href="koneta/idou.htm">移動速度の差</a><br>-->
+├<a href="koneta/fish.htm">魚影</a><br>
+├<a href="koneta/mons-lv.htm">魔物的強度</a><br>
+├<a href="koneta/mons-size.htm">魔物的體型</a><br>
+├<a href="koneta/damage.htm">受到的傷害</a><br>
+├<a href="koneta/houshu.htm">任務報酬</a><br>
+└<a href="koneta/dailybonus.htm">毎日特典</a>
+</span></p>
+<!--<p style="margin-top:1.5em;"><small><a href="http://blog.so-net.ne.jp/ochaken" target="_top">獵團FreeDom本部</a><span style="font-size: 70%">(停止中)</span></small></p>-->
+<div style="text-align:right; font-size:80%;margin-top:0.5em;"><a href="http://mhfg.capcom.com.tw/cover/g1/#/top">
+	魔物獵人官方網站</a></div>
+<div style="text-align:right; font-size:80%;margin-top:0.5em;"><a href="http://ferias.game.coocan.jp/" target="_blank">
+	原小屋</a></div>
+<div><img src="img/1.png"><img src="http://hpcounter.nifty.com/cgi-bin/counter.cgi?f=ferias&n=1&d=2" height=18 width=100></div>
+<div style="font-size:80%;">Since：2007/07/06</div>
+<iframe src="log.htm" style="width:0px; height:0px; display:none;"></iframe>
+</body>
+</html>

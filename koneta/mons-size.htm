@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<title>サイズ</title>
+<style type="text/css">
+<!--
+th {font-weight:normal;background-color:silver;}
+td {white-space:nowrap;}
+td.n {text-align:right;}
+p {margin-bottom:0;}
+-->
+</style>
+</head>
+<body>
+<div>魔物的體型</div>
+<p>毎次任務中，魔物體型的設定都根據基本體型和変動限制幅來決定。<br>
+<strong>基本體型％×変動値％（変動制限幅以内）</strong><br>
+<br>
+每次任務都進行基本體型的設定，内部數值按照％來表示。<br>
+然後再乘以隨機獲取的変動値％（以100為中心上下変動），乘以結果的％與魔物的100％中較大的那個值，其結果就是魔物的最終體型。<br>
+<br>
+關於変動幅，首先，從以下７種變動表中選擇一種。</p>
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><th><br></th><th>変動幅</th><th style="width:4.5em">確率</th></tr>
+<tr><td>表1</td><td>75％～79％</td><td>1/32</td></tr>
+<tr><td>表2</td><td>80％～84％</td><td>1/32</td></tr>
+<tr><td>表3</td><td>85％～94％</td><td>2/32</td></tr>
+<tr><td>表4</td><td>95％～105％</td><td>19/32</td></tr>
+<tr><td>表5</td><td>106％～115％</td><td>6/32 </td></tr>
+<tr><td>表6</td><td>116％～120％</td><td>2/32</td></tr>
+<tr><td>表7</td><td>121％～125％</td><td>1/32</td></tr>
+</table>
+<p>選擇変動表之後，隨機決定表内的変動値。
+<br>但是，根據任務數據設定変動制限幅，根據以下的範圍進行修正。
+<br>（下記５種模式。限制幅因任務而異）</p>
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><th>模式</th><th>制限幅</th></tr>
+<tr><td>0</td><td>100％固定</td></tr>
+<tr><td>1</td><td>100％～105％</td></tr>
+<tr><td>2</td><td>95％～110％</td></tr>
+<tr><td>3</td><td>87％～118％</td></tr>
+<tr><td>4</td><td>80％～125％</td></tr>
+</table>
+<p>在什麼樣的條件下，會出現+10％或者-10％的場合呢？条件不明。(連続狩猟？得意時間帯？大隻魔物來吧！？）</p>
+<p>SIZE表</p>
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><th></th><th style="width:4.5em">基本</th><th style="width:4.5em">大型</th><th style="width:4.5em">
+	王冠</th><th style="width:4.5em">小型</th><th>出現王冠級別的主要任務</th></tr>
+<tr><td>迅猛龍王</td><td class=n>738.4 </td><td class=n>841.8 </td><td class=n>
+	908.2 </td><td class=n>664.6 </td><td>★５繁殖期 《密林探索》青き２つの影</td></tr>
+<tr><td>痺猛龍王</td><td class=n>732.1 </td><td class=n>827.3 </td><td class=n>
+	900.5 </td><td class=n>658.9 </td><td>★５寒冷期 《砂漠探索》砂漠に跳ねる狩人</td></tr>
+<tr><td>毒猛龍王</td><td class=n>774.6 </td><td class=n>875.3 </td><td class=n>
+	1053.5 </td><td class=n>697.1 </td><td>★５温暖期 《沼地探索》赤き毒たちの統率者</td></tr>
+<tr><td>怪鳥</td><td class=n>919.8 </td><td class=n>1048.6 </td><td class=n>
+	1122.2 </td><td class=n>827.8 </td><td>★５温暖期 《沼地探索》怪鳥の双激</td></tr>
+<tr><td>毒怪鳥</td><td class=n>1013.7 </td><td class=n>1196.2 </td><td class=n>
+	1267.1 </td><td class=n>942.7 </td><td>★５温暖期 《密林探索》毒の嵐</td></tr>
+<tr><td>雌火龍</td><td class=n>1645.6 </td><td class=n>1941.8 </td><td class=n>
+	2122.8 </td><td class=n>1530.4 </td><td>★６寒冷期 《密林探索》百花繚乱</td></tr>
+<tr><td>火龍</td><td class=n>1629.4 </td><td class=n>1857.5 </td><td class=n>
+	2069.3 </td><td class=n>1466.5 </td><td>★７繁殖期 《古塔探索》竜たちのねぐら</td></tr>
+<tr><td>電龍</td><td class=n>873.2 </td><td class=n>1030.4 </td><td class=n>
+	1178.8 </td><td class=n>812.1 </td><td>★６寒冷期 《沼地探索》赤と白</td></tr>
+<tr><td>岩龍</td><td class=n>1297.6 </td><td class=n>1531.2 </td><td class=n>
+	1673.9 </td><td class=n>1206.8 </td><td>★５温暖期 《火山探索》岩地に潜む罠</td></tr>
+<tr><td>鎧龍</td><td class=n>2099.9 </td><td class=n>2582.9 </td><td class=n>
+	2834.9 </td><td class=n>2036.9 </td><td>★７繁殖期 《沼地探索》脅威の双璧</td></tr>
+<tr><td>一角龍</td><td class=n>2004.2 </td><td class=n>2324.9 </td><td class=n>
+	2545.3 </td><td class=n>1984.2 </td><td>☆３寒冷期 《ハンターズクエスト：砂漠》白き一角竜の猛り</td></tr>
+<tr><td>角龍</td><td class=n>1993.4 </td><td class=n>2451.9 </td><td class=n>
+	2770.8 </td><td class=n>1933.6 </td><td>★７繁殖期 《砂漠探索》４本の角</td></tr>
+<tr><td>砂龍王</td><td class=n>1538.3 </td><td class=n>1815.2 </td><td class=n>
+	1876.7 </td><td class=n>1430.6 </td><td>★６寒冷期 《砂漠探索》砂の中を泳ぐ竜</td></tr>
+<tr><td>水龍</td><td class=n>2315.2 </td><td class=n>2847.7 </td><td class=n>
+	3102.4 </td><td class=n>2245.7 </td><td>★７温暖期 《密林探索》大漁</td></tr>
+<tr><td>大名蟹</td><td class=n>1044.0 </td><td class=n>1148.4 </td><td class=n>
+	1284.1 </td><td class=n>918.7 </td><td>★６繁殖期 《砂漠探索》砂塵の砦</td></tr>
+<tr><td>將軍蟹</td><td class=n>863.0 </td><td class=n>983.8 </td><td class=n>
+	1035.6 </td><td class=n>811.2 </td><td>★７寒冷期 《火山探索》４本の大鎌</td></tr>
+<tr><td>野豬王</td><td class=n>566.0 </td><td class=n>735.8 </td><td class=n>
+	1188.6 </td><td class=n>554.7 </td><td>★５温暖期 《雪山探索》極寒の地での狩猟</td></tr>
+<tr><td>桃毛獸王</td><td class=n>984.0 </td><td class=n>1131.6 </td><td class=n>
+	1230.0 </td><td class=n>954.5 </td><td>★６寒冷期 《密林探索》桃毛獣のなわばり</td></tr>
+<tr><td>雪獅子王</td><td class=n>860.0 </td><td class=n>1075.0 </td><td class=n>
+	1186.8 </td><td class=n>851.4 </td><td>★７繁殖期 《雪山探索》雪山の大家族</td></tr>
+<tr><td>金獅子</td><td class=n>960.0 </td><td class=n>1200.0 </td><td class=n>
+	1344.4 </td><td class=n>1008.4 </td><td>★８ 《火山探索》金獅子</td></tr>
+<tr><td>黑狼鳥</td><td class=n>1290.0</td><td class=n>1483.5</td><td class=n>
+	1560.9</td><td class=n>1173.9</td><td>？</td></tr>
+<tr><td>麒麟</td><td class=n>464.3 </td><td class=n>603.6 </td><td class=n>821.8 </td><td class=n>
+	450.4 </td><td>★８ 《古龍クエスト：古塔》古塔を撃つ落雷</td></tr>
+<tr><td>鋼龍</td><td class=n>1577.0 </td><td class=n>1734.7 </td><td class=n>
+	1892.4 </td><td class=n>1435.1 </td><td>★８ 《ドンドルマ防衛戦》風翔龍を討伐せよ！</td></tr>
+<tr><td>霞龍</td><td class=n>1744.0 </td><td class=n>2092.8 </td><td class=n>
+	2459.0 </td><td class=n>1674.2 </td><td>★８ 《古龍クエスト：森丘》静寂を奏でし龍 </td></tr>
+<tr><td>炎王龍</td><td class=n>1740.0 </td><td class=n>2001.0 </td><td class=n>
+	2105.4 </td><td class=n>1583.4 </td><td>★８ 《古龍クエスト：火山》炎国の王</td></tr>
+<tr><td>炎妃龍</td><td class=n>1740.0 </td><td class=n>1914.0 </td><td class=n>
+	2175.0 </td><td class=n>1531.2 </td><td>☆４ 《ハンターズ古龍：古塔》炎妃龍の宿りし塔</td></tr>
+<tr><td>眠鳥</td><td class=n>1208.0</td><td class=n>1389.2</td><td class=n>
+	1461.7</td><td class=n>1099.3</td><td>？</td></tr>
+<tr><td>眠鳥【希少種】</td><td class=n>1308.0</td><td class=n>1504.2</td><td class=n>
+	1582.7</td><td class=n>1190.3</td><td>？</td></tr>
+<tr><td>轟龍</td><td class=n>1735.3</td><td class=n>2065.0</td><td class=n>
+	2134.4</td><td class=n>1561.8</td><td>？</td></tr>
+<tr><td>熔岩龍</td><td class=n>2431.2</td><td class=n>2968.2</td><td class=n>
+	3233.7</td><td class=n>2340.8</td><td>？</td></tr>
+<tr><td>棘龍</td><td class=n>1673.8</td><td class=n>1908.1</td><td class=n>
+	2125.7</td><td class=n>1506.4</td><td>？</td></tr>
+<tr><td>尾晶蠍</td><td class=n>2008.7</td><td class=n>2310.0</td><td class=n>
+	2490.8</td><td class=n>1807.8</td><td>？</td></tr>
+<tr><td>灰晶蠍</td><td class=n>2008.7</td><td class=n>2540.0</td><td class=n>
+	2738.8</td><td class=n>1987.8</td><td>？</td></tr>
+<tr><td>吞龍</td><td class=n>2009.4</td><td class=n>2310.8</td><td class=n>
+	2491.7</td><td class=n>1808.5</td><td>？</td></tr>
+<tr><td>舞雷龍</td><td class=n>1543.0</td><td class=n>1774.5</td><td class=n>
+	1913.3</td><td class=n>1388.7</td><td>★７《フロンティアクエスト》天翔ける雷</td></tr>
+<tr><td>雄·響狼</td><td class=n>980.0</td><td class=n>1078.8</td><td class=n>
+	1176.0</td><td class=n>891.8</td><td>？</td></tr>
+<tr><td>雌·響狼</td><td class=n>920.0</td><td class=n>1012.0</td><td class=n>
+	1104.0</td><td class=n>837.2</td><td>？</td></tr>
+<tr><td>氷狐龍</td><td class=n>1388.0</td><td class=n></td><td class=n></td><td class=n></td><td>
+	？</td></tr>
+<tr><td>冥雷龍</td><td class=n>1467.0</td><td class=n></td><td class=n></td><td class=n></td><td>
+	？</td></tr>
+<tr><td>蠻龍</td><td class=n>1858.0</td><td class=n></td><td class=n></td><td class=n></td><td>
+	？</td></tr>
+<tr><td>極龍</td><td class=n>1687.0</td><td class=n></td><td class=n></td><td class=n></td><td>
+	？</td></tr>
+<tr><td>刻龍</td><td class=n>1974.20</td><td class=n></td><td class=n></td><td class=n></td><td>
+	？</td></tr>
+<tr><td>跳緋獣</td><td class=n>1072.00</td><td class=n></td><td class=n></td><td class=n></td><td>
+	？</td></tr>
+<tr><td>ココモア</td><td class=n>327.00</td><td class=n></td><td class=n></td><td class=n></td><td>
+	？</td></tr>
+<tr><td>獰龍</td><td class=n>1645.60</td><td class=n></td><td class=n></td><td class=n></td><td>
+	？</td></tr>
+</table>
+</body>
+</html>

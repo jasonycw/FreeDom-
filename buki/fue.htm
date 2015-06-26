@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<style type="text/css">
+<!--
+#tree {height:99%;width:20%;overflow:scroll;float:left;white-space:nowrap;line-height:100%;}
+#data {height:99%;width:78%;overflow: scroll;}
+
+html,body {height:100%;overflow:hidden;}
+body {margin:5px; padding:0;}
+td {white-space:normal;text-align:center;}
+#buki td {text-align:left;}
+span {white-space:nowrap;}
+table.fue td {cursor:pointer;}
+table.fue span {color:black;}
+.s{background-color: silver; color: silver;}
+input {font-size:80%;}
+.r,.G,.T,.H,.I {color:red;}
+.b {color:blue;}
+.w {color:white;}
+.y {color:yellow;}
+.g {color:lime;}
+.a {color:aqua;}
+.p {color:fuchsia;}
+.c {color:pink;}
+.C {color:green;}
+.O {color:blue;}
+.Z {color:goldenrod}
+.l1i {background-color:lavenderblush;}
+.l3- {background-color:lightgreen;}
+.l4k,l5p {background-color:lavender;}
+.l4g {background-color:aqua;}
+.l5- {background-color:khaki;}
+.w,.y,.r,.b,.a,.g,.p,.c{background-color: silver;}
+td {border-color:#c0c0c0;} /*FF,Operaの罫線対応*/
+-->
+</style>
+<title>楽譜</title>
+</head>
+<body>
+<div id=tree>
+<table border=1 cellspacing=0 cellpadding=2 class=fue style="width:9em; margin-left:0.5em">
+<thead><tr><th colspan=3>音符</th><th>效果</th></tr></thead><tbody>
+<tr onClick="DamageForm.creGakufu('341')"><td class=w>■</td><td class=b>■</td><td class=r>
+	■</td><td>攻走風</td></tr>
+<tr onClick="DamageForm.creGakufu('321')"><td class=w>■</td><td class=y>■</td><td class=r>
+	■</td><td>攻防耐</td></tr>
+<tr onClick="DamageForm.creGakufu('351')"><td class=w>■</td><td class=g>■</td><td class=r>
+	■</td><td>攻防回</td></tr>
+<tr onClick="DamageForm.creGakufu('371')"><td class=w>■</td><td class=a>■</td><td class=r>
+	■</td><td>攻聴</td></tr>
+<tr onClick="DamageForm.creGakufu('352')"><td class=w>■</td><td class=g>■</td><td class=y>
+	■</td><td>回復耐</td></tr>
+<tr onClick="DamageForm.creGakufu('342')"><td class=w>■</td><td class=b>■</td><td class=y>
+	■</td><td>走属耐</td></tr>
+<tr onClick="DamageForm.creGakufu('357')"><td class=w>■</td><td class=g>■</td><td class=a>
+	■</td><td>回暑</td></tr>
+<tr onClick="DamageForm.creGakufu('354')"><td class=w>■</td><td class=g>■</td><td class=b>
+	■</td><td>走回風</td></tr>
+<tr onClick="DamageForm.creGakufu('327')"><td class=w>■</td><td class=y>■</td><td class=a>
+	■</td><td>寒震耐</td></tr>
+<tr onClick="DamageForm.creGakufu('374')"><td class=w>■</td><td class=a>■</td><td class=b>
+	■</td><td>走風</td></tr>
+<tr onClick="DamageForm.creGakufu('641')"><td class=p>■</td><td class=b>■</td><td class=r>
+	■</td><td>攻走風</td></tr>
+<tr onClick="DamageForm.creGakufu('621')"><td class=p>■</td><td class=y>■</td><td class=r>
+	■</td><td>攻防耐</td></tr>
+<tr onClick="DamageForm.creGakufu('651')"><td class=p>■</td><td class=g>■</td><td class=r>
+	■</td><td>攻防回</td></tr>
+<tr onClick="DamageForm.creGakufu('671')"><td class=p>■</td><td class=a>■</td><td class=r>
+	■</td><td>攻防聴</td></tr>
+<tr onClick="DamageForm.creGakufu('652')"><td class=p>■</td><td class=g>■</td><td class=y>
+	■</td><td>回復耐</td></tr>
+<tr onClick="DamageForm.creGakufu('642')"><td class=p>■</td><td class=b>■</td><td class=y>
+	■</td><td>走風耐</td></tr>
+<tr onClick="DamageForm.creGakufu('654')"><td class=p>■</td><td class=g>■</td><td class=b>
+	■</td><td>走回風</td></tr>
+<tr onClick="DamageForm.creGakufu('657')"><td class=p>■</td><td class=g>■</td><td class=a>
+	■</td><td>回暑聴</td></tr>
+<tr onClick="DamageForm.creGakufu('627')"><td class=p>■</td><td class=y>■</td><td class=a>
+	■</td><td>寒震耐</td></tr>
+<tr onClick="DamageForm.creGakufu('674')"><td class=p>■</td><td class=a>■</td><td class=b>
+	■</td><td>走風斬</td></tr>
+</tbody></table>
+</div>
+<div id=data>
+<p><input type="button" value="返回" onclick="history.back();">　　　<span class=Z>G級武器</span>／<span class=G>剛|天|覇種武器</span>／<span class=O>親方印</span>／<span class=C>HC武器</span>／<span class=l1i>活動</span>／<span class=l4k>套裝·產包</span>／<span class=l4g>扭蛋</span>／<span class=l3->網咖</span>／<span class=l5->特典</span></p>
+<table id=gakufu border=1 cellspacing=0 cellpadding=2 style="font-size:90%;">
+<col span=4 style="width:1em;"><col style="width:11em;"><col style="width:4em;"><col style="width:11em;"><col style="width:5em;"><col style="width:7em;">
+<thead><tr><th colspan=4>楽譜</th><th colspan=2>效果</th><th colspan=2>重複演奏</th><th>
+	最大</th></tr></thead><tbody>
+</tbody></table>
+<table id=buki border=1 cellspacing=0 cellpadding=2 style="font-size:90%; overflow: scroll;margin-top:2em;">
+<col style="width:3em;">
+<tbody></tbody></table>
+</div>
+<script type="text/javascript">
+<!--
+/*@cc_on if (@_jscript_version < 9) {_d=document;eval('var document=_d');}@*/
+var DamageForm = (function (){
+var I_aNAME = 0,I_aAT = 1,I_aZOKU = 2,I_aZOKUAT = 3,I_aZYOU = 4,I_aZYOUAT = 5,I_aCRI = 6,I_aRARE = 7,I_aGR = 8,I_aSLOT = 9,I_aDEF = 10,I_aHR = 11,I_aCRE = 12,I_aCLASS = 13,I_aSINKAGR = 14,I_aDOC = 15,I_aGAUGE = 16,I_aREACH = 17,I_aKYOKUSYA = 5,I_aYA = 16,I_aBIN = 17,I_aSPEED = 4,I_aSOKUSYA = 16,I_aKICK = 17,I_aRELO = 18,I_aGUN = 19;
+var MST_Equip = {};
+var ZOKUNAME = ["無","火","水","雷","龍","氷","炎","光","雷極","天翔","熾凍",,,,,,,,,"爆撃"];
+var IZYONAME = ["","毒","麻痺","睡眠"];
+var SENRITU = {
+
+
+"ww":"強化自己移動速度,10分,攻擊不會反彈,4分加算,最大10分間",
+"pp":"強化自己移動速度,10分,攻擊不會反彈,4分加算,最大10分間",
+"bba":"千里眼,30秒",
+"wr":"攻撃力強化【小】[1.15倍]\nＧ級倍率+45,120秒,攻撃力更加強化[1.2倍]\nＧ級倍率+60,90秒加算,最大120秒間",
+"prr":"攻撃力強化【大】[1.2倍]\nＧ級倍率+60,90秒,攻撃力更加強化[1.3倍]\nＧ級倍率+90,60秒加算,最大90秒間",
+"ry":"防御力強化【小】[1.15倍]\nＧ級+120,120秒,防禦力更加強化[1.2倍]\nＧ級+160,90秒加算,最大120秒間",
+"rgr":"防御力強化【大】[1.2倍]\nＧ級+160,90秒,防禦力更加強化[1.3倍]\nＧ級+240,60秒加算,最大90秒間",
+"raap":"防御力強化【大】[1.2倍]\nＧ級+160,90秒,防禦力更加強化[1.3倍]\nＧ級+240,60秒加算,最大90秒間",
+"wb":"耐力減少無効【小】,90秒,耐力減少無効,60秒加算,最大150秒間",
+"pbb":"耐力減少無効【大】,150秒,耐力減少無効,60秒加算,最大150秒間",
+"ybyw":"屬性攻擊強化[10%UP],90秒,-,60秒加算,最大150秒間",
+"gypy":"女神的赦免,60秒,-,30秒加算,最大90秒間",
+"rbw":"体力増加【小】[+20],180秒,-,120秒加算,最大180秒間",
+"rra":"体力増加【中】[+30],180秒,-,120秒加算,最大180秒間",
+"rbrp":"体力増加【大】[+50],180秒,-,120秒加算,最大180秒間",
+"pg":"体力回復【小】(1/3%) or 体力回復【微】(2/3%)",
+"gpy":"体力回復【中】(1/3%) or 体力回復【微】(2/3%)",
+"ggpa":"体力回復【大】(1/3%) or 体力回復【小】(2/3%)",
+"wg":"体力回復【小】＆解毒(1/3%)  or 体力回復【微】＆解毒(2/3%)",
+"gbpb":"体力回復【中】＆解毒(1/3%)  or 体力回復【微】＆解毒(2/3%)",
+"gwa":"体力回復【中】＆消臭(1/3%)  or 体力回復【微】＆消臭(2/3%)",
+"ggy":"回復速度【小】,120秒,-,60秒加算,最大180秒間",
+"grgp":"回復速度【大】,120秒,-,60秒加算,最大180秒間",
+"bbr":"風壓減輕\n(風壓【小】無效),180秒,風壓無効\n(風壓【大】無效),120秒,根據效果",
+"bbg":"風壓無効\n(風壓【大】無效),180秒,風壓完全無効\n(龍風壓無效),120秒,根據效果",
+"bab":"風壓無効\n(風壓【大】無效),180秒,風壓完全無効\n(龍風壓無效),120秒,根據效果",
+"bbyp":"風壓完全無効\n(龍風壓無效),180秒,-,180秒,最大180秒間",
+"aar":"聽覺保護【小】,180秒,聽覺保護【大】</small>,120秒,根據效果",
+"aagp":"聽覺保護【大】,180秒,-,120秒,根據效果",
+"aay":"寒冷無效,240秒,-,240秒加算,最大480秒間",
+"aga":"炎暑無效,240秒,-,240秒加算,最大480秒間",
+"abp":"暈眩無效,180秒,-,120秒加算,最大300秒間",
+"ayy":"麻痺無效,180秒,-,120秒加算,最大300秒間",
+"I_aYA":"耐震,180秒,-,120秒加算,最大300秒間",
+"yr":"火耐性強化【小】[+10],60秒,火耐性更加強化[+15],60秒,最大60秒間",
+"ybw":"火耐性強化【大】[+15],60秒,火耐性更加強化[+20],60秒,最大60秒間",
+"ybp":"水耐性強化【小】[+10],60秒,水耐性更加強化[+15],60秒,最大60秒間",
+"ybbw":"水耐性強化【大】[+15],60秒,水耐性更加強化[+20],60秒,最大60秒間",
+"yap":"雷耐性強化【小】[+10],60秒,雷耐性更加強化[+15],60秒,最大60秒間",
+"yyb":"雷耐性強化【大】[+15],60秒,雷耐性更加強化[+20],60秒,最大60秒間",
+"ywa":"冰耐性強化【小】[+10],60秒,冰耐性更加強化[+15],60秒,最大60秒間",
+"ygw":"冰耐性強化【小】[+10],60秒,冰耐性更加強化[+15],60秒,最大60秒間",
+"ypa":"冰耐性強化【大】[+15],60秒,冰耐性更加強化[+20],60秒,最大60秒間",
+"ygp":"冰耐性強化【大】[+15],60秒,冰耐性更加強化[+20],60秒,最大60秒間",
+"wy":"龍耐性強化【小】[+10],60秒,龍耐性更加強化[+15],60秒,最大60秒間",
+"pyy":"龍耐性強化【大】[+15],60秒,龍耐性更加強化[+20],60秒,最大60秒間",
+"bpyb":"硬直無效,60秒,-,60秒加算,最大90秒間",
+"bgbp":"硬直無效,60秒,-,60秒加算,最大90秒間",
+"abw":"銳利度回復【小】,75回復,-,-,",
+"agg":"銳利度回復【小】,75回復,-,-,",
+"apba":"銳利度回復【大】,150回復,-,-,"};
+
+var senritu_arasi = {
+"wcg":"寒冷無效,240秒,-,240秒加算,最大480秒間",
+"bwc":"炎暑無效,240秒,-,240秒加算,最大480秒間",
+"ycw":"暈眩無效,180秒,-,120秒加算,最大300秒間",
+"rpc":"麻痺無效,180秒,-,120秒加算,最大300秒間",
+"ycp":"暈眩無效,180秒,-,120秒加算,最大300秒間",
+"rcw":"耐震,180秒,-,120秒加算,最大300秒間",
+"pcg":"火耐性強化【小】[+10],60秒,火耐性更加強化[+15],60秒,最大60秒間",
+"bpc":"冰耐性強化【小】[+10],60秒,冰耐性更加強化[+15],60秒,最大60秒間",
+"acw":"防御力強化【小】[1.15倍],120秒,防御力更加強化[1.2倍],90秒加算,最大120秒間",
+"acp":"屬性攻擊強化[10%UP],90秒,-,60秒加算,最大150秒間"};
+
+
+
+var onpu = function (w) {
+	switch (w) {
+	case "1": //赤
+		return "r";
+	case "2": //黄
+		return "y";
+	case "3": //白
+		return "w";
+	case "4": //青
+		return "b";
+	case "5": //緑
+		return "g";
+	case "6": //紫
+		return "p";
+	case "7": //空
+		return "a";
+	}
+}
+var global = {
+//------------------------------------初期化----------
+init : function(){
+}
+//------------------------------------データセット----------
+,setEquip : function (name,data){
+if (name === "horn") MST_Equip[name]=data;
+}
+,setSinka : function (name,data){
+}
+,setSozai : function (data){
+}
+//------------------------------------譜面セット----------
+,creGakufu : function (fumen){
+var cstr = new RegExp("[" + onpu(fumen.charAt(0)) + onpu(fumen.charAt(1)) + onpu(fumen.charAt(2)) + "]","g");
+var tB=document.getElementsByTagName("tbody")[1],tBCre = document.createElement("tbody");
+for (var e in SENRITU) {
+	if (e.replace(cstr,"") === "") {
+		var insTR = document.createElement("tr"),insTD = document.createElement("td");
+		var o = e + "sssss";
+		for (var i = 0; i < 4; i++) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "■";
+			insTD.className = o.charAt(i);
+			insTR.appendChild(insTD.cloneNode(true));
+		}
+		insTD.className = "";
+		var s = SENRITU[e].split(",");
+		for (var i = 0,m = s.length; i < m; i++) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = s[i];
+			insTR.appendChild(insTD.cloneNode(true));
+		}
+		if (s.length === 1) {
+			insTR.lastChild.colSpan = 5;
+		}
+		tBCre.appendChild(insTR.cloneNode(true));
+	}
+}
+var insHeader = document.createElement("th");
+insHeader.colSpan = 4;
+insHeader./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "嵐之型";
+tBCre.appendChild(insHeader.cloneNode(true));
+//桜
+for (var e in senritu_arasi) {
+	if (e.replace(cstr,"") === "c") {
+		var insTR = document.createElement("tr"),insTD = document.createElement("td");
+		var o = e + "sssss";
+		for (var i = 0; i < 4; i++) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "■";
+			insTD.className = o.charAt(i);
+			insTR.appendChild(insTD.cloneNode(true));
+		}
+		insTD.className = "";
+		var s = senritu_arasi[e].split(",");
+		for (var i = 0,m = s.length; i < m; i++) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = s[i];
+			insTR.appendChild(insTD.cloneNode(true));
+		}
+		if (s.length === 1) {
+			insTR.lastChild.colSpan = 5;
+		}
+		tBCre.appendChild(insTR.cloneNode(true));
+	}
+}
+tB.parentNode.replaceChild( tBCre,tB );
+
+//武器一覧
+var lt_zoku = ["","","","","","","","","","","","","","",""];
+var lt_izyo = ["","","","","","","","","","","","","","",""];
+var tB=document.getElementsByTagName("tbody")[2],tBCre = document.createElement("tbody");
+for (var i in MST_Equip.horn) {
+	var eq = MST_Equip.horn[i].split(",");
+	if (eq[I_aREACH] === fumen &&
+	   (eq[I_aNAME].lastIndexOf("SP") < 0 ||
+	    eq[I_aNAME].lastIndexOf("Ⅶ") > 0)) {
+		if (!eq[I_aZOKUAT] && !eq[I_aZYOUAT]){
+			lt_zoku[0] += "／<span class=" + (eq[I_aCLASS] || "l"+eq[I_aCRE]) + ">" + eq[I_aNAME]+"</span>";
+		} else {
+			if (eq[I_aZOKUAT]) lt_zoku[eq[I_aZOKU]] += "／<span class=\"" + eq[I_aCLASS] + " l"+eq[I_aCRE] + "\">" + eq[I_aNAME] + "</span>";
+			if (eq[I_aZYOUAT]) lt_izyo[eq[I_aZYOU]] += "／<span class=\"" + eq[I_aCLASS] + " l"+eq[I_aCRE] + "\">" + eq[I_aNAME] + "</span>";
+		}
+	}
+}
+for (var i=0; i<=10; i++) {
+	if (lt_zoku[i]) {
+		var insTR = document.createElement("tr"),insTD = document.createElement("td");
+		insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = ZOKUNAME[i];
+		insTR.appendChild(insTD.cloneNode(true));
+
+		insTD.innerHTML = lt_zoku[i].substring(1)
+		insTR.appendChild(insTD.cloneNode(true));
+
+		tBCre.appendChild(insTR.cloneNode(true));
+	}
+}
+for (var i=1; i<=3; i++) {
+	if (lt_izyo[i]) {
+		var insTR = document.createElement("tr"),insTD = document.createElement("td");
+		insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = IZYONAME[i];
+		insTR.appendChild(insTD.cloneNode(true));
+
+		insTD.innerHTML = lt_izyo[i].substring(1)
+		insTR.appendChild(insTD.cloneNode(true));
+
+		tBCre.appendChild(insTR.cloneNode(true));
+	}
+}
+tB.parentNode.replaceChild( tBCre,tB );
+
+}
+}//グローバル
+return global;
+})();
+
+(function(){
+//------------------------------------活動貼り付け----------
+//活動セット
+var addEvent = function (elm, type, func) {
+	//追加
+	elm./*@cc_on @if (true) attachEvent ('on' + @else@*/ addEventListener (/*@end@*/ type,func,false);
+	//アンロードで削除
+	window./*@cc_on @if (true) attachEvent ('on' + @else@*/ addEventListener (/*@end@*/ "unload",
+		function(){
+			elm./*@cc_on @if (true) detachEvent ('on' + @else@*/ removeEventListener (/*@end@*/ type,func,false);
+		}
+		,false);
+};
+addEvent(window,"load",
+function () {
+	if (location.search.length) DamageForm.creGakufu(location.search.substring(1,4));
+});
+})();
+-->
+</script>
+<script type="text/javascript" src="../damage/equip.js"></script>
+</body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<style type="text/css">
+<!--
+th {white-space:nowrap;font-weight:normal;background-color:silver;}
+tr.top td {vertical-align:top}
+td.n {text-align:right}
+td.c {text-align:center}
+td.y {background-color:lemonchiffon}
+td.b {background-color:lightskyblue}
+td.r {background-color:darksalmon}
+table,p {font-size:85%}
+h4 {clear:both;margin-top:1em;background-color:silver;}
+.hosoku {float:left;margin-right:3em;}
+.l {border-left: 2px solid #191970;}
+.ex {font-size:70%}
+caption {white-space:nowrap;text-align:left}
+ul.ttop {margin:0;padding:1px 0;width:60em;list-style-type:none;}
+ul.ttop li {font-size:100%;float:left;padding:2px 5px 2px 5px;border:1px solid silver;}
+-->
+</style>
+<title>來自魔物的攻擊　【弩編】</title>
+</head>
+<body>
+<ul class=ttop>
+<li>來自魔物的攻擊　<a href="doc-sword.htm">【近接武器編】</a>
+／<a href="doc-gun.htm">【弩編】</a>
+／<a href="doc-yumi.htm">【弓編】</a>
+<li><a href="doc-spec.htm">武器性能</a>
+<li><a href="doc-kensyo.htm">劍晶技能</a>
+<li><a href="doc-buki.htm">武器的種類</a>
+<li><a href="doc-bougu.htm">防具的種類</a>
+<li><a href="doc-feature.htm">FEATURE</a>
+</ul>
+<hr style="clear:both">
+<h3>來自魔物的攻擊　【弩編】</h3>
+
+<h4>●　武器倍率</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku id>
+<tr><th>武器的種類</th><th>倍率</th></tr>
+<tr><td>大劍/太刀</td><td class=c>4.8</td></tr>
+<tr><td>單手劍/雙劍</td><td class=c>1.4</td></tr>
+<tr><td>大錘/狩獵笛</td><td class=c>5.2</td></tr>
+<tr><td>長槍/銃槍</td><td class=c>2.3</td></tr>
+<tr><td>弩/弓</td><td class=c>1.2</td></tr>
+</table>
+<p>武器倍率是表示武器強度的内部數值，也是計算給予魔物傷害的基本數值。
+<br>在“個人狀態”裏表示的攻撃力為該武器的倍率乘以一定係數得到的結果。
+<br>各武器的倍率見左表。
+<br><small>※左表的數值乘以在“個人狀態”裏表示的攻撃力就能得到武器倍率</small>
+<br>
+<br>用餐效果或者道具使用等讓攻撃力上升的情況全部以武器倍率加算。
+<br>不同種類武器在“個人狀態”裏表示的攻撃力的上升量是不同的。
+</p>
+<p style="clear:both" class=ex>例：手榴彈弩（武器倍率：90）的情况　90×1.2＝108 
+攻撃力為　108÷1.2＝90
+</p>
+<h4>●　子彈的威力</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th colspan=8>通常</th><th colspan=4 class=l>重弩[壓縮裝填]</th><th colspan=4 class=l>
+	重弩[完美壓縮裝填]</th></tr>
+<tr><th>彈名</th><th>威力</th><th>属性</th><th>HIT数</th><th>所持数</th><th>裝填値</th><th>
+	反動値</th><th>補足</th><th class=l>威力</th><th>属性</th><th>氣絶</th><th>着彈</th><th class=l>
+	威力</th><th>属性</th><th>氣絶</th><th>着彈</th></tr>
+<tr><td>LV1通常彈</td><td class=c>6</td><td><br></td><td class=c>1</td><td class=c>
+	∞</td><td class=c>5</td><td class=c>8</td><td><br></td><td class="c l">1.9</td><td><br></td><td class=c>
+	0.3</td><td class=c>5</td><td class="c l">3.1</td><td><br></td><td class=c>
+	0.3</td><td class=c>10</td></tr>
+<tr><td>LV2通常彈</td><td class=c>12</td><td><br></td><td class=c>1</td><td class=c>
+	99</td><td class=c>6</td><td class=c>9</td><td><br></td><td class="c l">4.8</td><td><br></td><td class=c>
+	0.5</td><td class=c>20</td><td class="c l">7.3</td><td><br></td><td class=c>
+	0.5</td><td class=c>20</td></tr>
+<tr><td>LV3通常彈</td><td class=c>12</td><td><br></td><td class=c>跳彈</td><td class=c>
+	99</td><td class=c>7</td><td class=c>10</td><td><br></td><td class="c l">4.8</td><td><br></td><td class=c>
+	0.7</td><td class=c>10</td><td class="c l">7.2</td><td><br></td><td class=c>
+	0.7</td><td class=c>10</td></tr>
+<tr><td>LV1貫通彈</td><td class=c>10</td><td><br></td><td class=c>3</td><td class=c>
+	60</td><td class=c>6</td><td class=c>10</td><td><br></td><td class="c l">5</td><td><br></td><td class=c>
+	0.7</td><td class=c>20</td><td class="c l">7</td><td><br></td><td class=c>
+	0.7</td><td class=c>20</td></tr>
+<tr><td>LV2貫通彈</td><td class=c>9</td><td><br></td><td class=c>4</td><td class=c>
+	50</td><td class=c>7</td><td class=c>10</td><td><br></td><td class="c l">4.5</td><td><br></td><td class=c>
+	0.7</td><td class=c>20</td><td class="c l">6.2</td><td><br></td><td class=c>
+	0.7</td><td class=c>20</td></tr>
+<tr><td>LV3貫通彈</td><td class=c>7</td><td><br></td><td class=c>6</td><td class=c>
+	40</td><td class=c>8</td><td class=c>11</td><td><br></td><td class="c l">3.5</td><td><br></td><td class=c>
+	1.4</td><td class=c>20</td><td class="c l">4.9</td><td><br></td><td class=c>
+	1.4</td><td class=c>20</td></tr>
+<tr><td>LV1散彈</td><td class=c>5</td><td>水属性：5</td><td class=c>3</td><td class=c>
+	60</td><td class=c>5</td><td class=c>10</td><td><br></td><td class="c l">3</td><td>
+	水属性：2.5</td><td class=c>0.6</td><td class=c>5</td><td class="c l">4</td><td>
+	水属性：3.5</td><td class=c>0.6</td><td class=c>5</td></tr>
+<tr><td>LV2散彈</td><td class=c>5</td><td>水属性：4</td><td class=c>4</td><td class=c>
+	60</td><td class=c>6</td><td class=c>10</td><td><br></td><td class="c l">3</td><td>
+	水属性：2</td><td class=c>0.6</td><td class=c>5</td><td class="c l">4</td><td>
+	水属性：2.5</td><td class=c>0.6</td><td class=c>5</td></tr>
+<tr><td>LV3散彈</td><td class=c>5</td><td>水属性：4</td><td class=c>5</td><td class=c>
+	60</td><td class=c>7</td><td class=c>11</td><td><br></td><td class="c l">3</td><td>
+	水属性：2</td><td class=c>0.6</td><td class=c>5</td><td class="c l">4</td><td>
+	水属性：2.5</td><td class=c>0.6</td><td class=c>5</td></tr>
+<tr><td>LV1徹甲榴彈</td><td class=c>3</td><td>着彈後<br>爆發：30火属性：40</td><td class=c>1</td><td class=c>
+	9</td><td class=c>7</td><td class=c>11</td><td rowspan=3>輕弩為<br>氣絶値： 5<br>
+	重は<br>氣絶値：10</td><td class="c l">2</td><td>着彈後<br>爆發：24火属性：20</td><td class=c>
+	2.5</td><td class=c>20</td><td class="c l">2</td><td>着彈後<br>爆發：30火属性：20</td><td class=c>
+	2.5</td><td class=c>20</td></tr>
+<tr><td>LV2徹甲榴彈</td><td class=c>3</td><td>着彈後<br>爆發：40火属性：60</td><td class=c>1</td><td class=c>
+	9</td><td class=c>8</td><td class=c>12</td><td class="c l">2</td><td>着彈後<br>
+	爆發：32火属性：30</td><td class=c>2.5</td><td class=c>20</td><td class="c l">2</td><td>
+	着彈後<br>爆發：40火属性：30</td><td class=c>2.5</td><td class=c>20</td></tr>
+<tr><td>LV3徹甲榴彈</td><td class=c>3</td><td>着彈後<br>爆發：50火属性：80</td><td class=c>1</td><td class=c>
+	9</td><td class=c>9</td><td class=c>13</td><td class="c l">2</td><td>着彈後<br>
+	爆發：40火属性：40</td><td class=c>2.5</td><td class=c>20</td><td class="c l">2</td><td>
+	着彈後<br>爆發：50火属性：40</td><td class=c>2.5</td><td class=c>20</td></tr>
+<tr><td>LV1擴散彈</td><td class=c>6</td><td>着彈後<br>爆發：32火属性：2×3</td><td class=c>1</td><td class=c>
+	3</td><td class=c>8</td><td class=c>13</td><td><br></td><td class="c l">-</td><td>
+	-</td><td class=c>-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td></tr>
+<tr><td>LV2擴散彈</td><td class=c>6</td><td>着彈後<br>爆發：32火属性：2×4</td><td class=c>1</td><td class=c>
+	3</td><td class=c>9</td><td class=c>14</td><td><br></td><td class="c l">-</td><td>
+	-</td><td class=c>-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td></tr>
+<tr><td>LV3擴散彈</td><td class=c>6</td><td>着彈後<br>爆發：32火属性：2×5</td><td class=c>1</td><td class=c>
+	3</td><td class=c>10</td><td class=c>14</td><td><br></td><td class="c l">-</td><td>
+	-</td><td class=c>-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td></tr>
+<tr><td>火炎彈</td><td class=c>1</td><td>火属性<br>輕弩：武器倍率×0.4<br>重弩：武器倍率×0.5</td><td class=c>
+	1</td><td class=c>60</td><td class=c>6</td><td class=c>10</td><td><br></td><td class="c l">
+	0.5</td><td>武器倍率×0.3</td><td class=c>2</td><td class=c>20</td><td class="c l">
+	0.8</td><td>武器倍率×0.4</td><td class=c>2</td><td class=c>20</td></tr>
+<tr><td>水冷彈</td><td class=c>1</td><td>水属性<br>輕弩：武器倍率×0.13<br>重弩：武器倍率×0.25</td><td class=c>
+	3</td><td class=c>60</td><td class=c>6</td><td class=c>10</td><td><br></td><td class="c l">
+	0.5</td><td>武器倍率×0.15</td><td class=c>1.7</td><td class=c>20</td><td class="c l">
+	0.8</td><td>武器倍率×0.2</td><td class=c>1.7</td><td class=c>20</td></tr>
+<tr><td>電擊彈</td><td class=c>1</td><td>雷属性<br>輕弩：武器倍率×0.2<br>重弩：武器倍率×0.27</td><td class=c>
+	3</td><td class=c>60</td><td class=c>6</td><td class=c>10</td><td><br></td><td class="c l">
+	0.5</td><td>武器倍率×0.17</td><td class=c>1.7</td><td class=c>20</td><td class="c l">
+	0.8</td><td>武器倍率×0.215</td><td class=c>1.7</td><td class=c>20</td></tr>
+<tr><td>冰結彈</td><td class=c>1</td><td>氷属性<br>輕弩：武器倍率×0.13<br>重弩：武器倍率×0.25</td><td class=c>
+	3</td><td class=c>60</td><td class=c>6</td><td class=c>10</td><td><br></td><td class="c l">
+	0.5</td><td>武器倍率×0.15</td><td class=c>1.7</td><td class=c>20</td><td class="c l">
+	0.8</td><td>武器倍率×0.2</td><td class=c>1.7</td><td class=c>20</td></tr>
+<tr><td>滅龍彈</td><td class=c>1</td><td>龍属性<br>輕弩：75<br>重弩：90</td><td class=c>6</td><td class=c>
+	20</td><td class=c>9</td><td class=c>13</td><td><br></td><td class="c l">0.5</td><td>
+	72</td><td class=c>10</td><td class=c>20</td><td class="c l">0.5</td><td>90</td><td class=c>
+	10</td><td class=c>20</td></tr>
+<tr><td>LV1回復彈</td><td class=c>0</td><td><br></td><td class=c>-</td><td class=c>
+	12</td><td class=c>7</td><td class=c>11</td><td>回復量：30</td><td class="c l">0</td><td><br></td><td class=c>
+	-</td><td class=c>-</td><td class="c l">0</td><td><br></td><td class=c>-</td><td class=c>
+	-</td></tr>
+<tr><td>LV2回復彈</td><td class=c>0</td><td><br></td><td class=c>-</td><td class=c>
+	12</td><td class=c>9</td><td class=c>13</td><td>回復量：50</td><td class="c l">0</td><td><br></td><td class=c>
+	-</td><td class=c>-</td><td class="c l">0</td><td><br></td><td class=c>-</td><td class=c>
+	-</td></tr>
+<tr><td>LV1毒彈</td><td class=c>10</td><td>毒蓄積量：25</td><td class=c>1</td><td class=c>
+	12</td><td class=c>7</td><td class=c>11</td><td><br></td><td class="c l">6</td><td>
+	毒蓄積量：20</td><td class=c>2.5</td><td class=c>-</td><td class="c l">8</td><td>
+	毒蓄積量：25</td><td class=c>2.5</td><td class=c>-</td></tr>
+<tr><td>LV2毒彈</td><td class=c>15</td><td>毒蓄積量：50</td><td class=c>1</td><td class=c>
+	8</td><td class=c>9</td><td class=c>13</td><td><br></td><td class="c l">9</td><td>
+	毒蓄積量：40</td><td class=c>2.5</td><td class=c>-</td><td class="c l">11</td><td>
+	毒蓄積量：50</td><td class=c>2.5</td><td class=c>-</td></tr>
+<tr><td>LV1麻痺彈</td><td class=c>10</td><td>麻痺蓄積量：25</td><td class=c>1</td><td class=c>
+	12</td><td class=c>7</td><td class=c>11</td><td><br></td><td class="c l">6</td><td>
+	麻痺蓄積量：20</td><td class=c>2.5</td><td class=c>-</td><td class="c l">8</td><td>
+	麻痺蓄積量：25</td><td class=c>2.5</td><td class=c>-</td></tr>
+<tr><td>LV2麻痺彈</td><td class=c>15</td><td>麻痺蓄積量：50</td><td class=c>1</td><td class=c>
+	8</td><td class=c>9</td><td class=c>13</td><td><br></td><td class="c l">9</td><td>
+	麻痺蓄積量：40</td><td class=c>2.5</td><td class=c>-</td><td class="c l">11</td><td>
+	麻痺蓄積量：50</td><td class=c>2.5</td><td class=c>-</td></tr>
+<tr><td>LV1睡眠彈</td><td class=c>0</td><td>睡眠蓄積量：25</td><td class=c>1</td><td class=c>
+	12</td><td class=c>7</td><td class=c>11</td><td><br></td><td class="c l">0</td><td>
+	睡眠蓄積量：20</td><td class=c>2.5</td><td class=c>-</td><td class="c l">0</td><td>
+	睡眠蓄積量：25</td><td class=c>2.5</td><td class=c>-</td></tr>
+<tr><td>LV2睡眠彈</td><td class=c>0</td><td>睡眠蓄積量：50</td><td class=c>1</td><td class=c>
+	8</td><td class=c>9</td><td class=c>13</td><td><br></td><td class="c l">0</td><td>
+	睡眠蓄積量：40</td><td class=c>2.5</td><td class=c>-</td><td class="c l">0</td><td>
+	睡眠蓄積量：50</td><td class=c>2.5</td><td class=c>-</td></tr>
+<tr><td>捕獲用麻醉彈</td><td class=c>0</td><td>麻酔蓄積量：80</td><td class=c>1</td><td class=c>
+	8</td><td class=c>8</td><td class=c>11</td><td><br></td><td class="c l">-</td><td>
+	-</td><td class=c>-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td></tr>
+<tr><td>染色彈</td><td class=c>0</td><td><br></td><td class=c>1</td><td class=c>
+	99</td><td class=c>7</td><td class=c>11</td><td>染色效果</td><td class="c l">-</td><td>
+	-</td><td class=c>-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td></tr>
+<tr><td>鬼人彈</td><td class=c>0</td><td><br></td><td class=c>-</td><td class=c>5</td><td class=c>
+	7</td><td class=c>11</td><td>武器倍率＋3</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>-</td><td class=c>
+	-</td></tr>
+<tr><td>硬化彈</td><td class=c>0</td><td><br></td><td class=c>-</td><td class=c>5</td><td class=c>
+	7</td><td class=c>11</td><td>防御力＋6</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>-</td><td class=c>
+	-</td></tr>
+<tr><td>排熱彈</td><td class=c>-</td><td>固定22＋火10</td><td class=c>-</td><td class=c>
+	∞</td><td class=c>10</td><td class=c>15</td><td>装填速度<br>反動減輕<br>無效</td><td class="c l">
+	-</td><td>-</td><td class=c>-</td><td class=c>-</td><td class="c l">-</td><td>
+	-</td><td class=c>-</td><td class=c>-</td></tr>
+<tr><td>強酸彈</td><td class=c>1</td><td><br></td><td class=c>1</td><td class=c>5</td><td class=c>
+	12</td><td class=c>15</td><td>斬打彈-10</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>-</td><td class=c>
+	-</td></tr>
+<tr><td>冰酸彈</td><td class=c>1</td><td><br></td><td class=c>1</td><td class=c>5</td><td class=c>
+	12</td><td class=c>15</td><td>氷-10</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>-</td><td class=c>
+	-</td></tr>
+<tr><td>龍酸彈</td><td class=c>1</td><td><br></td><td class=c>1</td><td class=c>5</td><td class=c>
+	12</td><td class=c>15</td><td>龍-10</td><td class="c l">-</td><td>-</td><td class=c>
+	-</td><td class=c>-</td><td class="c l">-</td><td>-</td><td class=c>-</td><td class=c>
+	-</td></tr>
+<tr><td>爆擊彈[初期]</td><td class=c>0</td><td>固定(30＋LV/2)+<br>(15+LV/4)×15</td><td class=c>
+	-</td><td class=c>5</td><td class=c>12</td><td class=c>30</td><td>1秒1HIT</td><td class="c l">
+	-</td><td>-</td><td class=c>-</td><td class=c>-</td><td class="c l">-</td><td>
+	-</td><td class=c>-</td><td class=c>-</td></tr>
+<tr><td>爆擊彈[派生後]</td><td class=c>0</td><td>固定(36＋LV/2)+<br>(18+LV/4)×15</td><td class=c>
+	-</td><td class=c>5</td><td class=c>12</td><td class=c>30</td><td>1秒1HIT</td><td class="c l">
+	-</td><td>-</td><td class=c>-</td><td class=c>-</td><td class="c l">-</td><td>
+	-</td><td class=c>-</td><td class=c>-</td></tr>
+<tr><td>龍爆擊彈</td><td class=c>0</td><td>固定20龍(60+LV)+<br>龍(120+LV/4)×15</td><td class=c>
+	-</td><td class=c>5</td><td class=c>12</td><td class=c>30</td><td>〃</td><td class="c l">
+	-</td><td>-</td><td class=c>-</td><td class=c>-</td><td class="c l">-</td><td>
+	-</td><td class=c>-</td><td class=c>-</td></tr>
+</table>
+<p>關於弩，根据子彈不同，產生的威力也有差異。
+<br>用武器倍率乘以子彈的威力％，就是基本威力。
+<br>徹甲榴彈在中彈後爆炸，擴散彈有附加子爆彈擴散爆發。
+<br>中彈後發生的爆發為固定傷害，不會因爲肉質而減輕，但是火屬性的部分會因爲肉質而減輕。
+<br>回復彈打在魔物身上不會起到回復作用。（中彈1單位傷害）
+</p>
+<br>關於重弩的壓縮裝填，威力等根據装填的彈数發生變化
+<br>　※着彈傷害為無属性的固定傷害，徹甲榴彈的着彈後的爆破傷害根據彈数變化
+</p>
+<p style="clear:both" class=ex>例：手榴彈弩發生LV2通常彈時　90×12%＝10.8＝10 即為基本威力
+</p>
+<h4>●　子彈的裝填速度</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>裝填速度値</th><th>動作</th></tr>
+<tr><td class=c>４ 以下</td><td class=c>快 （62）</td></tr>
+<tr><td class=c>５ ～ ７</td><td class=c>普通 （78）</td></tr>
+<tr><td class=c>８ 以上</td><td class=c>慢 （103）</td></tr>
+</table>
+<p>關於給弩裝填子彈的速度，左表根據下面計算式的結果，按照３階段分別表示。
+<br>
+<br>　　　裝填速度値 ＝ 子彈的裝填値 － （弩的裝填修正値 ＋ 装填速度技能修正値
+<br>
+<br>動作欄的 （） 中數値為裝填過程所經過的楨数。（30楨＝１秒）
+</p>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<caption>弩的裝填修正値</caption>
+<tr><th>裝填</th><th>修正値</th></tr>
+<tr><td class=c>慢</td><td class=c>0</td></tr>
+<tr><td class=c>較慢</td><td class=c>1</td></tr>
+<tr><td class=c>普通</td><td class=c>2</td></tr>
+<tr><td class=c>較快</td><td class=c>3</td></tr>
+<tr><td class=c>快</td><td class=c>4</td></tr>
+</table>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<caption>受装填速度技能影響修正値</caption>
+<tr><th>技能</th><th>修正値</th></tr>
+<tr><td class=c>裝填速度-1</td><td class=c>-1</td></tr>
+<tr><td class=c>技能沒有</td><td class=c>0</td></tr>
+<tr><td class=c>裝填速度+1</td><td class=c>1</td></tr>
+<tr><td class=c>裝填速度+2</td><td class=c>2</td></tr>
+<tr><td class=c>裝填速度+3</td><td class=c>3</td></tr>
+</table>
+<div style="clear:both" class=ex>例：
+<div class=hosoku>超怪鳥砲 （裝填：慢） 
+<br>裝填LV2擴散彈的場合
+<br>　　装填速度技能沒有
+<br>　　　　9－（0＋0）＝9　&#8658;　慢
+<br>　　裝填速度+2技能あり
+<br>　　　　9－（0＋2）＝7　&#8658;　普通
+</div>
+<div>繚亂的對弩 （裝填：較快） 
+<br>裝填LV2擴散彈的場合
+<br>　　装填速度技能沒有
+<br>　　　　9－（3＋0）＝6　&#8658;　普通
+<br>　　裝填速度+2技能あり
+<br>　　　　9－（3＋2）＝4　&#8658;　快
+</div>
+</div>
+<h4>●　發射時的反動</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>發射反動値</th><th>動作</th></tr>
+<tr><td class=c>０ ～ ８</td><td class=c>反動小 （26）</td></tr>
+<tr><td class=c>９ ～ １０</td><td class=c>反動中 （56）</td></tr>
+<tr><td class=c>１１ ～ １４</td><td class=c>反動大 （72）</td></tr>
+</table>
+<p>關於發射子彈的時候所生成的反動，左表根據以下計算式的結果，按照３階段分別表示。
+<br>
+<br>　　　反動値 ＝ 子彈的反動値 － （弩的反動修正値 ＋ 反動減輕技能修正値）
+<br>
+<br>動作欄的 （） 中數値為，從反彈開始到結束所經歷的楨數。（30楨＝１秒）
+<br>
+<br>此外，連射技能發動的場合，２次修正値都變成０，子彈的反動値回歸到原本的發射反彈値。
+<br>多數子彈在沒有技能的情況下，反動都很大。
+</p>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<caption>弩の反動修正値</caption>
+<tr><th>反動</th><th>修正値</th></tr>
+<tr><td class=c>最大</td><td class=c>0</td></tr>
+<tr><td class=c>較大</td><td class=c>1</td></tr>
+<tr><td class=c>中</td><td class=c>2</td></tr>
+<tr><td class=c>較小</td><td class=c>3</td></tr>
+</table>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<caption>反動減輕技能修正値</caption>
+<tr><th>技能</th><th>修正値</th></tr>
+<tr><td class=c>技能沒有</td><td class=c>0</td></tr>
+<tr><td class=c>反動減輕+1</td><td class=c>2</td></tr>
+<tr><td class=c>反動減輕+2</td><td class=c>4</td></tr>
+</table>
+<div style="clear:both" class=ex>例：
+<div class=hosoku>超怪鳥砲 （反動：中） 
+<br>發射LV2毒彈的場合
+<br>　　反動減輕技能沒有
+<br>　　　　13－（2＋0）＝11　&#8658;　反動大
+<br>　　反動減輕+1技能あり
+<br>　　　　13－（2＋2）＝ 9　&#8658;　反動中
+</div>
+<div>老山龍砲·霸 （反動：較小） 
+<br>發射LV2毒彈的場合
+<br>　　反動減輕技能沒有
+<br>　　　　13－（3＋0）＝10　&#8658;　反動中
+<br>　　反動減輕+1技能あり
+<br>　　　　13－（3＋2）＝ 8　&#8658;　反動小
+</div>
+</div>
+<h4>裝填速度/反動一覧</h4>
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><th rowspan=2>彈名</th><th rowspan=2>彈の<br>裝填値</th><th colspan=8>
+	弩的裝填修正値＋装填速度技能修正値</th><th rowspan=2>彈的<br>反動値</th><th colspan=7>
+	弩的反動修正値＋反動減輕技能修正値</th></tr>
+<tr><th>-1</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>
+	0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr>
+<tr><th>LV1通常彈</th><td class=c>5</td><td class="c y">普通</td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	8</td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV2通常彈</th><td class=c>6</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	9</td><td class="c y">中</td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV3通常彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	10</td><td class="c y">中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV1貫通彈</th><td class=c>6</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	10</td><td class="c y">中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV2貫通彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	10</td><td class="c y">中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV3貫通彈</th><td class=c>8</td><td class="c r">慢</td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV1散彈</th><td class=c>5</td><td class="c y">普通</td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	10</td><td class="c y">中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV2散彈</th><td class=c>6</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	10</td><td class="c y">中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV3散彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV1徹甲榴彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV2徹甲榴彈</th><td class=c>8</td><td class="c r">慢</td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class="c b"></td><td class=c>
+	12</td><td class="c r">大</td><td class="c r"></td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV3徹甲榴彈</th><td class=c>9</td><td class="c r">慢</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class=c>
+	13</td><td class="c r">大</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td></tr>
+<tr><th>LV1擴散彈</th><td class=c>8</td><td class="c r">慢</td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class="c b"></td><td class=c>
+	13</td><td class="c r">大</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td></tr>
+<tr><th>LV2擴散彈</th><td class=c>9</td><td class="c r">慢</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class=c>
+	14</td><td class="c r">大</td><td class="c r"></td><td class="c r"></td><td class="c r"></td><td class="c y">
+	中</td><td class="c y"></td><td class="c b">小</td></tr>
+<tr><th>LV3擴散彈</th><td class=c>10</td><td class="c r">慢</td><td class="c r"></td><td class="c r"></td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class=c>
+	14</td><td class="c r">大</td><td class="c r"></td><td class="c r"></td><td class="c r"></td><td class="c y">
+	中</td><td class="c y"></td><td class="c b">小</td></tr>
+<tr><th>火炎彈</th><td class=c>6</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	10</td><td class="c y">中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>水冷彈</th><td class=c>6</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	10</td><td class="c y">中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>電擊彈</th><td class=c>6</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	10</td><td class="c y">中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>冰結彈</th><td class=c>6</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	10</td><td class="c y">中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>滅龍彈</th><td class=c>9</td><td class="c r">慢</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class=c>
+	13</td><td class="c r">大</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td></tr>
+<tr><th>LV1回復彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV2回復彈</th><td class=c>9</td><td class="c r">慢</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class=c>
+	13</td><td class="c r">大</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td></tr>
+<tr><th>LV1毒彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV2毒彈</th><td class=c>9</td><td class="c r">慢</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class=c>
+	13</td><td class="c r">大</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td></tr>
+<tr><th>LV1麻痺彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV2麻痺彈</th><td class=c>9</td><td class="c r">慢</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class=c>
+	13</td><td class="c r">大</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td></tr>
+<tr><th>LV1睡眠彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>LV2睡眠彈</th><td class=c>9</td><td class="c r">慢</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class=c>
+	13</td><td class="c r">大</td><td class="c r"></td><td class="c r"></td><td class="c y">
+	中</td><td class="c y"></td><td class="c b">小</td><td class="c b"></td></tr>
+<tr><th>捕獲用麻醉彈</th><td class=c>8</td><td class="c r">慢</td><td class="c r"></td><td class="c y">
+	普通</td><td class="c y"></td><td class="c y"></td><td class="c b">快</td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>染色彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>鬼人彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+<tr><th>硬化彈</th><td class=c>7</td><td class="c r">慢</td><td class="c y">普通</td><td class="c y"></td><td class="c y"></td><td class="c b">
+	快</td><td class="c b"></td><td class="c b"></td><td class="c b"></td><td class=c>
+	11</td><td class="c r">大</td><td class="c y">中</td><td class="c y"></td><td class="c b">
+	小</td><td class="c b"></td><td class="c b"></td><td class="c b"></td></tr>
+</table>
+<h4>●　關於飛行距離與基本威力的修正</h4>
+
+<p>通常彈·貫通彈·徹甲榴彈這３種子彈，隨著發射後的飛行距離變化，其基本威力也發生変化。
+<br>
+<br>　　通常彈，按照發射後 1.5倍 &#8658; 1.0倍　&#8658; 0.8倍 &#8658; 0.5倍　的順序変化
+<br>　　貫通彈與徹甲榴彈，按照發射後 1.0倍 &#8658; 1.5倍 &#8658; 1.0倍 &#8658; 0.8倍 &#8658; 0.5倍　的順序変化
+<br>　　　※重弩的話不是1.5倍而是1.7倍
+<br>
+<br>以下圖表顯示隨著時間經過威力所發生的変化。也與弩的加工等級等有關
+<br>與子彈的速度不同，下面的圖表為子彈速度的補正。
+<br>子彈的速度越快，在圖表的横方向就越壓縮，越慢的話就越伸張，這是要領。
+<br>順便說一句，許多重弩比輕弩的子彈速度更快。
+<br>
+<br>根據補正，以時間查看（橫向），子彈的速度越快，其發揮的威力越短，時間帯也變短；
+<br>以距離查看（縱向），無論弩加工等級如何，發揮威力的高度都是大約相同的。
+<br>因此，只要掌握好這個距離的話，無論是什麽弩都可以在相同的距離發揮出高威力。
+<br>
+<br>圖表上所記３種子彈以外，基本威力不會伴隨飛行距離而變化。
+<br>散彈也不會因為飛行距離而發生威力的變化，只是HIT數會變化。
+<br>各種属性彈也是，屬性值不會伴隨飛行距離而變化。
+</p>
+<div><img src="../img/doc-bowgun.gif" alt="減衰"></div>
+
+<h4>●　受技能影響的基本威力·属性値修正</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>技能</th><th>效果</th></tr>
+<tr><td>通常彈攻撃力UP</td><td>通常子彈的威力為 1.1倍</td></tr>
+<tr><td>貫通彈攻撃力UP</td><td>貫通子彈的威力為 1.1倍</td></tr>
+<tr><td>散彈攻撃力UP</td><td>散子彈的威力為 1.3倍</td></tr>
+<tr><td>狙撃</td><td>特定条件下，彈對應肉質＋５</td></tr>
+<tr><td>○属性攻撃強化</td><td>各属性子彈的威力UP</td></tr>
+<tr><td>状態異常攻撃強化</td><td>状態異常子彈的属性値為 1.125倍</td></tr>
+</table>
+<p>左表表示技能發動時，子彈的威力與属性値都會増加。
+</p>
+<h4>●　会心率</h4>
+
+<p>会心率是指在攻撃時出現判定攻擊（暴擊）的概率。
+<br>發生判定攻擊時，必殺率為大於0％的情況下，基本威力變為 1.25倍；會心率為負値的情況下，基本威力為變爲0.75倍。
+</p>
+<h4>●　HIT的效果</h4>
+
+<p>弩的HIT效果，根據發射後威力変化存在差異。
+<br>效果按照1.5倍 &#8658; 1.0倍　&#8658; 0.8倍 &#8658; 0.5倍的順序逐級變小。
+<br>　　※重弩時不是1.5倍而是1.7倍
+<br><small>(由於不受給予傷害的影響，有時候也會出現傷害幾乎不通過的部位也有較大效果)</small>
+</p>
+<h4>●　給予傷害的増大</h4>
+<table border=1 cellspacing=0 cellpadding=2 class=hosoku>
+<tr><th>状態</th><th>倍率</th></tr>
+<tr><td>麻痺状態中</td><td class=n>1.1倍</td></tr>
+<tr><td>岩石擬態中　（岩龍）</td><td class=n>1.1倍</td></tr>
+<tr><td>地洞　（只有從落入之後<br>到開始掙扎之間）</td><td class=n>1.1倍</td></tr>
+<tr><td>睡眠中　（受到的第一擊）</td><td class=n>3.0倍</td></tr>
+</table>
+<p>魔物在特定的状態受到攻撃時，按照左表的數據增加傷害。
+<br><small>(増大的只是無属性傷害，属性傷害不變)</small>
+<br>在麻痺陷阱中掙扎時，不會再進入麻痺状態。
+<br>未發覺的状態落入地洞，效果時間延長約1.7倍。如果是發怒時的話，就變成約0.7倍。(未發覚為優先)
+<br><small>(金獅子睡覺時落入陷阱，效果時間為6秒)</small>
+<br>魔物在瀕死睡覺時和中睡眠狀態一樣。只不過，魔物的体力會徐徐回復。
+<br><small>(棘龍在任務開始時的状態除外)</small>
+</p>
+<h4>●　肉質與全体防御率造成傷害減輕</h4>
+
+<p>魔物肉質的設定，目的就是減輕傷害。
+<br>通常傷害和属性傷害全都因爲肉質而軽減。
+<br>再者，在魔物的肉質和全体防御率設定之下，減輕総傷害値。
+<br>發怒状態之下，絕大部分魔物的全体防御率會發生補正。
+</p>
+<p style="clear:both" class=ex>
+例：手榴彈弩使用通常彈LV2顏射雌火龍（全体防御率：0.9）並且在判定距離下命中時
+<br>　　 90×6%×1.5×50%＝4.05＝4
+<br>　　 4×90%＝3.6＝3 傷害
+</p>
+<h4>●　玩家的攻撃力上升</h4>
+
+<p>使玩家的攻撃力上升的手段大致分爲以下３組。
+<br>　　１：發動使攻撃力上升的技能，持有使攻撃力上升的道具（力量之護符·力量之爪）
+<br>　　２：通過用餐效果使之上升，使用鬼人藥、鬼人藥·大
+<br>　　３：使用怪力種子、怪力藥丸、鬼人笛
+<br>
+<br>第１組、不會因爲在任務中貓車而造成效果消失。
+<br>第２組、任務中一直有効，不過貓車之後效果消失。
+<br>第３組、一定的時間經過后效果消失。
+<br>
+<br>第２、３組，每組内的各效果不可疊加。強制疊加的話，按照順序效果較大的優先。
+</body></html>
+

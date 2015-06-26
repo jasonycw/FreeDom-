@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<style type="text/css">
+<!--
+html,body{ height: 100%;}
+td{ white-space: nowrap; }
+tr{ vertical-align: top; }
+-->
+</style>
+<title>食事</title>
+</head>
+<body>
+<table id="zk" border="1" Width="800">
+<tr>
+<th style="width:310px"><select id="kisetu"><option value="5" selected>温暖期</option><option value="7">
+寒冷期</option><option value="9">繁殖期</option></select>
+<th style="Width:125px">搜索条件</th>
+<th><select id="hpz"><option value="" selected>沒有</option><option value="：+50">
++50</option><option value="：+40">+40</option><option value="：+30">+30</option><option value="：+20">
++20</option><option value="：+10">+10</option><option value="－">-</option><option value="：-10">
+-10</option><option value="：-20">-20</option><option value="：-30">-30</option><option value="：-40">
+-40</option><option value="：-50">-50</option></select></th>
+<th><select id="stz"><option value="" selected>沒有</option><option value="：+50">
++50</option><option value="：+25">+25</option><option value="－">-</option><option value="：-25">
+-25</option><option value="：-50">-50</option></select></th>
+<th><select id="strz"><option value="" selected>沒有</option><option value="：+5">
++5</option><option value="：+3">+3</option><option value="－">-</option><option value="：-3">
+-3</option><option value="：-5">-5</option></select></th>
+<th><select id="defz"><option value="" selected>沒有</option><option value="：+20">
++20</option><option value="：+10">+10</option><option value="－">-</option><option value="：-10">
+-10</option><option value="：-20">-20</option></select></th>
+</tr>
+</table>
+<table id="syoku" border="1" cellspacing="0" cellpadding="2" Width="800" style="table-layout: fixed;">
+<col span=1 width=40>
+<col span=2 width=130>
+<col span=1 width=120>
+<col span=4 width=80 align="center">
+<thead><tr style="background-color:silver;">
+ <th>季節</th><th colspan="2">食材</th><th>料理名</th><th colspan="4">效果</th>
+</tr></thead><tbody>
+</tbody></table>
+</body>
+<script type="text/javascript">
+<!--
+/*@cc_on if (@_jscript_version < 9) {_d=document;eval('var document=_d');}@*/
+(function (){
+//活動セット
+var addEvent = function (elm, type, func) {
+	//追加
+	elm./*@if (@_jscript_version < 9) attachEvent ('on' + @else@*/ addEventListener (/*@end@*/ type,func,false);
+	//アンロードで削除
+	window./*@if (@_jscript_version < 9) attachEvent ('on' + @else@*/ addEventListener (/*@end@*/ "unload",
+		function(){
+			elm./*@if (@_jscript_version < 9) detachEvent ('on' + @else@*/ removeEventListener (/*@end@*/ type,func,false);
+		}
+		,false);
+};
+
+var sokuzai = [
+["叢林蔥","010D",13,"ST","",5,0,5,0,5,0],
+["薄片仙人掌","010E",14,"ST","",0,0,10,0,-5,0],
+["稀有洋蔥","010F",15,"ST","",-5,0,0,0,10,0],
+["霜降番茄","0110",0,"ST","",-15,0,20,0,5,0],
+["鬼松茸","0111",1,"ST","",30,0,-10,0,10,0],
+["寒冷麥","0112",2,"HP","",5,0,0,0,5,0],
+["混合豆","0113",3,"HP","",5,0,-5,0,10,0],
+["頑固麵包","0114",4,"HP","",0,0,5,0,10,0],
+["銀米草","0115",5,"HP","",-5,0,20,0,5,0],
+["古代豆","0116",6,"HP","",-5,0,30,0,10,0],
+["拳頭米","1AA9",9,"HP","",20,0,20,0,15,0],
+["白肝","0117",7,"ATK","",-5,0,0,0,5,0],
+["波波舌","0118",8,"ATK","",-5,0,10,0,0,0],
+["醃小電龍","0119",9,"ATK","",5,0,-10,0,10,0],
+["蛇龍背脊肉","011A",10,"ATK","",5,0,20,0,-10,0],
+["龍尾肉","011B",11,"ATK","",5,0,30,0,10,0],
+["音符魚","011C",12,"DEF","",0,0,5,0,-5,0],
+["刺身魚","00EB",11,"DEF","",-5,0,0,0,10,0],
+["蛇鮭魚","011D",13,"DEF","",10,0,-15,0,5,0],
+["古代魚","00FD",13,"DEF","",-10,0,20,0,5,0],
+["旗魚","00FA",10,"DEF","",25,0,-10,0,10,0],
+["米蟲","011E",14,"ST","HP",5,5,-5,-5,5,-5],
+["不死蟲","0103",3,"ST","HP",0,5,5,5,0,0],
+["辛辣蟲","011F",15,"ST","HP",-10,-10,10,5,5,-10],
+["蜜蜻蜓","0120",0,"ST","HP",5,5,5,10,5,5],
+["大獨角仙","0121",1,"ST","HP",10,5,-10,-10,15,10],
+["紙蟲","1AA5",5,"ST","HP",5,5,0,-10,0,15],
+["鐮剪螳螂","1AA7",7,"ST","HP",5,10,10,10,-15,-10],
+["辣油","0122",2,"ST","HP",-5,5,5,5,-5,5],
+["力量豬油","0123",3,"ST","HP",15,-5,-5,-5,5,5],
+["長壽果醬","0124",4,"ST","HP",0,10,10,0,10,10],
+["肥河豚","1AA6",6,"ST","HP",15,10,-5,-15,5,0],
+["乾乳瑪琳","0125",5,"DEF","",5,0,-5,0,0,0],
+["猛牛奶油","0126",6,"DEF","",-15,0,5,0,10,0],
+["皇家起司","0127",7,"DEF","",5,0,10,0,15,0],
+["荷比酒","0128",8,"ATK","",10,0,5,0,-5,0],
+["祝福紅酒","0129",9,"ATK","",5,0,-5,0,15,0],
+["黃金芋酒","012A",10,"ATK","",5,0,0,0,20,0],
+["菇菇吟釀酒","1AA8",8,"ATK","",-15,0,15,0,15,0],
+["魔物蛋","012B",11,"ATK","DEF",-5,10,5,5,10,5],
+["圓滾滾的蛋","1AAA",10,"ATK","DEF",10,15,10,10,-10,-15],
+["懷孕海參","1AAB",11,"ATK","DEF",10,10,-10,-15,10,10],
+["豬仙貝","012C",12,"ST","ATK",-5,-5,-5,-5,-5,-5],
+["黃金精華","1AAC",12,"ST","ATK",0,5,5,15,0,15],
+["掠奪者蜂蜜","1AAD",13,"ST","ATK",5,15,0,5,5,15]];
+var mesi = [
+["驚嚇燉肉",1],
+["驚異燉飯",1],
+["驚人蛋糕",2],
+["毅力炒飯",2],
+["蘭蘭沙拉",1],
+["冒泡焗烤",-1.5],
+["呆瓜義大利麵",1.5],
+["ポッコリフライ",1],
+["滾動可樂餅",1],
+["グラグラタン",1.5],
+["暖暖鍋",2],
+["爆炸湯",-1.5],
+["巨型披薩",1.5],
+["燦爛拉麵",1],
+["辣辣咖哩",1.5],
+["暗暗稀飯",1]];
+
+var kisetu = document.getElementById("kisetu");
+var hpz = document.getElementById("hpz");
+var stz = document.getElementById("stz");
+var strz = document.getElementById("strz");
+var defz = document.getElementById("defz");
+
+var setSyokuji = function (){
+var sokuzaiMax=sokuzai.length,tBCre = document.createElement("tbody");
+var mesi_p = {"ST":0,"HP":0,"ATK":0,"DEF":0},ryori_p=0;
+var kisetu1 = kisetu.value-0,kisetu2 = kisetu1 + 1;
+
+for (var i=0;i<sokuzaiMax;i++) {
+	for (var j=i+1;j<sokuzaiMax;j++) {
+		var insTR = document.createElement("tr"),insTD = document.createElement("td"),ck=0;
+		mesi_p["ST"] = mesi_p["HP"] = mesi_p["ATK"] = mesi_p["DEF"] = ryori_p = 0;
+		if (sokuzai[i][3]) mesi_p[sokuzai[i][3]] += sokuzai[i][kisetu1];
+		if (sokuzai[i][4]) mesi_p[sokuzai[i][4]] += sokuzai[i][kisetu2];
+		if (sokuzai[j][3]) mesi_p[sokuzai[j][3]] += sokuzai[j][kisetu1];
+		if (sokuzai[j][4]) mesi_p[sokuzai[j][4]] += sokuzai[j][kisetu2];
+		ryori_p = (sokuzai[i][2] + sokuzai[j][2]) % 16;
+		
+		mesi_p["ST"]  *= mesi[ryori_p][1];
+		mesi_p["HP"]  *= mesi[ryori_p][1];
+		mesi_p["ATK"] *= mesi[ryori_p][1];
+		mesi_p["DEF"] *= mesi[ryori_p][1];
+		
+		insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = kisetu.options[kisetu.selectedIndex].text.substring(0,2);
+		insTR.appendChild(insTD.cloneNode(true));
+
+		insTD.innerHTML = "<a href=\"../sozai/sozai.htm?" + sokuzai[i][1] + "\">" + sokuzai[i][0] + "</a>";
+		insTR.appendChild(insTD.cloneNode(true));
+
+		insTD.innerHTML = "<a href=\"../sozai/sozai.htm?" + sokuzai[j][1] + "\">" + sokuzai[j][0] + "</a>";
+		insTR.appendChild(insTD.cloneNode(true));
+
+		insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = mesi[ryori_p][0];
+		insTR.appendChild(insTD.cloneNode(true));
+
+		if (mesi_p["HP"] > 25) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：+50";
+			insTR.x="150";
+		} else if (mesi_p["HP"] > 20) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：+40";
+			insTR.x="140";
+		} else if (mesi_p["HP"] > 15) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：+30";
+			insTR.x="130";
+		} else if (mesi_p["HP"] > 10) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：+20";
+			insTR.x="120";
+		} else if (mesi_p["HP"] > 5) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：+10";
+			insTR.x="110";
+		} else if (mesi_p["HP"] < -25) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：-50";
+			insTR.x="010";
+		} else if (mesi_p["HP"] < -20) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：-40";
+			insTR.x="020";
+		} else if (mesi_p["HP"] < -15) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：-30";
+			insTR.x="030";
+		} else if (mesi_p["HP"] < -10) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：-20";
+			insTR.x="040";
+		} else if (mesi_p["HP"] < -5) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "体力：-10";
+			insTR.x="050";
+		} else {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "－";
+			insTR.x="100";
+			ck += 1;
+		}
+		insTR.appendChild(insTD.cloneNode(true));
+
+		if (mesi_p["ST"] > 25) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：+50";
+			insTR.x+="150";
+		} else if (mesi_p["ST"] > 20) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：+50";
+			insTR.x+="150";
+		} else if (mesi_p["ST"] > 15) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：+25";
+			insTR.x+="125";
+		} else if (mesi_p["ST"] > 10) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：+25";
+			insTR.x+="125";
+		} else if (mesi_p["ST"] > 5) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：+25";
+			insTR.x+="125";
+		} else if (mesi_p["ST"] < -25) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：-50";
+			insTR.x+="025";
+		} else if (mesi_p["ST"] < -20) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：-50";
+			insTR.x+="025";
+		} else if (mesi_p["ST"] < -15) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：-25";
+			insTR.x+="050";
+		} else if (mesi_p["ST"] < -10) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：-25";
+			insTR.x+="050";
+		} else if (mesi_p["ST"] < -5) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "耐力：-25";
+			insTR.x+="050";
+		} else {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "－";
+			insTR.x+="100";
+			ck += 1;
+		}
+		insTR.appendChild(insTD.cloneNode(true));
+
+		if (mesi_p["ATK"] > 25) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：+5";
+			insTR.x+="110";
+		} else if (mesi_p["ATK"] > 20) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：+5";
+			insTR.x+="110";
+		} else if (mesi_p["ATK"] > 15) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：+3";
+			insTR.x+="103";
+		} else if (mesi_p["ATK"] > 10) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：+3";
+			insTR.x+="103";
+		} else if (mesi_p["ATK"] > 5) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：+3";
+			insTR.x+="103";
+		} else if (mesi_p["ATK"] < -25) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：-5";
+			insTR.x+="003";
+		} else if (mesi_p["ATK"] < -20) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：-5";
+			insTR.x+="003";
+		} else if (mesi_p["ATK"] < -15) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：-3";
+			insTR.x+="003";
+		} else if (mesi_p["ATK"] < -10) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：-3";
+			insTR.x+="010";
+		} else if (mesi_p["ATK"] < -5) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "攻撃力：-3";
+			insTR.x+="010";
+		} else {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "－";
+			insTR.x+="100";
+			ck += 1;
+		}
+		insTR.appendChild(insTD.cloneNode(true));
+
+		if (mesi_p["DEF"] > 25) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：+20";
+			insTR.x+="120";
+		} else if (mesi_p["DEF"] > 20) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：+20";
+			insTR.x+="120";
+		} else if (mesi_p["DEF"] > 15) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：+10";
+			insTR.x+="110";
+		} else if (mesi_p["DEF"] > 10) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：+10";
+			insTR.x+="110";
+		} else if (mesi_p["DEF"] > 5) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：+10";
+			insTR.x+="110";
+		} else if (mesi_p["DEF"] < -25) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：-20";
+			insTR.x+="010";
+		} else if (mesi_p["DEF"] < -20) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：-20";
+			insTR.x+="010";
+		} else if (mesi_p["DEF"] < -15) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：-10";
+			insTR.x+="020";
+		} else if (mesi_p["DEF"] < -10) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：-10";
+			insTR.x+="020";
+		} else if (mesi_p["DEF"] < -5) {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "防御力：-10";
+			insTR.x+="020";
+		} else {
+			insTD./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/ = "－";
+			insTR.x+="100";
+			ck += 1;
+		}
+		insTR.appendChild(insTD.cloneNode(true));
+
+		if (ck != 4) tBCre.appendChild(insTR.cloneNode(true));
+	}
+}
+var tB=document.getElementsByTagName("tbody")[1], tr=tBCre.rows, N=tr.length, x=[], marker = document.createElement("tbody");
+for(var i=0; i<N; x[i] = tr[i++]);
+
+x.sort(function(a, b){
+	return a.x > b.x ? -1 : 1;
+	});
+for (var i=0; i<N; marker.appendChild(x[i++]));
+tB.parentNode.replaceChild( marker,tB );
+
+hpz.selectedIndex = stz.selectedIndex = strz.selectedIndex = defz.selectedIndex = 0;
+
+}
+
+var filter = function(){
+var trs = document.getElementById("syoku").rows;
+for(var i=1,m=trs.length;i<m;i++){
+	var td = trs[i].cells;
+	if ((!hpz.value || td[4]./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/.indexOf(hpz.value) >= 0) &&
+		(!stz.value || td[5]./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/.indexOf(stz.value) >= 0) &&
+		(!strz.value || td[6]./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/.indexOf(strz.value) >= 0) &&
+		(!defz.value || td[7]./*@if (@_jscript_version < 9) innerText @else@*/ textContent /*@end@*/.indexOf(defz.value) >= 0)) {
+		trs[i].style.display = "";
+	} else {
+		trs[i].style.display = "none";
+	}
+}
+}
+
+
+addEvent(kisetu,"change",setSyokuji);
+addEvent(hpz,"change",filter);
+addEvent(stz,"change",filter);
+addEvent(strz,"change",filter);
+addEvent(defz,"change",filter);
+
+setSyokuji();
+})();
+
+-->
+</script>
+</html>

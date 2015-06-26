@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>餌/攻撃方法</title>
+<style type="text/css">
+<!--
+th {white-space:nowrap;font-weight:normal;background-color:gray;}
+td.no {background-color:silver;width:3em}
+td.esa {width:8em}
+td.fue {width:3em;background-color:silver}
+table.top td {color:blue;cursor:pointer;}
+-->
+</style>
+<script type="text/javascript">
+<!--
+document./*@cc_on @if (true) attachEvent ('on' + @else@*/ addEventListener (/*@end@*/
+	'click',
+	function (evt) {
+		/*@if (true)
+		var t = evt.srcElement;
+		@else@*/
+		var t = evt.target;
+		/*@end@*/
+		if (!t.id) return;
+		if (t.id.charAt(4) != "c") return;
+
+		var trs = document.getElementsByTagName("table");
+		for(var i=2; i<trs.length; i++){
+			trs[i].style.display = trs[i].id  == t.id.substring(0,4) ? "":"none";
+		}
+	},
+	false
+	);
+-->
+</script>
+</head>
+<body>
+<table border=1 cellspacing=0 cellpadding=2 class=top><tr>
+<td id="m027c">迅猛龍王</td>
+<td id="m028c">痺猛龍王</td>
+<td id="m031c">毒猛龍王</td>
+<td id="m068c">野豬王</td>
+<td id="m006c">怪鳥</td>
+<td id="m038c">怪鳥【亜種】</td>
+</tr><tr><td id="m020c">毒怪鳥</td>
+<td id="m039c">毒怪鳥【亜種】</td>
+<td id="m001c">雌火龍</td>
+<td id="m037c">雌火龍【櫻】</td>
+<td id="m011c">火龍</td>
+<td id="m049c">火龍【蒼】</td>
+</tr><tr><td id="m015c">電龍</td>
+<td id="m045c">電龍【亜種】</td>
+<td id="m014c">角龍</td>
+<td id="m043c">角龍【亜種】</td>
+<td id="m017c">鎧龍</td>
+<td id="m047c">鎧龍【亜種】</td>
+</tr><tr><td id="m053c">金獅子</td>
+<td id="m048c">大名蟹</td>
+<td id="m067c">將軍蟹</td>
+<td id="m052c">桃毛獸王</td>
+<td id="m051c">雪獅子王</td>
+<td id="m040c">黑狼鳥</td>
+</tr></table>
+<table border=1 cellspacing=0 cellpadding=2 class=all>
+<tr><td class=no>共通</td><td class=esa>鎮上剩飯</td><td>体-10%防-10%</td></tr>
+<tr><td class=no>共通</td><td class=esa>龍飼料</td><td>体-10%防-3%</td></tr>
+<tr><td class=no>共通</td><td class=esa>巨龍飼料</td><td>1～10%體型增大(不會超過最大體型)</td></tr>
+<tr><td class=no>共通</td><td class=esa>強龍飼料</td><td>闘技LV上升1</td></tr>
+<tr><td class=no>共通</td><td class=esa>龍飼料·極</td><td>友好度上升1</td></tr>
+<tr><td class=no>共通</td><td class=esa>紅龍飼料</td><td>麻痹無効攻+10%</td></tr>
+<tr><td class=no>共通</td><td class=esa>蒼龍飼料</td><td>睡眠無効攻+10%</td></tr>
+<tr><td class=no>共通</td><td class=esa>翠龍飼料</td><td>毒無効攻+10%</td></tr>
+<tr><td class=no>共通</td><td class=esa>奇妙飼料</td><td>隨機効果變化<br>
+	(1～10%體型減小/体+15%攻+25%/闘技LV上升1)</td></tr>
+</table>
+<table id="m006" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	怪鳥</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>26/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>蚯蚓魚餌</td><td>体+5%攻+5%</td><td class=fue>
+	彈擊笛</td><td>火炎液</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>蚱蜢魚餌</td><td>体+5%攻+10%</td><td class=fue>
+	突擊笛</td><td>連続啄擊</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>米蟲</td><td>体+15%攻+10%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>蜜蜻蜓</td><td>体+15%攻+20%</td><td class=fue>
+	必擊笛</td><td>滑空奇襲</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>稀有黃金蟲</td><td>体+25%攻+25%防+10%</td><td class=fue>
+	特擊笛</td><td>連続火炎液</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	滑空奇襲→回転尻尾→連続啄擊</td></tr>
+</table><table id="m020" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	毒怪鳥</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>26/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>毒蕈</td><td>攻+5%</td><td class=fue>
+	彈擊笛</td><td>毒液</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>辛辣蟲</td><td>体+5%攻+5%</td><td class=fue>
+	突擊笛</td><td>連続啄擊</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>超毒菇</td><td>体+10%攻+10%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>殺手甲蟲</td><td>体+15%攻+10%</td><td class=fue>
+	必擊笛</td><td>閃光</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>亮水晶</td><td>体+25%攻+20%防+8%</td><td class=fue>
+	特擊笛</td><td>裝死起身</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	閃光→連続啄擊→閃光→毒液</td></tr>
+</table><table id="m011" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	火龍</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>5/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>生肉</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>空中3連噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白肝</td><td>攻+5%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>蛇龍肋排</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>龍尾肉</td><td>体+10%攻+15%</td><td class=fue>
+	必擊笛</td><td>空中脚り</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>嗜菇豬頭</td><td>体+15%攻+15%防+5%</td><td class=fue>
+	特擊笛</td><td>向後飛跳噴火</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	猛衝（龍車）→向後飛跳噴火→空中噴火</td></tr>
+</table><table id="m001" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	雌火龍</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>19/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>生肉</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>地上3連噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白肝</td><td>攻+5%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>蛇龍肋排</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>龍尾肉</td><td>体+10%攻+15%</td><td class=fue>
+	必擊笛</td><td>連続猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>嗜菇豬頭</td><td>体+15%攻+15%防+5%</td><td class=fue>
+	特擊笛</td><td>翻筋斗</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	連続猛衝（龍車）→連続翻筋斗</td></tr>
+</table><table id="m015" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	電龍</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>16/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>生肉</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>噴射雷電</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白肝</td><td>攻+5%</td><td class=fue>
+	突擊笛</td><td>飛撲</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>蛇龍肋排</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>龍尾肉</td><td>体+10%攻+15%</td><td class=fue>
+	必擊笛</td><td>体内発電</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>嗜菇豬頭</td><td>体+15%攻+15%防+5%</td><td class=fue>
+	特擊笛</td><td>首伸ばし</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	高音吼叫→噴射雷電→体内発電</td></tr>
+</table><table id="m017" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	鎧龍</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>10/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>陽光石</td><td>防-3%</td><td class=fue>彈擊笛</td><td>
+	熱線噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>大地的結晶</td><td>攻+5%防-3%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>紅蓮石</td><td>体+5%攻+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>靈鶴石</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	必擊笛</td><td>火炎ガス</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>白鳩石</td><td>体+10%攻+10%</td><td class=fue>
+	特擊笛</td><td>体当たり</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	なぎ払い熱線→猛衝（龍車）→火炎ガス</td></tr>
+</table><table id="m052" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	桃毛獸</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>22/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>毒蕈</td><td>息毒+体+5%</td><td class=fue>
+	彈擊笛</td><td>オナラ</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>麻痺蕈</td><td>息マヒ+体+5%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>催眠草</td><td>息眠り+体+5%</td><td class=fue>
+	尾擊笛</td><td>ボディ噴火</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>興奮香菇</td><td>体+10%攻+10%</td><td class=fue>
+	必擊笛</td><td>各種噴火</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>鬼松茸</td><td>息毒+体+15%攻+10%</td><td class=fue>
+	特擊笛</td><td>連続ラリアット</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	高音吼叫→猛衝（龍車）→連続ラリアット</td></tr>
+</table><table id="m051" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	雪獅子王</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>13/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>冰結晶</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>冷棟噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>巨牙獸的舌頭</td><td>体+5%攻+5%</td><td class=fue>
+	突擊笛</td><td>突進噛みつき</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>冷烤肉</td><td>体+10%攻+5%</td><td class=fue>
+	尾擊笛</td><td>バックステップ</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>冷烤肉Ｇ</td><td>体+5%攻+10%防+5%</td><td class=fue>
+	必擊笛</td><td>左右ビンタ</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>琥珀冰結晶</td><td>体+10%攻+15%防+10%</td><td class=fue>
+	特擊笛</td><td>雪玉</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	高音吼叫→バックステップ→左右ビンタ→冷凍噴火</td></tr>
+</table><table id="m014" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	角龍</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>10/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>仙人掌花</td><td>防-3%</td><td class=fue>
+	彈擊笛</td><td>角突き上げ</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>薄片仙人掌</td><td>攻+5%防-3%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>猛牛奶油</td><td>体+5%攻+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>彩色花</td><td>体+5%攻+10%防+5%</td><td class=fue>
+	必擊笛</td><td>高音吼叫</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>吶喊堅果</td><td>体+10%攻+10%</td><td class=fue>
+	特擊笛</td><td>地中急襲</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	高音吼叫→角突き上げ→尻尾振り→猛衝（龍車）</td></tr>
+</table><table id="m048" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	大名蟹</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>22/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>刺身魚</td><td>体+5%</td><td class=fue>
+	彈擊笛</td><td>泡噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>硬鰭魚</td><td>攻+10%</td><td class=fue>
+	突擊笛</td><td>両爪攻撃</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>大硬鰭魚</td><td>攻+15%</td><td class=fue>
+	尾擊笛</td><td>ボデイプレス</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>全熟大魚</td><td>攻+5%防+10%</td><td class=fue>
+	必擊笛</td><td>地中急襲</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>旗魚</td><td>攻+15%防+10%</td><td class=fue>
+	特擊笛</td><td>持殊ガード</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	左右爪攻撃→地中急襲→ヤド突進</td></tr>
+</table><table id="m067" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	將軍蟹</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>13/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>刺身魚</td><td>体+5%</td><td class=fue>
+	彈擊笛</td><td>左右爪攻撃</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>硬鰭魚</td><td>攻+10%</td><td class=fue>
+	突擊笛</td><td>振り下ろし爪攻撃</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>大硬鰭魚</td><td>攻+15%</td><td class=fue>
+	尾擊笛</td><td>回転爪攻撃</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>全熟大魚</td><td>攻+5%防+10%</td><td class=fue>
+	必擊笛</td><td>地中連続急襲</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>旗魚</td><td>攻+15%防+10%</td><td class=fue>
+	特擊笛</td><td>移動攻撃</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	振り下ろし爪攻撃→左右爪攻撃→左右爪攻撃→弛中連続急襲</td></tr>
+</table><table id="m053" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	金獅子</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>1/32 『ビーストマスター』の称号が必要</td><td class=fue>憤怒笛</td><td>
+	進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>小金魚</td><td>防-3%</td><td class=fue>彈擊笛</td><td>
+	デンプシー</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白金魚</td><td>攻+5%防-3%</td><td class=fue>
+	突擊笛</td><td>蛇行猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>銀蛋</td><td>体+5%攻+5%</td><td class=fue>
+	尾擊笛</td><td>回転攻撃</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>金蛋</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	必擊笛</td><td>ビーム</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>麒麟的蒼角</td><td>体+20%攻+10%</td><td class=fue>
+	特擊笛</td><td>ジャンプ気合弾</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	ビーム→回転攻撃→蛇行猛衝（龍車）→デンブシー</td></tr>
+</table><table id="m040" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	黑狼鳥</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>16/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>生肉</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>地上3連噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白肝</td><td>攻+5%</td><td class=fue>
+	突擊笛</td><td>噴火走り→噛みつき</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>蛇龍肋排</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>龍尾肉</td><td>体+10%攻+15%</td><td class=fue>
+	必擊笛</td><td>高音吼叫</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>嗜菇豬頭</td><td>体+15%攻+15%防+5%</td><td class=fue>
+	特擊笛</td><td>翻筋斗</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	高音吼叫→噴火→噛みつき→地上噴火→翻筋斗</td></tr>
+</table><table id="m027" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	迅猛龍王</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>29/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>焦肉</td><td>体+10%</td><td class=fue>
+	彈擊笛</td><td>噛みつき</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>生肉</td><td>体+10%攻+10%</td><td class=fue>
+	突擊笛</td><td>飛撲</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>半熟肉</td><td>体+15%防+8%</td><td class=fue>
+	尾擊笛</td><td>噛みつき</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>全熟肉</td><td>体+20%攻+20%</td><td class=fue>
+	必擊笛</td><td>飛撲</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>全熟肉Ｇ</td><td>体+25%攻+25%</td><td class=fue>
+	特擊笛</td><td>バックステップ</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	飛撲→噛みつき→飛撲→バックステップ</td></tr>
+</table><table id="m028" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	痺猛龍王</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>29/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>焦肉</td><td>体+10%</td><td class=fue>
+	彈擊笛</td><td>噛みつき</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>生肉</td><td>体+10%攻+10%</td><td class=fue>
+	突擊笛</td><td>飛撲</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>半熟肉</td><td>体+15%防+8%</td><td class=fue>
+	尾擊笛</td><td>噛みつき</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>全熟肉</td><td>体+20%攻+20%</td><td class=fue>
+	必擊笛</td><td>飛撲</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>全熟肉Ｇ</td><td>体+25%攻+25%</td><td class=fue>
+	特擊笛</td><td>バックステップ</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	飛撲→噛みつき→飛撲→バックステップ</td></tr>
+</table><table id="m031" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	毒猛龍王</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>29/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>焦肉</td><td>体+10%</td><td class=fue>
+	彈擊笛</td><td>毒吐き</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>生肉</td><td>体+10%攻+10%</td><td class=fue>
+	突擊笛</td><td>飛撲</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>半熟肉</td><td>体+15%防+8%</td><td class=fue>
+	尾擊笛</td><td>噛みつき</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>全熟肉</td><td>体+20%攻+20%</td><td class=fue>
+	必擊笛</td><td>飛撲</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>全熟肉Ｇ</td><td>体+25%攻+25%</td><td class=fue>
+	特擊笛</td><td>バックステップ</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	毒吐き→飛撲→噛みつき→毒吐き</td></tr>
+</table><table id="m068" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	野豬王</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>29/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>豬仙貝</td><td>体+10%</td><td class=fue>
+	彈擊笛</td><td>長距離突進</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>芋毛蟲</td><td>体+10%攻+5%</td><td class=fue>
+	突擊笛</td><td>短距離突進</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>寒冷麥</td><td>体+5%防+10%</td><td class=fue>
+	尾擊笛</td><td>長距離突進</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>土蜂蛹</td><td>体+15%攻+15%</td><td class=fue>
+	必擊笛</td><td>短距離突進</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>銀米草</td><td>体+20%攻+20%</td><td class=fue>
+	特擊笛</td><td>回転牙攻撃</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	短距離突進→回転牙攻撃→長距離突進</td></tr>
+</table><table id="m037" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	雌火龍【亜種】</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>10/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>生肉</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>地上3連噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白肝</td><td>攻+5%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>蛇龍肋排</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>龍尾肉</td><td>体+10%攻+15%</td><td class=fue>
+	必擊笛</td><td>連続猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>嗜菇豬頭</td><td>体+15%攻+15%防+5%</td><td class=fue>
+	特擊笛</td><td>翻筋斗</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	連続猛衝（龍車）→連続翻筋斗</td></tr>
+</table><table id="m038" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	怪鳥【亜種】</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>13/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>蚯蚓魚餌</td><td>体+5%攻+5%</td><td class=fue>
+	彈擊笛</td><td>火炎液</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>蚱蜢魚餌</td><td>体+5%攻+10%</td><td class=fue>
+	突擊笛</td><td>連続啄擊</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>米蟲</td><td>体+15%攻+10%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>蜜蜻蜓</td><td>体+15%攻+20%</td><td class=fue>
+	必擊笛</td><td>滑空奇襲</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>稀有黃金蟲</td><td>体+25%攻+25%防+10%</td><td class=fue>
+	特擊笛</td><td>連続火炎液</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	滑空奇襲→回転尻尾→連続啄擊</td></tr>
+</table><table id="m039" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	毒怪鳥【亜種】</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>13/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>毒蕈</td><td>攻+5%</td><td class=fue>
+	彈擊笛</td><td>毒液</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>辛辣蟲</td><td>体+5%攻+5%</td><td class=fue>
+	突擊笛</td><td>連続啄擊</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>超毒菇</td><td>体+10%攻+10%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>殺手甲蟲</td><td>体+15%攻+10%</td><td class=fue>
+	必擊笛</td><td>閃光</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>亮水晶</td><td>体+25%攻+20%防+8%</td><td class=fue>
+	特擊笛</td><td>裝死起身</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	閃光→連続啄擊→閃光→毒液</td></tr>
+</table><table id="m049" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	火龍【亜種】</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>3/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>生肉</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>空中3連噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白肝</td><td>攻+5%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>蛇龍肋排</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>龍尾肉</td><td>体+10%攻+15%</td><td class=fue>
+	必擊笛</td><td>空中脚り</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>嗜菇豬頭</td><td>体+15%攻+15%防+5%</td><td class=fue>
+	特擊笛</td><td>向後飛跳噴火</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	猛衝（龍車）→向後飛跳噴火→空中噴火</td></tr>
+</table><table id="m042" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	雌火龍【希少種】</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td> (不可)</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>生肉</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>地上3連噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白肝</td><td>攻+5%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>蛇龍肋排</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>龍尾肉</td><td>体+10%攻+15%</td><td class=fue>
+	必擊笛</td><td>連続猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>嗜菇豬頭</td><td>体+15%攻+15%防+5%</td><td class=fue>
+	特擊笛</td><td>翻筋斗</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	連続猛衝（龍車）→連続翻筋斗</td></tr>
+</table><table id="m043" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	角龍【亜種】</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>5/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>仙人掌花</td><td>防-3%</td><td class=fue>
+	彈擊笛</td><td>角突き上げ</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>薄片仙人掌</td><td>攻+5%防-3%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>猛牛奶油</td><td>体+5%攻+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>彩色花</td><td>体+5%攻+10%防+5%</td><td class=fue>
+	必擊笛</td><td>高音吼叫</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>吶喊堅果</td><td>体+10%攻+10%</td><td class=fue>
+	特擊笛</td><td>地中急襲</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	高音吼叫→角突き上げ→尻尾振り→猛衝（龍車）</td></tr>
+</table><table id="m045" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	電龍【亜種】</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>10/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>生肉</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>噴射雷電</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白肝</td><td>攻+5%</td><td class=fue>
+	突擊笛</td><td>飛撲</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>蛇龍肋排</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>龍尾肉</td><td>体+10%攻+15%</td><td class=fue>
+	必擊笛</td><td>体内発電</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>嗜菇豬頭</td><td>体+15%攻+15%防+5%</td><td class=fue>
+	特擊笛</td><td>首伸ばし</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	高音吼叫→噴射雷電→体内発電</td></tr>
+</table><table id="m047" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	鎧龍【亜種】</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td>5/32</td><td class=fue>憤怒笛</td><td>進入抓狂狀態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>陽光石</td><td>防-3%</td><td class=fue>彈擊笛</td><td>
+	熱線噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>大地的結晶</td><td>攻+5%防-3%</td><td class=fue>
+	突擊笛</td><td>猛衝（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>紅蓮石</td><td>体+5%攻+5%</td><td class=fue>
+	尾擊笛</td><td>回転尻尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>靈鶴石</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	必擊笛</td><td>火炎ガス</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>白鳩石</td><td>体+10%攻+10%</td><td class=fue>
+	特擊笛</td><td>体当たり</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	なぎ払い熱線→猛衝（龍車）→火炎ガス</td></tr>
+</table><table id="m041" border=1 cellspacing=0 cellpadding=2 style="display:none"><tr><th colspan=5>
+	火龍【希少種】</th></tr>
+<tr><td colspan=2>成為寵物的概率</td><td> (不可)</td><td class=fue>憤怒笛</td><td>進入抓狂状態</td></tr>
+<tr><td class=no>餌:No.1</td><td class=esa>生肉</td><td>体+5%防-3%</td><td class=fue>
+	彈擊笛</td><td>空中3連噴火</td></tr>
+<tr><td class=no>餌:No.2</td><td class=esa>白肝</td><td>攻+5%</td><td class=fue>
+	突擊笛</td><td>猛沖（龍車）</td></tr>
+<tr><td class=no>餌:No.3</td><td class=esa>蛇龍肋排</td><td>体+5%攻+5%防+5%</td><td class=fue>
+	尾擊笛</td><td>甩尾</td></tr>
+<tr><td class=no>餌:No.4</td><td class=esa>龍尾肉</td><td>体+10%攻+15%</td><td class=fue>
+	必擊笛</td><td>空中脚抓</td></tr>
+<tr><td class=no>餌:No.5</td><td class=esa>嗜菇豬頭</td><td>体+15%攻+15%防+5%</td><td class=fue>
+	特擊笛</td><td>後飛噴火</td></tr>
+<tr><td class=no></td><td class=esa></td><td></td><td class=fue>逆鱗笛</td><td>
+	猛沖→後飛噴火→空中噴火</td></tr>
+</table>
+</body>
+</html>

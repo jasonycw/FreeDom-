@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+<meta http-equiv=content-type content=text/html; charset=gb2312>
+<title>技能説明</title>
+<style type=text/css>
+<!--
+th {font-weight:normal;background-color:yellow;}
+td.g {background-color:gray}
+td.t {background-color:silver}
+td.n {text-align:right;}
+tr.l td {border-top-width:2pt;}
+-->
+</style>
+</head><body>
+<div>技能效果　　　　<small>(○为剛種防具裝備下提升的技能)</small></div>
+<table border=1 cellspacing=0 cellpadding=1>
+<col><col><col><col style=width:2em>
+<tr><th colspan=5>体力耐力系</th></tr>
+<tr class=l><td class=g rowspan=8>体力</td><td class=g rowspan=8>○</td><td class=t>
+體力+50</td><td class=n>40</td><td>體力的最大値上升50</td></tr>
+<tr><td class=t>體力+40</td><td class=n>30</td><td>體力的最大値上升40</td></tr>
+<tr><td class=t>體力+30</td><td class=n>20</td><td>體力的最大値上升30</td></tr>
+<tr><td class=t>體力+20</td><td class=n>15</td><td>體力的最大値上升20</td></tr>
+<tr><td class=t>體力+10</td><td class=n>10</td><td>體力的最大値上升10</td></tr>
+<tr><td class=t>體力-10</td><td class=n>-10</td><td>體力的最大値下降10</td></tr>
+<tr><td class=t>體力-20</td><td class=n>-15</td><td>體力的最大値下降20</td></tr>
+<tr><td class=t>體力-30</td><td class=n>-20</td><td>體力的最大値下降30</td></tr>
+<tr class=l><td class=g rowspan=4>回復速度</td><td class=g rowspan=4>○</td><td class=t>
+傷害回復速度+2</td><td class=n>20</td><td>體力槽的紅色部分的恢復速度變為4倍</td></tr>
+<tr><td class=t>傷害回復速度+1</td><td class=n>10</td><td>體力槽的紅色部分的恢復速度變為3倍</td></tr>
+<tr><td class=t>傷害回復速度-1</td><td class=n>-10</td><td>體力槽的紅色部分的恢復速度變為3分之1</td></tr>
+<tr><td class=t>傷害回復速度-2</td><td class=n>-20</td><td>體力槽的紅色部分的恢復速度變為4分之1</td></tr>
+<tr class=l><td class=g rowspan=4>飢餓</td><td class=g rowspan=4>○</td><td class=t>
+飢餓無效</td><td class=n>15</td><td>耐力的最大値不會減少</td></tr>
+<tr><td class=t>飢餓減半</td><td class=n>10</td><td>耐力最大値減少的時間變為2倍</td></tr>
+<tr><td class=t>飢餓加倍【小】</td><td class=n>-10</td><td>耐力的最大値以正常1.5倍的速度減少</td></tr>
+<tr><td class=t>飢餓加倍【大】</td><td class=n>-15</td><td>耐力的最大値以正常2倍的速度減少</td></tr>
+<tr class=l><td class=g rowspan=2>回復</td><td class=g rowspan=2>×</td><td class=t>
+體力回復道具強化</td><td class=n>10</td><td>體力恢復道具的恢復量變為1.25倍</td></tr>
+<tr><td class=t>體力回復道具弱化</td><td class=n>-10</td><td>體力恢復道具的恢復量變為0.75倍</td></tr>
+<tr class=l><td class=g rowspan=2>吸血</td><td class=g rowspan=2>×</td><td class=t>
+吸血+2</td><td class=n>20</td><td>攻撃魔物時，有一定概率，自身体力回復<br>
+ （發生概率與回復量比吸血+1高）</td></tr>
+<tr><td class=t>吸血+1</td><td class=n>10</td><td>攻撃魔物時，有一定概率，自身体力回復</td></tr>
+<tr class=l><td class=g>藥草學</td><td class=g>×</td><td class=t>藥仙人</td><td class=n>
+10</td><td>使用回復道具時，体力槽的赤條一瞬間全回復。<br>
+同時，與這個技能發動時的玩家人数相對應，追加發生以下效果<br>１人：無追加效果<br>
+２人：回復道具使用時，對其他玩家也有效<br>
+３人：回復道具使用時，對其他玩家也有效，並且全部回復道具的回復値＋20<br>
+４人：回復道具使用時，對其他玩家也有效，並且全部回復道具的回復値＋50<br>※可與『回復』技能並用</td></tr>
+<tr class=l><td class=g rowspan=3>氣力回復</td><td class=g rowspan=3>○</td><td class=t>
+耐力急速回復【大】</td><td class=n>20</td><td>隨著時間經過耐力恢復速度變為2倍</td></tr>
+<tr><td class=t>耐力急速回復【小】</td><td class=n>10</td><td>隨著時間經過耐力恢復速度變為1.5倍</td></tr>
+<tr><td class=t>耐力回復遲緩</td><td class=n>-10</td><td>隨著時間經過耐力恢復速度變為一半 </td></tr>
+<tr class=l><td class=g rowspan=4>耐力</td><td class=g rowspan=4>○</td><td colspan=2><br></td><td>
+通常情況耐力値以15単位減少</td></tr>
+<tr><td class=t>絶倫</td><td class=n>20</td><td>耐力的減少速度變為一半（減少量變為8単位）<br>
+同時、回避與防禦時的耐力減少變為正常的５０％</td></tr>
+<tr><td class=t>跑者</td><td class=n>10</td><td>耐力的減少速度變為一半（減少量變為8単位）<br>
+同時、回避與防禦時的耐力減少變為正常的７５％</td></tr>
+<tr><td class=t>鈍足</td><td class=n>-10</td><td>耐力的減少速度變為1.2倍（減少量變為18単位）</td></tr>
+<tr class=l><td class=g rowspan=2>食事</td><td class=g rowspan=2>×</td><td class=t>
+快吃</td><td class=n>10</td><td>肉·恢復藥什麽的，往嘴里塞的道具，進食的動作變快</td></tr>
+<tr><td class=t>散漫生活</td><td class=n>-10</td><td>肉·恢復藥什麽的，往嘴里塞的道具，進食的動作變慢</td></tr>
+<tr class=l><td class=g rowspan=2>大食王</td><td class=g rowspan=2>×</td><td class=t>
+撿食</td><td class=n>15</td><td>使用往嘴裡塞的道具時，耐力的最大値25恢復</td></tr>
+<tr><td class=t>吃飽</td><td class=n>10</td><td>吃肉時，耐力恢復量25上升</td></tr>
+<tr></tr><tr><th colspan=5>攻撃系</th></tr>
+<tr class=l><td class=g rowspan=5>剛撃</td><td class=g rowspan=5>×</td><td class=t>
+剛擊+5</td><td class=n>40</td><td>攻撃力(倍率)上升150。不可與攻撃力UP技能重複</td></tr>
+<tr><td class=t>剛擊+4</td><td class=n>30</td><td>攻撃力(倍率)上升80。不可與攻撃力UP技能重複</td></tr>
+<tr><td class=t>剛擊+3</td><td class=n>20</td><td>攻撃力(倍率)上升50。不可與攻撃力UP技能重複</td></tr>
+<tr><td class=t>剛擊+2</td><td class=n>15</td><td>攻撃力(倍率)上升35。不可與攻撃力UP技能重複</td></tr>
+<tr><td class=t>剛擊+1</td><td class=n>10</td><td>攻撃力(倍率)上升20。不可與攻撃力UP技能重複</td></tr>
+<tr class=l><td class=g rowspan=5>攻撃</td><td class=g rowspan=5>○</td><td class=t>
+攻擊力UP【絕大】</td><td class=n>80</td><td>攻擊力(倍率)上升50</td></tr>
+<tr><td class=t>攻擊力UP【特大】</td><td class=n>50</td><td>攻擊力(倍率)上升30</td></tr>
+<tr><td class=t>攻擊力UP【大】</td><td class=n>25</td><td>攻擊力(倍率)上升20</td></tr>
+<tr><td class=t>攻擊力UP【中】</td><td class=n>15</td><td>攻擊力(倍率)上升10</td></tr>
+<tr><td class=t>攻擊力UP【小】</td><td class=n>10</td><td>攻擊力(倍率)上升5</td></tr>
+<tr class=l><td class=g>一匹狼</td><td class=g>×</td><td class=t>一匹狼</td><td class=n>
+10</td><td>所在區域內沒有獵人或賴狩人時，攻撃力(倍率)上升100。<br>可帶狩獵鷹</td></tr>
+<tr class=l><td class=g rowspan=4>底力</td><td class=g rowspan=4>×</td><td colspan=2><br></td><td>
+通常情況下，體力40％以下的時候、攻擊力不變、防禦力會增加60。</td></tr>
+<tr><td class=t>火場怪力+2</td><td class=n>15<br>∥<br>20</td><td>體力為40％以下時，攻擊力為 
+1.5倍（弩為1.3倍)，<br>防禦力増加量為90</td></tr>
+<tr><td class=t>火場怪力+1</td><td class=n>10<br>21</td><td>體力為40％以下時，防禦力増加量為90</td></tr>
+<tr><td class=t>憂心</td><td class=n>-15<br>30</td><td>體力為40％以下時，攻擊力減少為 
+0.7倍，防禦力増加量減少為42</td></tr>
+<tr class=l><td class=g rowspan=3>一閃</td><td class=g rowspan=3>×</td><td class=t>
+一閃+3</td><td class=n>30</td><td>会心率上升20％，会心傷害UP變為1.50</td></tr>
+<tr><td class=t>一閃+2</td><td class=n>20</td><td>会心率上升10％，会心傷害UP變為1.40</td></tr>
+<tr><td class=t>一閃+1</td><td class=n>10</td><td>会心率上升5％，会心傷害UP變為1.35</td></tr>
+<tr class=l><td class=g rowspan=5>達人</td><td class=g rowspan=5>○</td><td class=t>
+看破+5</td><td class=n>50</td><td>会心率上升為50％</td></tr>
+<tr><td class=t>看破+4</td><td class=n>35</td><td>会心率上升為40％</td></tr>
+<tr><td class=t>看破+3</td><td class=n>20</td><td>会心率上升為30％</td></tr>
+<tr><td class=t>看破+2</td><td class=n>15</td><td>会心率上升為20％</td></tr>
+<tr><td class=t>看破+1</td><td class=n>10</td><td>会心率上升為10％</td></tr>
+<tr class=l><td class=g rowspan=2>痛撃</td><td class=g rowspan=2>×</td><td class=t>
+弱點特效</td><td class=n>20</td><td>
+攻擊肉質35以上的部位時，該部位的肉質+5。不過属性傷害不變</td></tr>
+<tr><td class=t>不擅弱點</td><td class=n>-10</td><td>
+攻擊肉質35以上的部位時，該部位的肉質-5。不過属性傷害不變</td></tr>
+<tr class=l><td class=g>劇物的心得</td><td class=g>×</td><td class=t>劇物取扱皆伝</td><td class=n>
+10</td><td>状態異常属性武器的攻撃力(倍率)上升其状態異常値的1/4，發動必中状態異常属性値。<br>
+（※状態異常値的蓄積量按照3/8減算補正）</td></tr>
+<tr class=l><td class=g>特殊攻擊</td><td class=g>×</td><td class=t>狀態異常攻擊強化</td><td class=n>
+10</td><td>状態異常攻撃（毒/麻痺/睡眠）的属性値變為1.125倍</td></tr>
+<tr class=l><td class=g>爆彈強化</td><td class=g>×</td><td class=t>炸彈客</td><td class=n>
+10</td><td>x桶爆彈的傷害1.5倍、爆彈系的調合成功率100％</td></tr>
+<tr class=l><td class=g rowspan=3>砲術師</td><td class=g rowspan=3>○</td><td class=t>
+砲術神</td><td class=n>35</td><td>大砲、弩彈的傷害1.3倍<br>
+銃槍：砲撃的無属性部分為1.3倍、龍撃砲的無属性部分為1.4倍<br>
+弩：徹甲榴彈的無属性部分為1.5倍、火属性部分為1.7倍／排熱彈的傷害1.3倍<br>穿龍棍的龍氣穿撃（不包括爆炸傷害）</td></tr>
+<tr><td class=t>砲術王</td><td class=n>20</td><td>大砲、弩彈的傷害1.2倍<br>
+銃槍：砲撃的無属性部分為1.2倍、竜撃砲的無属性部分為1.3倍<br>
+弩：徹甲榴彈的無属性部分為1.5倍、火属性部分為1.6倍／排熱彈的傷害1.2倍<br>穿龍棍的龍氣穿撃（不包括爆炸傷害）</td></tr>
+<tr><td class=t>砲術師</td><td class=n>10</td><td>大砲、弩彈的傷害1.1倍<br>
+銃槍：砲撃的無属性部分為1.1倍、竜撃砲的無属性部分為1.2倍<br>
+弩：徹甲榴彈的無属性部分為1.5倍、火属性部分為1.5倍／排熱彈的傷害1.1倍<br>穿龍棍的龍氣穿撃（不包括爆炸傷害）</td></tr>
+<tr class=l><td class=g rowspan=2>火屬性攻擊</td><td class=g rowspan=2>○</td><td class=t>
+火屬性攻擊強化【大】</td><td class=n>20</td><td>火属性的攻撃値變為1.2倍</td></tr>
+<tr><td class=t>火屬性攻擊強化【小】</td><td class=n>10</td><td>火属性的攻撃値變為1.1倍</td></tr>
+<tr class=l><td class=g rowspan=2>水屬性攻擊</td><td class=g rowspan=2>○</td><td class=t>
+水屬性攻擊強化【大】</td><td class=n>20</td><td>水属性的攻撃値變為1.2倍</td></tr>
+<tr><td class=t>水屬性攻擊強化【小】</td><td class=n>10</td><td>水属性的攻撃値變為1.1倍</td></tr>
+<tr class=l><td class=g rowspan=2>雷屬性攻擊</td><td class=g rowspan=2>○</td><td class=t>
+雷屬性攻擊強化【大】</td><td class=n>20</td><td>雷属性的攻撃値變為1.2倍</td></tr>
+<tr><td class=t>雷屬性攻擊強化【小】</td><td class=n>10</td><td>雷属性的攻撃値變為1.1倍</td></tr>
+<tr class=l><td class=g rowspan=2>冰屬性攻擊</td><td class=g rowspan=2>○</td><td class=t>
+冰屬性攻擊強化【大】</td><td class=n>20</td><td>氷属性的攻撃値變為1.2倍</td></tr>
+<tr><td class=t>冰屬性攻擊強化【小】</td><td class=n>10</td><td>氷属性的攻撃値變為1.1倍</td></tr>
+<tr class=l><td class=g rowspan=2>龍屬性攻擊</td><td class=g rowspan=2>○</td><td class=t>
+龍屬性攻擊強化【大】</td><td class=n>20</td><td>龍属性的攻撃値變為1.2倍</td></tr>
+<tr><td class=t>龍屬性攻擊強化【小】</td><td class=n>10</td><td>龍属性的攻撃値變為1.1倍</td></tr>
+<tr class=l><td class=g rowspan=2>屬性攻擊</td><td class=g rowspan=2>×</td><td class=t>
+屬性攻擊強化</td><td class=n>10</td><td>武器·彈的火、水、雷、氷、龍属性攻撃値變為1.1倍</td></tr>
+<tr><td class=t>屬性攻擊弱化</td><td class=n>-10</td><td>武器·彈的火、水、雷、氷、龍属性攻撃値變為0.9倍</td></tr>
+<tr class=l><td class=g rowspan=2>体術</td><td class=g rowspan=2>○</td><td class=t>
+格鬥王</td><td class=n>20</td><td>能夠使用迴旋踢(傷害15)和下踢（drop-kick，傷害25)<br>
+穿龍棍:踢攻撃的攻撃力上昇，空中攻撃HIT時的滯空時間略増</td></tr>
+<tr><td class=t>体術</td><td class=n>10</td><td>踢的傷害變成15、挑發·持大劍時的踢傷害變為10<br>
+穿龍棍:踢攻撃的攻撃力略上昇。</td></tr>
+<tr class=l><td class=g rowspan=2>逆境</td><td class=g rowspan=2>×</td><td class=t>
+不屈不撓</td><td class=n>20</td><td>隨著任務的剩餘復活次數減少<br>
+貓車1次：攻撃力(倍率)+15、防御力+100<br>貓車2次：攻撃力(倍率)+10、防御力+100、「超強毅力」發動<br>
+※大討伐任務、商隊任務中不會產生效果。</td></tr>
+<tr><td class=t>不屈</td><td class=n>10</td><td>隨著任務的剩餘復活次數減少<br>
+貓車1次：攻撃力(倍率)+5、防御力+50<br>貓車2次：攻撃力(倍率)+10、防御力+100、「超強毅力」發動<br>
+※大討伐任務、商隊任務中不會產生效果。</td></tr>
+<tr class=l><td class=g rowspan=2>怒</td><td class=g rowspan=2>×</td><td class=t>
+怒氣衝天</td><td class=n>20</td><td>同時發動「超強毅力」和「火事場力+2」的效果。</td></tr>
+<tr><td class=t>逆鱗</td><td class=n>15</td><td>同時發動「超強毅力」和「火事場力+1」的效果。</td></tr>
+<tr class=l><td class=g rowspan=2>断食</td><td class=g rowspan=2>×</td><td class=t>
+餓狼+2</td><td class=n>20</td><td>空腹状態時、会心率+50%、迴避性能+2效果、会心補正變為1.35倍<br>
+(強走状態會使餓狼技能無効)</td></tr>
+<tr><td class=t>餓狼+1</td><td class=n>10</td><td>空腹状態時、会心率+50%、迴避性能+1效果<br>
+上位技能為優先(強走状態會使餓狼 技能無効)</td></tr>
+<tr class=l><td class=g rowspan=3>蓄力縮短</td><td class=g rowspan=3>○</td><td class=t>
+集中+2</td><td class=n>20</td><td>大劍、大錘、太刀(嵐)、重弩(嵐)的蓄力時間，槍的範圍防禦的蓄力
+縮短為0.8倍<br>太刀的練氣槽、穿龍棍的龍氣蓄積量的蓄積量增加為1.2倍<br>重弩的排熱噴射槽的蓄積量為+2</td></tr>
+<tr><td class=t>集中+1</td><td class=n>10</td><td>
+大劍、大錘、太刀(嵐)、重弩(嵐)的蓄力時間，槍的範圍防禦的蓄力縮短為0.9倍<br>太刀的練氣槽、穿龍棍的龍氣蓄積量的蓄積量
+延長為1.1倍<br>重弩的排熱噴射槽的蓄積量為+1</td></tr>
+<tr><td class=t>雑念</td><td class=n>-10</td><td>
+大劍、大錘、太刀(嵐)、重弩(嵐)的蓄力時間，槍的範圍防禦的蓄力延長為1.2倍<br>太刀的練氣槽、穿龍棍的龍氣蓄積量的蓄積量
+減少為0.8倍<br>重弩的排熱噴射槽的蓄積量為-1</td></tr>
+<tr class=l><td class=g rowspan=2>蓄力威力</td><td class=g rowspan=2>×</td><td class=t>
+蓄力威力ＵＰ+2</td><td class=n>20</td><td>
+大劍、太刀、大錘、槍、穿龍棍的蓄力攻擊時，給予的傷害和属性値進一步上昇。<br>可以和「縮短蓄力」共用</td></tr>
+<tr><td class=t>蓄力威力ＵＰ+1</td><td class=n>10</td><td>
+大劍、太刀、大錘、槍、穿龍棍的蓄力攻擊時，給予的傷害和属性値上昇。<br>可以和「縮短蓄力」共用</td></tr>
+<tr class=l><td class=g>武器技術</td><td class=g>×</td><td class=t>武器技術</td><td class=n>
+10</td><td>武器的抜刀·納刀的速度が20%上がる[親方印武器には無効]</td></tr>
+<tr class=l><td class=g>得意</td><td class=g>×</td><td class=t>得意</td><td class=n>
+15</td><td>隨著任務時間經過，相應的攻撃力(倍率)增加<br>15,20分:+25 25,30,35分:+50　持續増加</td></tr>
+<tr class=l><td class=g rowspan=2>適應擊</td><td class=g rowspan=2>×</td><td class=t>
+適應擊+2</td><td class=n>20</td><td>体力在100以上時，附加其他攻撃系統。近接：81％、遠距離：72％<br>
+成為能夠選擇攻撃的類型（斬打彈）的攻撃系統。</td></tr>
+<tr><td class=t>適應擊+1</td><td class=n>10</td><td>
+体力在100以上時，附加其他攻撃系統。近接：72％、遠距離：64％<br>成為能夠選擇攻撃的類型（斬打彈）的攻撃系統。<br>
+此外，單手劍的打攻撃補正變為125%。</td></tr>
+<tr></tr><tr><th colspan=5>防御系</th></tr>
+<tr class=l><td class=g rowspan=4>生命力</td><td class=g rowspan=4>×</td><td class=t>
+生命力+3</td><td class=n>30</td><td>防御+90，同時發動「傷害回復速度+2」、「回復」的效果。<br>
+ 回復薬、回復薬G、秘薬、古代秘薬的調合成功率變成100％</td></tr>
+<tr><td class=t>生命力+2</td><td class=n>15</td><td>
+ 防御+45，同時發動「傷害回復速度+1」、「回復」的效果。<br>回復薬、回復薬G、秘薬、古代秘薬的調合成功率變成100％</td></tr>
+<tr><td class=t>生命力+1</td><td class=n>10</td><td>
+防御+15，同時發動「傷害回復速度+1」、「回復」的效果。<br>回復薬、回復薬G、秘薬、古代秘薬的調合成功率變成100％</td></tr>
+<tr><td class=t>生命力-1</td><td class=n>-10</td><td>
+「體力-10」、「体力回復道具回復弱化」、「傷害回復速度-1」效果が同時發動</td></tr>
+<tr class=l><td class=g rowspan=3>反射</td><td class=g rowspan=3>×</td><td class=t>
+反射+3</td><td class=n>20</td><td>
+防禦魔物的攻撃時，在獵人周圍出現(動作値:48)。<br>※不會發生会心</td></tr>
+<tr><td class=t>反射+2</td><td class=n>15</td><td>
+防禦魔物的攻撃時，在獵人周圍出現(動作値:36)。<br>※不會發生会心</td></tr>
+<tr><td class=t>反射+1</td><td class=n>10</td><td>
+防禦魔物的攻撃時，在獵人周圍出現(動作値:24)。<br>擊中魔物并造成傷害</td></tr>
+<tr class=l><td class=g rowspan=8>防御</td><td class=g rowspan=8>○</td><td class=t>
+防禦+120</td><td class=n>45</td><td>防禦力上升120</td></tr>
+<tr><td class=t>防禦+90</td><td class=n>35</td><td>防禦力上升90</td></tr>
+<tr><td class=t>防禦+60</td><td class=n>25</td><td>防禦力上升60</td></tr>
+<tr><td class=t>防禦+30</td><td class=n>15</td><td>防禦力上升30</td></tr>
+<tr><td class=t>防禦+20</td><td class=n>10</td><td>防禦力上升20</td></tr>
+<tr><td class=t>防禦-20</td><td class=n>-10</td><td>防禦力下降20</td></tr>
+<tr><td class=t>防禦-30</td><td class=n>-15</td><td>防禦力下降30</td></tr>
+<tr><td class=t>防禦-40</td><td class=n>-20</td><td>防禦力下降40</td></tr>
+<tr class=l><td class=g rowspan=5>防禦性能</td><td class=g rowspan=5>○</td><td colspan=2><br></td><td>
+非大幅後退時不會受到傷害<table><tr><th>武器的種類</th><th>威力値1～15</th><th>威力値16～39</th><th>
+威力値40以上</th></tr><tr><td class=t>單手劍</td><td>小幅後退</td><td>大幅後退</td><td>
+大幅後退</td></tr><tr><td class=t>大劍</td><td>穩住不懂</td><td>稍微後退</td><td>
+大幅後退</td></tr><tr><td class=t>長槍</td><td>穩住不懂</td><td>穩住不懂</td><td>
+大幅後退</td></tr></table></td></tr>
+<tr><td class=t>防禦性能+2</td><td class=n>20</td><td>威力値減少 
+20。同時能夠防禦不可防禦的攻撃<br>長槍範圍防禦的次數變為6次</td></tr>
+<tr><td class=t>防禦性能+1</td><td class=n>10</td><td>威力値減少10<br>
+槍的範圍防禦次數變為４次</td></tr>
+<tr><td class=t>防禦性能-1</td><td class=n>-10</td><td>威力値增加 5</td></tr>
+<tr><td class=t>防禦性能-2</td><td class=n>-15</td><td>威力値增加 10</td></tr>
+<tr class=l><td class=g>自動防禦</td><td class=g>×</td><td class=t>自動防禦</td><td class=n>
+10</td><td>自動防禦。但是只有在拔出武器的状態下，才能進入防禦狀態</td></tr>
+<tr></tr><tr><th colspan=5>劍士系</th></tr>
+<tr class=l><td class=g rowspan=3>研磨師</td><td class=g rowspan=3>○</td><td class=t>
+砥匠</td><td class=n>20</td><td>研磨時間縮短+銳利度全回復<br>30秒內發動「銳利度等級+1」效果<br>
+30秒內銳利度不會減少</td></tr>
+<tr><td class=t>砥石使用高速化</td><td class=n>10</td><td>研磨時間短縮</td></tr>
+<tr><td class=t>砥石性能減半</td><td class=n>-10</td><td>砥石系道具的效果減半</td></tr>
+<tr class=l><td class=g rowspan=3>銳利度</td><td class=g rowspan=3>○</td><td class=t>
+利刃+2</td><td class=n>20</td><td>銳利度消耗減半<br>銳利度消耗為1時，有1/2的概率消耗變為0</td></tr>
+<tr><td class=t>利刃+1</td><td class=n>10</td><td>銳利度消耗減半(捨去尾數，最小為1)</td></tr>
+<tr><td class=t>鈍化</td><td class=n>-10</td><td>銳利度消耗變為２倍</td></tr>
+<tr class=l><td class=g>巧流</td><td class=g>×</td><td class=t>巧流</td><td class=n>
+15</td><td>迴避掉魔物的攻撃時，銳利度回復。<br>
+大劍:5,太刀:4,單手劍:8,雙劍:12,大錘:3,狩獵笛:5,長槍:5,銃槍:10,穿龍棍:2<br>緊急回避（飛撲？）均回覆2</td></tr>
+<tr class=l><td class=g rowspan=3>刀匠</td><td class=g rowspan=3>×</td><td class=t>
+真打+3</td><td class=n>20</td><td>同時發動「銳利度等級+1」、「攻撃力UP【絶大】」的效果。<br>
+發動相同系統的技能時，效果較高的技能優先</td></tr>
+<tr><td class=t>真打+2</td><td class=n>15</td><td>同時發動「銳利度等級+1」、「攻撃力UP【特大】」的效果。<br>
+發動相同系統的技能時，效果較高的技能優先</td></tr>
+<tr><td class=t>真打+1</td><td class=n>10</td><td>同時發動「銳利度等級+1」、「攻撃力UP【大】」的效果。<br>
+發動相同系統的技能時，效果較高的技能優先</td></tr>
+<tr class=l><td class=g>匠</td><td class=g>×</td><td class=t>銳利度等級+1</td><td class=n>
+10</td><td>銳利度上升１階段</td></tr>
+<tr class=l><td class=g rowspan=3>爆撃劍</td><td class=g rowspan=3>○</td><td class=t>
+爆撃劍+3</td><td class=n>20</td><td>爆撃劍晶裝填時發動爆撃劍【強】的效果。※３倍的銳利度消耗</td></tr>
+<tr><td class=t>爆撃劍+2</td><td class=n>15</td><td>
+爆撃劍晶裝填時發動爆撃劍【中】的效果。※３倍的銳利度消耗</td></tr>
+<tr><td class=t>爆撃劍+1</td><td class=n>10</td><td>
+爆撃劍晶裝填時發動爆撃劍【弱】的效果。※３倍的銳利度消耗</td></tr>
+<tr class=l><td class=g rowspan=3>猛毒劍</td><td class=g rowspan=3>○</td><td class=t>
+猛毒劍+3</td><td class=n>20</td><td>猛毒劍晶裝填時發動猛毒劍【強】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>猛毒劍+2</td><td class=n>15</td><td>
+猛毒劍晶裝填時發動猛毒劍【中】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>猛毒劍+1</td><td class=n>10</td><td>
+猛毒劍晶裝填時發動猛毒劍【弱】的效果。※２倍的銳利度消耗</td></tr>
+<tr class=l><td class=g rowspan=3>麻痺劍</td><td class=g rowspan=3>○</td><td class=t>
+麻痺劍+3</td><td class=n>20</td><td>麻痺劍晶裝填時發動麻痺劍【強】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>麻痺劍+2</td><td class=n>15</td><td>
+麻痺劍晶裝填時發動麻痺劍【中】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>麻痺劍+1</td><td class=n>10</td><td>
+麻痺劍晶裝填時發動麻痺劍【弱】的效果。※２倍的銳利度消耗</td></tr>
+<tr class=l><td class=g rowspan=3>睡眠劍</td><td class=g rowspan=3>○</td><td class=t>
+睡眠劍+3</td><td class=n>20</td><td>睡眠劍晶裝填時發動睡眠劍【強】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>睡眠劍+2</td><td class=n>15</td><td>
+睡眠劍晶裝填時發動睡眠劍【中】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>睡眠劍+1</td><td class=n>10</td><td>
+睡眠劍晶裝填時發動睡眠劍【弱】的效果。※２倍的銳利度消耗</td></tr>
+<tr class=l><td class=g rowspan=3>火炎劍</td><td class=g rowspan=3>○</td><td class=t>
+火炎劍+3</td><td class=n>20</td><td>火炎劍晶裝填時發動火炎劍【強】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>火炎劍+2</td><td class=n>15</td><td>
+火炎劍晶裝填時發動火炎劍【中】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>火炎劍+1</td><td class=n>10</td><td>
+火炎劍晶裝填時發動火炎劍【弱】的效果。※２倍的銳利度消耗</td></tr>
+<tr class=l><td class=g rowspan=3>水激劍</td><td class=g rowspan=3>○</td><td class=t>
+水激劍+3</td><td class=n>20</td><td>水激劍晶裝填時發動水激劍【強】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>水激劍+2</td><td class=n>15</td><td>
+水激劍晶裝填時發動水激劍【中】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>水激劍+1</td><td class=n>10</td><td>
+水激劍晶裝填時發動水激劍【弱】的效果。※２倍的銳利度消耗</td></tr>
+<tr class=l><td class=g rowspan=3>雷神劍</td><td class=g rowspan=3>○</td><td class=t>
+雷神劍+3</td><td class=n>20</td><td>雷神劍晶裝填時發動雷神劍【強】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>雷神劍+2</td><td class=n>15</td><td>
+雷神劍晶裝填時發動雷神劍【中】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>雷神劍+1</td><td class=n>10</td><td>
+雷神劍晶裝填時發動雷神劍【弱】的效果。※２倍的銳利度消耗</td></tr>
+<tr class=l><td class=g rowspan=3>氷結劍</td><td class=g rowspan=3>○</td><td class=t>
+氷結劍+3</td><td class=n>20</td><td>氷結劍晶裝填時發動氷結劍【強】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>氷結劍+2</td><td class=n>15</td><td>
+氷結劍晶裝填時發動氷結劍【中】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>氷結劍+1</td><td class=n>10</td><td>
+氷結劍晶裝填時發動氷結劍【弱】的效果。※２倍的銳利度消耗</td></tr>
+<tr class=l><td class=g rowspan=3>龍王劍</td><td class=g rowspan=3>○</td><td class=t>
+龍王劍+3</td><td class=n>20</td><td>龍王劍晶裝填時發動龍王劍【強】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>龍王劍+2</td><td class=n>15</td><td>
+龍王劍晶裝填時發動龍王劍【中】的效果。※２倍的銳利度消耗</td></tr>
+<tr><td class=t>龍王劍+1</td><td class=n>10</td><td>
+龍王劍晶裝填時發動龍王劍【弱】的效果。※２倍的銳利度消耗</td></tr>
+<tr class=l><td class=g rowspan=5>單手劍技</td><td class=g rowspan=5>×</td><td class=t>
+單手劍技【大劍聖】</td><td class=n>2重</td><td>單手劍技【劍聖】發動的基礎上，追加銳利度等級+1</td></tr>
+<tr><td class=t>單手劍技【劍聖】</td><td class=n>30</td><td>發動超高級耳塞<br>
+片手劍的攻擊力1.3倍上升，攻擊不會被彈開。<br>能夠使用通常属性的劍晶為+3、状態異常属性的劍晶以及爆擊劍為+2的效果<br>
+（上位技能優先）<br>抜刀時的移動速度上昇</td></tr>
+<tr><td class=t>單手劍技【皆傳】</td><td class=n>20</td><td>片手劍的攻擊力1.2倍上升，攻擊不會被彈開</td></tr>
+<tr><td class=t>單手劍技【達人】</td><td class=n>10</td><td>片手劍的攻擊不會被彈開</td></tr>
+<tr><td class=t>單手劍技【未熟】</td><td class=n>-10</td><td>片手劍的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>雙劍技</td><td class=g rowspan=5>×</td><td class=t>
+雙劍技【大雙龍】</td><td class=n>2重</td><td>雙劍技【雙龍】發動的基礎上，追加銳利度等級+1</td></tr>
+<tr><td class=t>雙劍技【雙龍】</td><td class=n>30</td><td>發動超高級耳塞<br>双劍的攻擊力1.2倍上升，
+攻擊不會被彈開。<br>鬼人化中攻擊到魔物時，耐力回復3</td></tr>
+<tr><td class=t>雙劍技【皆傳】</td><td class=n>20</td><td>双劍的攻擊力1.1倍上升，攻擊不會被彈開</td></tr>
+<tr><td class=t>雙劍技【達人】</td><td class=n>10</td><td>双劍的攻擊不會被彈開</td></tr>
+<tr><td class=t>雙劍技【未熟】</td><td class=n>-10</td><td>双劍的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>大劍技</td><td class=g rowspan=5>×</td><td class=t>
+大劍技【大劍王】</td><td class=n>2重</td><td>大劍技【劍王】發動的基礎上，追加銳利度等級+1</td></tr>
+<tr><td class=t>大劍技【劍王】</td><td class=n>30</td><td>發動超高級耳塞<br>
+大劍的攻擊力1.2倍上升，攻擊不會被彈開。<br>蓄力時間縮短<br>同時，嵐之型的蓄力4之後變成蓄力2的時間延遲<br>
+防禦攻擊時，銳利度的減少値回覆一半。<br>(回復量は防禦性能による減輕を受けない)<br>
+近身時防禦魔物的攻撃時，耐力不會減少，<br>可以通過迴避鍵取消防禦動作<br>然後，銳利度會回復</td></tr>
+<tr><td class=t>大劍技【皆傳】</td><td class=n>20</td><td>大劍的攻擊力1.1倍上升，攻擊不會被彈開</td></tr>
+<tr><td class=t>大劍技【達人】</td><td class=n>10</td><td>大劍的攻擊不會被彈開</td></tr>
+<tr><td class=t>大劍技【未熟】</td><td class=n>-10</td><td>大劍的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>太刀技</td><td class=g rowspan=5>×</td><td class=t>
+太刀技【大刀神】</td><td class=n>2重</td><td>太刀技【刀神】發動的基礎上，追加銳利度等級+1</td></tr>
+<tr><td class=t>太刀技【刀神】</td><td class=n>30</td><td>發動超高級耳塞<br>
+太刀的攻擊力1.2倍上升，攻擊不會被彈開。<br>錬氣槽的消費量變為半分。<br>錬氣MAX的場合,具有利刃+2相同的效果<br>
+氣刃状態(錬氣槽閃爍)時，攻撃力變為1.1倍</td></tr>
+<tr><td class=t>太刀技【皆傳】</td><td class=n>20</td><td>太刀的攻擊力1.1倍上升，攻擊不會被彈開</td></tr>
+<tr><td class=t>太刀技【達人】</td><td class=n>10</td><td>太刀的攻擊不會被彈開</td></tr>
+<tr><td class=t>太刀技【未熟】</td><td class=n>-10</td><td>太刀的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>鎚技</td><td class=g rowspan=5>×</td><td class=t>
+錘技【大鈍器獸】</td><td class=n>2重</td><td>大錘技【鈍器獸】發動的基礎上，追加銳利度等級+1</td></tr>
+<tr><td class=t>大錘技【鈍器獸】</td><td class=n>30</td><td>發動超高級耳塞<br>
+大錘的攻擊力1.2倍上升，攻擊不會被彈開。<br>在蓄力完成的瞬間發動蓄力攻撃時，攻撃力上升1.3倍</td></tr>
+<tr><td class=t>大錘技【皆傳】</td><td class=n>20</td><td>大錘的攻擊力1.1倍上升，攻擊不會被彈開</td></tr>
+<tr><td class=t>大錘技【達人】</td><td class=n>10</td><td>大錘的攻擊不會被彈開</td></tr>
+<tr><td class=t>大錘技【未熟】</td><td class=n>-10</td><td>大錘的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>狩獵笛技</td><td class=g rowspan=5>×</td><td class=t>
+狩獵笛技【大奏帝】</td><td class=n>2重</td><td>狩獵笛技【奏帝】發動的基礎上，追加銳利度等級+1</td></tr>
+<tr><td class=t>狩獵笛技【奏帝】</td><td class=n>30</td><td>發動超高級耳塞<br>
+狩獵笛的攻擊力1.2倍上升，攻擊不會被彈開。<br>演奏的效果確定時的計時器提前(60幀→40幀)</td></tr>
+<tr><td class=t>狩獵笛技【皆傳】</td><td class=n>20</td><td>狩獵笛的攻擊力1.1倍上升，攻擊不會被彈開</td></tr>
+<tr><td class=t>狩獵笛技【達人】</td><td class=n>10</td><td>狩獵笛的攻擊不會被彈開</td></tr>
+<tr><td class=t>狩獵笛技【未熟】</td><td class=n>-10</td><td>狩獵笛的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>槍技</td><td class=g rowspan=5>×</td><td class=t>
+槍技【大天槍】</td><td class=n>2重</td><td>槍技【天槍】發動的基礎上，追加銳利度等級+1</td></tr>
+<tr><td class=t>槍技【天槍】</td><td class=n>30</td><td>發動超高級耳塞<br>
+長槍的攻擊力1.2倍上升，攻擊不會被彈開。<br>可以連續進行4次STEP。<br>防禦時的傷害變為０。<br>
+地之型的第3段、天·嵐之型的第4段目において、水平突刺、上段突刺、天井突刺的威力+10</td></tr>
+<tr><td class=t>槍技【皆傳】</td><td class=n>20</td><td>長槍的攻擊力1.1倍上升，攻擊不會被彈開</td></tr>
+<tr><td class=t>槍技【達人】</td><td class=n>10</td><td>長槍的攻擊不會被彈開</td></tr>
+<tr><td class=t>槍技【未熟】</td><td class=n>-10</td><td>長槍的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>銃槍技</td><td class=g rowspan=5>×</td><td class=t>
+銃槍技【大砲皇】</td><td class=n>2重</td><td>銃槍技【砲皇】發動的基礎上，追加銳利度等級+1</td></tr>
+<tr><td class=t>銃槍技【砲皇】</td><td class=n>30</td><td>發動超高級耳塞<br>
+銃槍的攻擊力1.2倍上升，攻擊不會被彈開。<br>放熱時間縮短為1/2，ＨＢ發動變為3秒。<br>
+砲撃的裝填數變為通常型+2,放射型+1,拡散型+1。</td></tr>
+<tr><td class=t>銃槍技【皆傳】</td><td class=n>20</td><td>
+銃槍的攻擊力1.1倍上升，攻擊不會被彈開</td></tr>
+<tr><td class=t>銃槍技【達人】</td><td class=n>10</td><td>銃槍的攻擊不會被彈開</td></tr>
+<tr><td class=t>銃槍技【未熟】</td><td class=n>-10</td><td>銃槍的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>穿龍棍技</td><td class=g rowspan=5>×</td><td class=t>
+穿龍棍技【大穿凰】</td><td class=n>2重</td><td>穿龍棍技【穿凰】發動的基礎上，追加銳利度等級+1</td></tr>
+<tr><td class=t>穿龍棍技【穿凰】</td><td class=n>30</td><td>發動超高級耳塞<br>
+穿龍棍的攻擊力1.2倍上升，攻擊不會被彈開。<br>連擊槽的上限多解放1階段。</td></tr>
+<tr><td class=t>穿龍棍技【皆伝】</td><td class=n>20</td><td>穿龍棍的攻擊力1.1倍上升，攻擊不會被彈開</td></tr>
+<tr><td class=t>穿龍棍技【達人】</td><td class=n>10</td><td>穿龍棍的攻擊不會被彈開</td></tr>
+<tr><td class=t>穿龍棍技【未熟】</td><td class=n>-10</td><td>穿龍棍的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=2>劍術</td><td class=g rowspan=2>○</td><td class=t>
+劍術+2</td><td class=n>20</td><td>彈開的動作無効。1次的攻撃按2次HIT算。<br>
+第２HIT的動作値、属性値、状態異常値、スタン値為０．２倍<br>不會消耗劍晶<br>太刀:貫刺的動作値UP</td></tr>
+<tr><td class=t>劍術+1</td><td class=n>10</td><td>彈開的動作無効</td></tr>
+<tr></tr><tr><th colspan=5>槍手系</th></tr>
+<tr class=l><td class=g>射手</td><td class=g>×</td><td class=t>剛彈</td><td class=n>
+15</td><td>「通常彈·通常矢威力ＵＰ」、「貫通彈·貫通矢威力ＵＰ」、「散彈·拡散矢威力ＵＰ」效果が同時發動。<br>
+即使發動相同效果的技能，技能效果也不會重複</td></tr>
+<tr class=l><td class=g>通常彈強化</td><td class=g>×</td><td class=t>通常彈·連射箭威力UP</td><td class=n>
+10</td><td>通常彈·連射矢的傷害1.1倍</td></tr>
+<tr class=l><td class=g>貫通彈強化</td><td class=g>×</td><td class=t>貫通彈·貫通箭威力UP</td><td class=n>
+10</td><td>貫通彈·貫通矢的傷害1.1倍</td></tr>
+<tr class=l><td class=g>散彈強化</td><td class=g>×</td><td class=t>散彈·擴散箭威力UP</td><td class=n>
+10</td><td>散彈·拡散矢的傷害1.3倍</td></tr>
+<tr class=l><td class=g rowspan=2>通常彈追加</td><td class=g rowspan=2>×</td><td class=t>
+通常彈全等級追加</td><td class=n>15</td><td>通常彈的全級別使用可能</td></tr>
+<tr><td class=t>通常彈ＬＶ1追加</td><td class=n>10</td><td>LV1通常彈使用可能</td></tr>
+<tr class=l><td class=g rowspan=3>貫通彈追加</td><td class=g rowspan=3>×</td><td class=t>
+貫通彈全等級追加</td><td class=n>20</td><td>貫通彈的全級別使用可能</td></tr>
+<tr><td class=t>貫通彈ＬＶ1·2追加</td><td class=n>15</td><td>LV1·2貫通彈使用可能</td></tr>
+<tr><td class=t>貫通彈ＬＶ1追加</td><td class=n>10</td><td>LV1貫通彈使用可能</td></tr>
+<tr class=l><td class=g rowspan=3>散彈追加</td><td class=g rowspan=3>×</td><td class=t>
+散彈全等級追加</td><td class=n>20</td><td>散彈全級別使用可能</td></tr>
+<tr><td class=t>散彈ＬＶ1·2追加</td><td class=n>15</td><td>LV1·2散彈使用可能</td></tr>
+<tr><td class=t>散彈ＬＶ1追加</td><td class=n>10</td><td>LV1散彈使用可能</td></tr>
+<tr class=l><td class=g rowspan=3>榴彈追加</td><td class=g rowspan=3>×</td><td class=t>
+徹甲榴彈全等級追加</td><td class=n>20</td><td>徹甲榴彈的全級別使用可能</td></tr>
+<tr><td class=t>徹甲榴彈ＬＶ1·2追加</td><td class=n>15</td><td>LV1·2徹甲榴彈使用可能</td></tr>
+<tr><td class=t>徹甲榴彈ＬＶ1追加</td><td class=n>10</td><td>LV1徹甲榴彈使用可能</td></tr>
+<tr class=l><td class=g rowspan=3>擴散彈追加</td><td class=g rowspan=3>×</td><td class=t>
+擴散彈全等級追加</td><td class=n>20</td><td>拡散彈的全級別使用可能</td></tr>
+<tr><td class=t>拡散彈ＬＶ1·2追加</td><td class=n>15</td><td>LV1·2拡散彈使用可能</td></tr>
+<tr><td class=t>拡散彈ＬＶ1追加</td><td class=n>10</td><td>LV1拡散彈使用可能</td></tr>
+<tr class=l><td class=g>裝填數</td><td class=g>×</td><td class=t>装填数ＵＰ</td><td class=n>
+10</td><td>弩：能夠使用的全部彈種的最大裝填數上升1<br>弓：能夠進行第4階段蓄力<br>
+銃槍：砲撃的最大裝填數上升1</td></tr>
+<tr class=l><td class=g rowspan=4>装填</td><td class=g rowspan=4>○</td><td class=t>
+裝填速度+3</td><td class=n>20</td><td>弩：裝填速度修正値+3<br>弓：瓶能夠自動裝配</td></tr>
+<tr><td class=t>裝填速度+2</td><td class=n>15</td><td>弩：裝填速度修正値+2<br>
+弓：瓶裝配時間縮短為75％</td></tr>
+<tr><td class=t>裝填速度+1</td><td class=n>10</td><td>弩：裝填速度修正値+1<br>
+弓：瓶裝配時間縮短為85％</td></tr>
+<tr><td class=t>裝填速度-1</td><td class=n>-10</td><td>弩：裝填速度修正値-1<br>
+弓：瓶裝配時間縮短為110％</td></tr>
+<tr class=l><td class=g rowspan=2>反動</td><td class=g rowspan=2>○</td><td class=t>
+反動減輕+2</td><td class=n>15</td><td>弩：反動修正値+4<br>
+銃槍：各種砲撃以及連撃砲時，能夠進行回避行動。竜撃砲後的硬直時間減少30幀</td></tr>
+<tr><td class=t>反動減輕+1</td><td class=n>10</td><td>弩：反動修正値+2<br>
+銃槍：各種砲撃以及連撃砲時，能夠進行回避行動。</td></tr>
+<tr class=l><td class=g rowspan=3>扇射</td><td class=g rowspan=3>×</td><td class=t>
+扇射+3</td><td class=n>20</td><td>
+通常彈、貫通彈、徹甲榴彈、以及弓的攻撃在判定距離下，擊中時按照肉質＋５計算傷害。<br>同時發動「攻撃力ＵＰ【絶大】」的效果。<br>
+發動相同系統的技能時，效果較高的優先，不會與「精密射擊」的技能效果重複</td></tr>
+<tr><td class=t>扇射+2</td><td class=n>15</td><td>
+通常彈、貫通彈、徹甲榴彈、以及弓的攻撃在判定距離下，擊中時按照肉質＋５計算傷害。<br>同時發動「攻撃力ＵＰ【特大】」的效果。<br>
+發動相同系統的技能時，效果較高的優先，不會與「精密射擊」的技能效果重複</td></tr>
+<tr><td class=t>扇射+1</td><td class=n>10</td><td>
+通常彈、貫通彈、徹甲榴彈、以及弓的攻撃在判定距離下，擊中時按照肉質＋５計算傷害。<br>同時發動「攻撃力ＵＰ【大】」的效果。<br>
+發動相同系統的技能時，效果較高的優先，不會與「精密射擊」的技能效果重複</td></tr>
+<tr class=l><td class=g>速射</td><td class=g>×</td><td class=t>速射</td><td class=n>
+15</td><td>超速射以外的速射彈的發射数+1<br>一次裝填時，裝填數不會減少（彈會減少）</td></tr>
+<tr class=l><td class=g>連射</td><td class=g>×</td><td class=t>連射</td><td class=n>
+10</td><td>弩：能夠無需裝填的連續發射<br>弓：蓄力的必要時間縮短85％（每１階段的蓄力30幀縮短為26幀）</td></tr>
+<tr class=l><td class=g>子彈調合</td><td class=g>×</td><td class=t>最大值子彈生產</td><td class=n>
+10</td><td>調和彈·瓶時，必然會生產最大数</td></tr>
+<tr class=l><td class=g rowspan=2>子彈節約術</td><td class=g rowspan=2>×</td><td class=t>
+節約達人</td><td class=n>20</td><td>弩、弓在攻撃時，有11/32的概率，使用中的瓶、彈消費数為0。<br>
+(比「節約名人」消費数為0的概率更高)<br>這個效果，JUST裝填或壓縮裝填時，装填的彈也適用。<br>
+※超速射、排熱彈は非対応</td></tr>
+<tr><td class=t>節約名人</td><td class=n>10</td><td>
+弩、弓在攻撃時，有7/32的概率，使用中的瓶、彈消費数為0。<br>
+這個效果，JUST裝填或壓縮裝填時，装填的彈也適用。<br>※超速射、排熱彈不對應</td></tr>
+<tr class=l><td class=g rowspan=3>精密射擊</td><td class=g rowspan=3>○</td><td class=t>
+狙擊</td><td class=n>20</td><td>彈的軌道的偏離幅度變小<br>
+通常彈,貫通彈,徹甲榴彈在判定距離下擊中時，按照肉質＋５計算傷害。</td></tr>
+<tr><td class=t>偏移量DOWN</td><td class=n>10</td><td>彈的軌道的偏離幅度變小</td></tr>
+<tr><td class=t>偏移量UP</td><td class=n>-10</td><td>彈的軌道的偏離幅度變大</td></tr>
+<tr class=l><td class=g>毒瓶追加</td><td class=g>×</td><td class=t>毒瓶追加</td><td class=n>
+10</td><td>能夠使用毒瓶</td></tr>
+<tr class=l><td class=g>麻痺瓶追加</td><td class=g>×</td><td class=t>麻痺瓶追加</td><td class=n>
+10</td><td>能夠使用麻痺瓶</td></tr>
+<tr class=l><td class=g>睡眠瓶追加</td><td class=g>×</td><td class=t>睡眠瓶追加</td><td class=n>
+10</td><td>能夠使用睡眠瓶</td></tr>
+<tr class=l><td class=g rowspan=3>裝配</td><td class=g rowspan=3>×</td><td class=t>
+裝著+3</td><td class=n>30</td><td>「裝填數UP」與「裝填速度+3」效果同時發動</td></tr>
+<tr><td class=t>裝著+2</td><td class=n>20</td><td>「裝填數UP」與「裝填速度+2」效果同時發動</td></tr>
+<tr><td class=t>裝著+1</td><td class=n>10</td><td>「裝填數UP」與「裝填速度+1」效果同時發動</td></tr>
+<tr class=l><td class=g rowspan=5>重銃技</td><td class=g rowspan=5>×</td><td class=t>
+重銃技【大銃仙】</td><td class=n>2重</td><td>重銃技【銃仙】的攻撃力UP變為1.4倍</td></tr>
+<tr><td class=t>重銃技【銃仙】</td><td class=n>30</td><td>發動超高級耳塞<br>
+重弩的攻擊力1.2倍、属性彈的威力上升1.2倍，回避的距離變遠。<br>
+近接攻撃時追加氣絶(15)，徹甲榴彈的氣絶値上升15。<br>排熱傷害的無·火部份都變為1.2倍<br>
+追加壓縮裝填，能夠使用攻撃力較高的Perfect壓縮裝填</td></tr>
+<tr><td class=t>重銃技【皆傳】</td><td class=n>20</td><td>
+重弩的攻擊力上升1.1倍，回避的距離變遠</td></tr>
+<tr><td class=t>重銃技【達人】</td><td class=n>10</td><td>回避的距離變遠</td></tr>
+<tr><td class=t>重銃技【未熟】</td><td class=n>-10</td><td>重弩的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>輕銃技</td><td class=g rowspan=5>×</td><td class=t>
+輕銃技【大銃傑】</td><td class=n>2重</td><td>輕銃技【銃傑】的攻撃力UP變為1.4倍</td></tr>
+<tr><td class=t>輕銃技【銃傑】</td><td class=n>30</td><td>發動超高級耳塞<br>
+輕弩的攻擊力上升為1.2倍。<br>子彈彈回打自己人的概率下降，彈回時受到的傷害大幅減少<br>
+武器拔出的狀態下，能夠使用一部份消費道具<br>追加JustShot，能夠使用攻撃力較高的PerfectShot</td></tr>
+<tr><td class=t>輕銃技【皆傳】</td><td class=n>20</td><td>輕弩的攻擊力上升1.1倍。<br>
+子彈彈回打自己人的概率下降，彈回時受到的傷害大幅減少</td></tr>
+<tr><td class=t>輕銃技【達人】</td><td class=n>10</td><td>
+子彈彈回打自己人的概率下降，彈回時受到的傷害大幅減少</td></tr>
+<tr><td class=t>輕銃技【未熟】</td><td class=n>-10</td><td>輕弩的攻擊力0.8倍下降</td></tr>
+<tr class=l><td class=g rowspan=5>弓技</td><td class=g rowspan=5>×</td><td class=t>
+弓技【大弓鬼】</td><td class=n>2重</td><td>弓技【弓鬼】的攻撃力UP變為1.4倍</td></tr>
+<tr><td class=t>弓技【弓鬼】</td><td class=n>30</td><td>發動超高級耳塞<br>
+弓的攻擊力1.2倍上升，矢不會被彈開。<br>強撃瓶的效果變為1.6倍、剛/進化/G武器變為1.7倍<br>
+曲射自「蓄力2」開始</td></tr>
+<tr><td class=t>弓技【皆傳】</td><td class=n>20</td><td>弓的攻擊力1.1倍上升，矢不會被彈開</td></tr>
+<tr><td class=t>弓技【達人】</td><td class=n>10</td><td>矢不會被彈開</td></tr>
+<tr><td class=t>弓技【未熟】</td><td class=n>-10</td><td>弓的攻擊力0.8倍下降</td></tr>
+<tr></tr><tr><th colspan=5>耐性系</th></tr>
+<tr class=l><td class=g rowspan=6>全耐性ＵＰ</td><td class=g rowspan=6>×</td><td class=t>
+各耐性+20</td><td class=n>20</td><td>各耐性値合計上升20</td></tr>
+<tr><td class=t>各耐性+10</td><td class=n>15</td><td>各耐性値合計上升10</td></tr>
+<tr><td class=t>各耐性+5</td><td class=n>10</td><td>各耐性値合計上升5</td></tr>
+<tr><td class=t>各耐性-5</td><td class=n>-10</td><td>各耐性値合計下降5</td></tr>
+<tr><td class=t>各耐性-10</td><td class=n>-15</td><td>各耐性値合計下降10</td></tr>
+<tr><td class=t>各耐性-20</td><td class=n>-20</td><td>各耐性値合計下降20</td></tr>
+<tr class=l><td class=g rowspan=6>火耐性</td><td class=g rowspan=6>○</td><td class=t>
+火耐性+30</td><td class=n>20</td><td>火耐性値合計上升30</td></tr>
+<tr><td class=t>火耐性+20</td><td class=n>15</td><td>火耐性値合計上升20</td></tr>
+<tr><td class=t>火耐性+10</td><td class=n>10</td><td>火耐性値合計上升10</td></tr>
+<tr><td class=t>火耐性-10</td><td class=n>-10</td><td>火耐性値合計下降10</td></tr>
+<tr><td class=t>火耐性-20</td><td class=n>-15</td><td>火耐性値合計下降20</td></tr>
+<tr><td class=t>火耐性-30</td><td class=n>-20</td><td>火耐性値合計下降30</td></tr>
+<tr class=l><td class=g rowspan=6>水耐性</td><td class=g rowspan=6>○</td><td class=t>
+水耐性+30</td><td class=n>20</td><td>水耐性値合計上升30</td></tr>
+<tr><td class=t>水耐性+20</td><td class=n>15</td><td>水耐性値合計上升20</td></tr>
+<tr><td class=t>水耐性+10</td><td class=n>10</td><td>水耐性値合計上升10</td></tr>
+<tr><td class=t>水耐性-10</td><td class=n>-10</td><td>水耐性値合計下降10</td></tr>
+<tr><td class=t>水耐性-20</td><td class=n>-15</td><td>水耐性値合計下降20</td></tr>
+<tr><td class=t>水耐性-30</td><td class=n>-20</td><td>水耐性値合計下降30</td></tr>
+<tr class=l><td class=g rowspan=6>冰耐性</td><td class=g rowspan=6>○</td><td class=t>
+冰耐性+30</td><td class=n>20</td><td>氷耐性値合計上升30</td></tr>
+<tr><td class=t>冰耐性+20</td><td class=n>15</td><td>氷耐性値合計上升20</td></tr>
+<tr><td class=t>冰耐性+10</td><td class=n>10</td><td>氷耐性値合計上升10</td></tr>
+<tr><td class=t>冰耐性-10</td><td class=n>-10</td><td>氷耐性値合計下降10</td></tr>
+<tr><td class=t>冰耐性-20</td><td class=n>-15</td><td>氷耐性値合計下降20</td></tr>
+<tr><td class=t>冰耐性-30</td><td class=n>-20</td><td>氷耐性値合計下降30</td></tr>
+<tr class=l><td class=g rowspan=6>雷耐性</td><td class=g rowspan=6>○</td><td class=t>
+雷耐性+30</td><td class=n>20</td><td>雷耐性値合計上升30</td></tr>
+<tr><td class=t>雷耐性+20</td><td class=n>15</td><td>雷耐性値合計上升20</td></tr>
+<tr><td class=t>雷耐性+10</td><td class=n>10</td><td>雷耐性値合計上升10</td></tr>
+<tr><td class=t>雷耐性-10</td><td class=n>-10</td><td>雷耐性値合計下降10</td></tr>
+<tr><td class=t>雷耐性-20</td><td class=n>-15</td><td>雷耐性値合計下降20</td></tr>
+<tr><td class=t>雷耐性-30</td><td class=n>-20</td><td>雷耐性値合計下降30</td></tr>
+<tr class=l><td class=g rowspan=6>龍耐性</td><td class=g rowspan=6>○</td><td class=t>
+龍耐性+30</td><td class=n>20</td><td>龍耐性値合計上升30</td></tr>
+<tr><td class=t>龍耐性+20</td><td class=n>15</td><td>龍耐性値合計上升20</td></tr>
+<tr><td class=t>龍耐性+10</td><td class=n>10</td><td>龍耐性値合計上升10</td></tr>
+<tr><td class=t>龍耐性-10</td><td class=n>-10</td><td>龍耐性値合計下降10</td></tr>
+<tr><td class=t>龍耐性-20</td><td class=n>-15</td><td>龍耐性値合計下降20</td></tr>
+<tr><td class=t>龍耐性-30</td><td class=n>-20</td><td>龍耐性値合計下降30</td></tr>
+<tr></tr><tr><th colspan=5>状態異常系</th></tr>
+<tr class=l><td class=g rowspan=3>毒</td><td class=g rowspan=3>○</td><td class=t>
+中毒無效</td><td class=n>20</td><td>不會進入毒状態</td></tr>
+<tr><td class=t>中毒減半</td><td class=n>10</td><td>毒傷害的進行速度減半</td></tr>
+<tr><td class=t>中毒加倍</td><td class=n>-10</td><td>毒傷害的進行速度變為2倍</td></tr>
+<tr class=l><td class=g rowspan=3>麻痺</td><td class=g rowspan=3>○</td><td class=t>
+麻痺無效</td><td class=n>20</td><td>不會進入麻痺状態</td></tr>
+<tr><td class=t>麻痺減半</td><td class=n>10</td><td>麻痺傷害的進行速度減半</td></tr>
+<tr><td class=t>麻痺加倍</td><td class=n>-10</td><td>麻痺傷害的進行速度變為2倍</td></tr>
+<tr class=l><td class=g rowspan=3>睡眠</td><td class=g rowspan=3>○</td><td class=t>
+睡眠無效</td><td class=n>20</td><td>不會進入睡眠状態</td></tr>
+<tr><td class=t>睡眠減半</td><td class=n>10</td><td>睡眠傷害的進行速度減半</td></tr>
+<tr><td class=t>睡眠加倍</td><td class=n>-10</td><td>睡眠傷害的進行速度變為2倍</td></tr>
+<tr class=l><td class=g rowspan=3>耐狀態異常</td><td class=g rowspan=3>○</td><td class=t>
+狀態異常無效</td><td class=n>20</td><td>同時發動「中毒無效」「麻痺無效」「睡眠無效」3個技能的效果</td></tr>
+<tr><td class=t>狀態異常減半</td><td class=n>10</td><td>同時發動「中毒減半」「麻痺減半」「睡眠減半」3個技能的效果</td></tr>
+<tr><td class=t>狀態異常加倍</td><td class=n>-10</td><td>
+同時發動「中毒加倍」「麻痺加倍」「睡眠加倍」這3個技能的效果</td></tr>
+<tr class=l><td class=g rowspan=3>氣絶</td><td class=g rowspan=3>○</td><td class=t>
+暈眩無效</td><td class=n>20</td><td>不會進入暈眩状態</td></tr>
+<tr><td class=t>暈眩機率減半</td><td class=n>10</td><td>受到攻撃時，積蓄的暈眩値減半</td></tr>
+<tr><td class=t>暈眩加倍</td><td class=n>-10</td><td>暈眩状態的持續時間變為2倍</td></tr>
+<tr class=l><td class=g>脱臭</td><td class=g>×</td><td class=t>脱臭</td><td class=n>
+10</td><td>不會進入不能使用部分道具的状態。</td></tr>
+<tr class=l><td class=g>耐雪</td><td class=g>×</td><td class=t>耐雪</td><td class=n>
+10</td><td>不會進入雪蛋状態</td></tr>
+<tr class=l><td class=g rowspan=2>声帯</td><td class=g rowspan=2>○</td><td class=t>
+聲帶麻痺毒無效</td><td class=n>15</td><td>不會進入聊天不可的状態，受到対象特殊攻擊時的耐力減少無效</td></tr>
+<tr><td class=t>聲帶麻痺毒減半</td><td class=n>10</td><td>
+不會進入聊天不可的状態，受到対象特殊攻擊時的耐力減少減半</td></tr>
+<tr class=l><td class=g>對防禦DOWN</td><td class=g>×</td><td class=t>厚皮</td><td class=n>
+10</td><td>不會進入防御力ＤＯＷＮ状態</td></tr>
+<tr class=l><td class=g rowspan=2>耐酔</td><td class=g rowspan=2>×</td><td class=t>
+酒豪</td><td class=n>10</td><td>状態異常「泥酔」的效果無効</td></tr>
+<tr><td class=t>醉鬼</td><td class=n>-10</td><td>状態異常「泥酔」的效果時間變長</td></tr>
+<tr class=l><td class=g rowspan=2>磁力耐性</td><td class=g rowspan=2>×</td><td class=t>
+磁力耐性</td><td class=n>10</td><td>不會進入磁力状態</td></tr>
+<tr><td class=t>磁力弱點</td><td class=n>-10</td><td>磁力状態中的吸引，排斥速度倍増</td></tr>
+<tr class=l><td class=g rowspan=2>結晶耐性</td><td class=g rowspan=2>×</td><td class=t>
+結晶耐性</td><td class=n>10</td><td>不會進入結晶状態</td></tr>
+<tr><td class=t>結晶弱點</td><td class=n>-10</td><td>從結晶状態回覆的時間變長。<br>
+同時，結晶變得容易爆發</td></tr>
+<tr></tr><tr><th colspan=5>そ的他傷害保護</th></tr>
+<tr class=l><td class=g rowspan=3>三界的守護</td><td class=g rowspan=3>×</td><td class=t>
+豪放+3</td><td class=n>20</td><td>同時發動「暴風壓無效」、「耐震+2」、「超高級耳塞」的效果。<br>
+發動相同系統的技能時，效果較高的技能優先</td></tr>
+<tr><td class=t>豪放+2</td><td class=n>15</td><td>同時發動「龍風壓無效」、「耐震+1」、「高級耳塞」的效果。<br>
+發動相同系統的技能時，效果較高的技能優先</td></tr>
+<tr><td class=t>豪放+1</td><td class=n>10</td><td>同時發動「風壓【大】無效」、「耐震+1」、「耳栓」的效果。<br>
+發動相同系統的技能時，效果較高的技能優先</td></tr>
+<tr class=l><td class=g rowspan=3>聽覺保護</td><td class=g rowspan=3>○</td><td class=t>
+超高級耳塞</td><td class=n>25</td><td>大型魔物的非常強的咆哮無效</td></tr>
+<tr><td class=t>高級耳塞</td><td class=n>15</td><td>大型魔物的咆哮【大】無效<br>
+咆哮【特大】的硬直時間縮短為3/4</td></tr>
+<tr><td class=t>耳栓</td><td class=n>10</td><td>大型魔物的咆哮【小】無效<br>
+咆哮【大】的硬直時間縮短為3/4</td></tr>
+<tr class=l><td class=g rowspan=4>風壓</td><td class=g rowspan=4>○</td><td class=t>
+暴風壓無效</td><td class=n>30</td><td>風壓【小】、風壓【大】、龍風壓、暴風壓無效</td></tr>
+<tr><td class=t>龍風壓無效</td><td class=n>20</td><td>風壓【小】、風壓【大】、龍風壓無效</td></tr>
+<tr><td class=t>風壓【大】無效</td><td class=n>15</td><td>風壓【小】、風壓【大】無效</td></tr>
+<tr><td class=t>風壓【小】無效</td><td class=n>10</td><td>風壓【小】無效</td></tr>
+<tr class=l><td class=g rowspan=2>耐震</td><td class=g rowspan=2>○</td><td class=t>
+耐震+2</td><td class=n>25</td><td>非常強的震動也無效了</td></tr>
+<tr><td class=t>耐震+1</td><td class=n>15</td><td>震動無效</td></tr>
+<tr class=l><td class=g rowspan=3>迴避性能</td><td class=g rowspan=3>○</td><td colspan=2><br></td><td colspan=3>
+通常的無敵時間為 6/30秒</td></tr>
+<tr><td class=t>迴避性能+2</td><td class=n>20</td><td>回避的無敵時間變為12/30秒</td></tr>
+<tr><td class=t>迴避性能+1</td><td class=n>10</td><td>回避的無敵時間變為10/30秒</td></tr>
+<tr class=l><td class=g>迴避距離</td><td class=g>×</td><td class=t>迴避距離ＵＰ</td><td class=n>
+20</td><td>回避或飛撲的移動距離變遠。<br>※發動重銃技的技能效果時無効。</td></tr>
+<tr class=l><td class=g rowspan=6>耐暑</td><td class=g rowspan=6>○</td><td colspan=2><br></td><td colspan=3>
+通常情況，體力槽以在火山2秒，在砂漠3秒的速度減少1單位</td></tr>
+<tr><td class=t>夏男夏女</td><td class=n>25</td><td>
+暑氣無効＋在有炎熱的影響的場所具有「傷害恢復速度+1」同等的效果発動<br>上位技能優先</td></tr>
+<tr><td class=t>炎暑無效</td><td class=n>15</td><td>在火山·砂漠等炎熱的地方，體力槽不會減少</td></tr>
+<tr><td class=t>炎暑減半</td><td class=n>10</td><td>體力槽以在火山4秒、砂漠為6秒的速度減少1單位</td></tr>
+<tr><td class=t>炎暑加倍【小】</td><td class=n>-10</td><td>體力槽以在火山1.3秒、在砂漠
+2秒的速度減少1單位</td></tr>
+<tr><td class=t>炎暑加倍【大】</td><td class=n>-20</td><td>體力槽以在火山1秒、在砂漠
+1.5秒的速度減少1單位</td></tr>
+<tr class=l><td class=g rowspan=6>耐寒</td><td class=g rowspan=6>○</td><td colspan=2><br></td><td colspan=3>
+通常情況，耐力槽每6分鐘減少</td></tr>
+<tr><td class=t>冬將軍</td><td class=n>25</td><td>
+寒冷無効＋凍傷無効，在有寒冷的影響的場所會獲得與「跑者」同等的效果<br>上位技能優先</td></tr>
+<tr><td class=t>寒冷無效</td><td class=n>15</td><td>寒冷影響的耐力最大値減少變為無效</td></tr>
+<tr><td class=t>寒冷減半</td><td class=n>10</td><td>寒冷影響的耐力最大値減少速度變為1/2倍</td></tr>
+<tr><td class=t>寒冷加倍【小】</td><td class=n>-10</td><td>寒冷影響的耐力最大値減少速度變為１．５倍</td></tr>
+<tr><td class=t>寒冷加倍【大】</td><td class=n>-20</td><td>寒冷影響的耐力最大値減少速度變為２倍</td></tr>
+<tr class=l><td class=g>警戒</td><td class=g>×</td><td class=t>警戒</td><td class=n>
+10</td><td>魔物的陷阱攻撃無効化</td></tr>
+<tr class=l><td class=g>偷竊無效</td><td class=g>×</td><td class=t>偷竊無效</td><td class=n>
+10</td><td>道具不會被盜</td></tr>
+<tr class=l><td class=g rowspan=5>地形</td><td class=g rowspan=5>○</td><td colspan=2><br></td><td colspan=3>
+通常以每單位 8/30秒的速度受到一定的傷害</td></tr>
+<tr><td class=t>地形傷害減【大】</td><td class=n>15</td><td>在溶岩等的地形受到的傷害變為1/3倍</td></tr>
+<tr><td class=t>地形傷害減【小】</td><td class=n>10</td><td>在溶岩等的地形受到的傷害變為2/3倍</td></tr>
+<tr><td class=t>地形傷害增【小】</td><td class=n>-10</td><td>在溶岩等的地形受到的傷害變為１．５倍</td></tr>
+<tr><td class=t>地形傷害增【大】</td><td class=n>-15</td><td>在溶岩等的地形受到的傷害變為２倍</td></tr>
+<tr class=l><td class=g rowspan=4>審判</td><td class=g rowspan=4>○</td><td class=t>
+女神的擁抱</td><td class=n>20</td><td>有1/4的概率，受到的傷害變為１</td></tr>
+<tr><td class=t>女神的赦免</td><td class=n>10</td><td>有1/8的概率，受到的傷害變為１</td></tr>
+<tr><td class=t>死神的制裁</td><td class=n>-10</td><td>受到傷害時，有1/16的概率即死</td></tr>
+<tr><td class=t>死神的擁抱</td><td class=n>-20</td><td>受到傷害時，有1/8的概率即死</td></tr>
+<tr class=l><td class=g>守勢</td><td class=g>×</td><td class=t>守勢</td><td class=n>
+10</td><td>到底後，起身時的無敵時間變為３倍</td></tr>
+<tr class=l><td class=g>遁逃</td><td class=g>×</td><td class=t>遁逃</td><td class=n>
+10</td><td>体力２０％以下時，「逃走」的移動速度上昇</td></tr>
+<tr class=l><td class=g rowspan=3>根性</td><td class=g rowspan=3>○</td><td class=t>
+超強毅力</td><td class=n>30</td><td>受到使體力降到0以下的攻擊時，
+以體力1單位的狀態生還（沒有赤槽）。<br>
+条件:耐力的上限在50以上,体力在50以上。麻痺状態下不會發動</td></tr>
+<tr><td class=t>堅毅力</td><td class=n>20</td><td>
+受到使體力降到0以下的攻擊時，
+以體力1單位的狀態生還（沒有赤槽）。<br>条件:耐力的上限在50以上,体力在70以上。麻痺状態下不會發動<br>
+G級任務下不會發動</td></tr>
+<tr><td class=t>根性</td><td class=n>10</td><td>
+受到使體力降到0以下的攻擊時，
+以體力1單位的狀態生還（沒有赤槽）。<br>条件:耐力的上限在50以上,体力在90以上。麻痺状態下不會發動<br>
+G級任務下不會發動</td></tr>
+<tr class=l><td class=g>絶対防御</td><td class=g>×</td><td class=t>絶対防御態勢</td><td class=n>
+20</td><td>十分堅固的防守，魔物的攻撃無効化。<br>發動一次效果以後，到再次發動效果會發生準備時間<br>
+準備時間中，受到來自魔物的傷害增加。<br>效果發動后，到再次發動效果的時間會變得更長。<br>
+（※賴狩人發動時的效果無効）</td></tr>
+<tr></tr><tr><th colspan=5>道具使用·調合系</th></tr>
+<tr class=l><td class=g rowspan=4>調合師</td><td class=g rowspan=4>×</td><td class=t>
+調合師+3</td><td class=n>20</td><td>同時發動「調合成功率+30％」、「最大值子彈生產」、「回復」的效果</td></tr>
+<tr><td class=t>調合師+2</td><td class=n>15</td><td>同時發動「調合成功率+15％」、「最大值子彈生產」的效果</td></tr>
+<tr><td class=t>調合師+1</td><td class=n>10</td><td>同時發動「調合成功率+10％」、「最大值子彈生產」的效果</td></tr>
+<tr><td class=t>調合師-1</td><td class=n>-10</td><td>發動「調合成功率-5％」相同的效果</td></tr>
+<tr class=l><td class=g rowspan=5>廣域</td><td class=g rowspan=5>○</td><td colspan=2><br></td><td colspan=3>
+使用薬草,回復薬,解毒薬,怪力種子,忍耐種子,無懼果實時會產生效果</td></tr>
+<tr><td class=t>廣域化+3</td><td class=n>30</td><td>回復藥·大以及大巌竜的紅血的效果也適用</td></tr>
+<tr><td class=t>廣域化+2</td><td class=n>20</td><td>
+使用特定道具時，對相同區域内的任務夥伴會產生同等的效果</td></tr>
+<tr><td class=t>廣域化+1</td><td class=n>10</td><td>
+使用特定道具時，對相同區域内的任務夥伴會產生一半的效果</td></tr>
+<tr><td class=t>廣域化-1</td><td class=n>-10</td><td>不會獲得來自其他同伴的廣域效果</td></tr>
+<tr class=l><td class=g rowspan=2>效果持續</td><td class=g rowspan=2>×</td><td class=t>
+道具使用強化</td><td class=n>10</td><td>特定道具的效果持續時間變為1.5倍</td></tr>
+<tr><td class=t>道具使用弱化</td><td class=n>-10</td><td>特定道具的效果持續時間變為2/3倍</td></tr>
+<tr class=l><td class=g rowspan=5>反覆無常</td><td class=g rowspan=5>○</td><td colspan=2><br></td><td colspan=3>
+道具壞掉的概率<br>破鐵鎬：1/3　鐵鎬：1/10　鐵鎬大：1/15　強化鐵鎬大：1/17<br>
+破虫網　：1/3　虫網　：1/10　虫網大　：1/15　強化虫網大：1/17<br>回復笛：1/12　解毒笛：1/12　鬼人笛：1/ 
+8　硬化笛：1/8　角笛1/5<br>彈撃笛：1/16　突撃笛：1/16　尾撃笛：1/12　必撃笛：1/8<br>
+特撃笛：1/16　怒笛：1/16　逆鱗笛：1/ 8</td></tr>
+<tr><td class=t>神的反覆無常</td><td class=n>15</td><td>有1/2的概率迴避掉損壞計數</td></tr>
+<tr><td class=t>精靈的反覆無常</td><td class=n>10</td><td>有1/4的概率迴避掉損壞計數</td></tr>
+<tr><td class=t>惡靈的反覆無常</td><td class=n>-10</td><td>1/4的概率坏掉概率變為２倍</td></tr>
+<tr><td class=t>惡魔的反覆無常</td><td class=n>-15</td><td>1/2的概率坏掉概率變為２倍</td></tr>
+<tr class=l><td class=g rowspan=2>狩人</td><td class=g rowspan=2>×</td><td class=t>
+獵人享受</td><td class=n>20</td><td>發動「釣魚名人」、「採掘大師」、「地圖常備」、「自動記號」的效果</td></tr>
+<tr><td class=t>獵人生活</td><td class=n>10</td><td>發動「釣魚名人」、「採掘大師」、「地圖常備」的效果</td></tr>
+<tr class=l><td class=g rowspan=2>強肩</td><td class=g rowspan=2>○</td><td class=t>
+強力投手+2</td><td class=n>20</td><td>同時，刀子（不是村裡的那隻）的威力上升1.3倍</td></tr>
+<tr><td class=t>強力投手+1</td><td class=n>10</td><td>
+投擲石子、染色球之類的球体投擲物時，威力上升11倍</td></tr>
+<tr class=l><td class=g>投擲</td><td class=g>×</td><td class=t>投擲技術UP</td><td class=n>
+10</td><td>投擲道具的飛行距離和速度上升，飛鏢的損失有1/8的概率會回避掉</td></tr>
+<tr class=l><td class=g rowspan=3>採掘</td><td class=g rowspan=3>○</td><td class=t>
+採掘大師</td><td class=n>15</td><td>採掘、魚時『烤熟狀態』的持續時間大幅變長</td></tr>
+<tr><td class=t>採掘名人</td><td class=n>10</td><td>採掘、魚時『烤熟狀態』的持續時間變長</td></tr>
+<tr><td class=t>自稱?採掘名人</td><td class=n>-10</td><td>採掘、魚時『烤熟狀態』的持續時間變為一半</td></tr>
+<tr class=l><td class=g>釣魚</td><td class=g>×</td><td class=t>釣魚名人</td><td class=n>
+10</td><td>第一次咬鈎必能釣起（與釣魚フィーバエ一樣）</td></tr>
+<tr class=l><td class=g rowspan=4>調合成功率</td><td class=g rowspan=4>○</td><td class=t>
+調合成功率+30%</td><td class=n>20</td><td>調合成功率が30％上がる</td></tr>
+<tr><td class=t>調合成功率+15%</td><td class=n>15</td><td>調合成功率上升15％</td></tr>
+<tr><td class=t>調合成功率+10%</td><td class=n>10</td><td>調合成功率上升10％</td></tr>
+<tr><td class=t>調合成功率-5%</td><td class=n>-10</td><td>調合成功率下降5％</td></tr>
+<tr class=l><td class=g>鍊金術</td><td class=g>×</td><td class=t>鍊金術</td><td class=n>
+10</td><td>能夠進行錬金調合</td></tr>
+<tr class=l><td class=g rowspan=2>鼓舞</td><td class=g rowspan=2>×</td><td class=t>
+激勵+2</td><td class=n>20</td><td>吹笛名人+<br>
+同任務内，包括自己在內的成員發動「迴避性能+2」、「暈眩無效」的效果</td></tr>
+<tr><td class=t>激勵+1</td><td class=n>10</td><td>吹笛名人+<br>
+同任務内，包括自己在內的成員發動「迴避性能+1」、「暈眩減半」的效果</td></tr>
+<tr class=l><td class=g>吹笛名人</td><td class=g>×</td><td class=t>吹笛名人</td><td class=n>
+10</td><td>各種笛壞掉的時候有1/2的概率會回避掉。<br>狩獵笛的演奏效果變成1.5倍<br>
+回復效果的旋律的概率發生逆轉。</td></tr>
+<tr class=l><td class=g rowspan=2>高速設置</td><td class=g rowspan=2>○</td><td class=t>
+罠匠</td><td class=n>20</td><td>設置道具的設置時間縮短為0.66倍。<br>
+対象:落穴以及麻痹罠、爆雷針、摩卡漬壺、肉、爆彈<br>肉·罠的調合成功率變為100%。<br>
+対象:毒生肉·麻痹生肉·睡眠生肉·網·落穴·麻痹罠·爆雷針</td></tr>
+<tr><td class=t>罠師</td><td class=n>10</td><td>設置道具的設置時間縮短為0.8倍。<br>
+対象:落穴以及麻痹罠、爆雷針、摩卡漬壺、肉、爆彈<br>肉·罠的調合成功率變為100%。<br>
+対象:毒生肉·麻痹生肉·睡眠生肉·網·落穴·麻痹罠·爆雷針</td></tr>
+<tr class=l><td class=g rowspan=2>鉄腕</td><td class=g rowspan=2>×</td><td class=t>
+鐵臂+2</td><td class=n>20</td><td>「投擲技術UP」、「強力投手+2」、「飛刀+2」的效果同時發動<br>
+此外，大劍的防禦斬、長槍的突進、<br>穿龍棍的基本連携１·３·４、滞空連携１～３、連續突２、ダッシュ旋回<br>的攻撃無効化時間延長。<br>
+但是，發動相同系統的技能時，效果較高的技能優先。</td></tr>
+<tr><td class=t>鐵臂+1</td><td class=n>10</td><td>
+「投擲技術UP」、「強力投手+1」、「飛刀+1」的效果同時發動<br>此外，大劍的防禦斬、長槍的突進、<br>
+穿龍棍的基本連携１·３·４、滞空連携１～３、連續突２、ダッシュ旋回<br>的攻撃無効化時間延長。<br>
+但是，發動相同系統的技能時，效果較高的技能優先。</td></tr>
+<tr class=l><td class=g rowspan=2>飛刀手</td><td class=g rowspan=2>○</td><td class=t>
+飛刀+2</td><td class=n>20</td><td>此外，投擲的飛刀追加5把（消耗刀子）</td></tr>
+<tr><td class=t>飛刀+1</td><td class=n>10</td><td>
+同時投擲3把刀(實際耗1把。投擲出的每1把傷害減半)<br>另外，任務中還可以調和投擲刀Ｇ</td></tr>
+<tr></tr><tr><th colspan=5>地圖·探知系</th></tr>
+<tr class=l><td class=g>地圖</td><td class=g>×</td><td class=t>地圖常備</td><td class=n>
+10</td><td>沒有持有地圖的狀態也會顯示地圖</td></tr>
+<tr class=l><td class=g rowspan=2>千里眼</td><td class=g rowspan=2>○</td><td class=t>
+自動記號</td><td class=n>15</td><td>大型魔物的位置會一直在地圖上表示</td></tr>
+<tr><td class=t>探知</td><td class=n>10</td><td>染色后,魔物在地圖上的樣子會和自動追蹤一樣,而且持續時間變長</td></tr>
+<tr class=l><td class=g rowspan=2>氣配</td><td class=g rowspan=2>×</td><td class=t>
+隠密</td><td class=n>10</td><td>不容易被大型魔物發現</td></tr>
+<tr><td class=t>挑發</td><td class=n>-10</td><td>容易被魔物攻擊</td></tr>
+<tr class=l><td class=g>煽動</td><td class=g>×</td><td class=t>煽動</td><td class=n>
+10</td><td>攻擊魔物時，自己對應的仇恨值上昇，能夠在一定時間內被注意。<br>
+（※但是，從魔物身邊離開一定距離以上時，處於存在一定以上高低差的地方時，注意會轉移）<br>
+受到魔物注意期間，所受來自魔物的傷害減少。注意轉移后，30秒內技能不會再次發動</td></tr>
+<tr></tr><tr><th colspan=5>採集·運搬系</th></tr>
+<tr class=l><td class=g>運搬</td><td class=g>×</td><td class=t>搬運達人</td><td class=n>
+10</td><td>搬運時移動速度增加、搬運物從高處落下也不會破碎</td></tr>
+<tr class=l><td class=g>高速收集</td><td class=g>×</td><td class=t>高速剝取＆採集</td><td class=n>
+10</td><td>剝取、採取、捕蟲、採掘的速度上升</td></tr>
+<tr class=l><td class=g rowspan=5>採取</td><td class=g rowspan=5>○</td><td colspan=2><br></td><td colspan=3>
+通常情況下、２次以上繼續採取·挖掘的概率為 27/32</td></tr>
+<tr><td class=t>採集+2</td><td class=n>15</td><td>2次以上繼續採取·挖掘的概率上升為 31/32</td></tr>
+<tr><td class=t>採集+1</td><td class=n>10</td><td>2次以上繼續採取·挖掘的概率上升為 29/32</td></tr>
+<tr><td class=t>採集-1</td><td class=n>-10</td><td>2次以上繼續採取·挖掘的概率下降為 23/32</td></tr>
+<tr><td class=t>採集-2</td><td class=n>-15</td><td>2次以上繼續採取·挖掘的概率下降為 19/32</td></tr>
+<tr class=l><td class=g>剝取</td><td class=g>×</td><td class=t>剝取名人</td><td class=n>
+15</td><td>剝取次数增加1次</td></tr>
+<tr class=l><td class=g rowspan=3>平常心</td><td class=g rowspan=3>○</td><td class=t>
+盤石的構え</td><td class=n>15</td><td>道具使用或進行採集等有破綻的動作時，保持擊飛無效状態。</td></tr>
+<tr><td class=t>万全的備え</td><td class=n>10</td><td>
+道具使用或進行採集等有破綻的動作時，保持打斷無效状態</td></tr>
+<tr><td class=t>油断大敵</td><td class=n>-10</td><td>
+道具使用或進行採集等有破綻的動作時，受到來自魔物的傷害増加。</td></tr>
+<tr></tr><tr><th colspan=5>報酬系</th></tr>
+<tr class=l><td class=g rowspan=5>運氣</td><td class=g rowspan=5>○</td><td colspan=2><br></td><td colspan=3>
+通常情況，報酬格增加的概率為 22/32</td></tr>
+<tr><td class=t>激運</td><td class=n>20</td><td>報酬格增加的概率提升為 29/32</td></tr>
+<tr><td class=t>幸運</td><td class=n>10</td><td>報酬格增加的概率提升為 26/32</td></tr>
+<tr><td class=t>不運</td><td class=n>-10</td><td>報酬格增加的概率降低為 16/32</td></tr>
+<tr><td class=t>災難</td><td class=n>-20</td><td>報酬格增加的概率降低為 8/32</td></tr>
+<tr class=l><td class=g>魔物</td><td class=g>×</td><td class=t>大魔物放馬來吧！</td><td class=n>
+10</td><td>魔物的big size出現幾率增大…吧？</td></tr>
+<tr class=l><td class=g rowspan=2>壓力</td><td class=g rowspan=2>○</td><td class=t>
+壓力【大】</td><td class=n>20</td><td>魔物的交易價格隨機上升30/50/75/100/150％</td></tr>
+<tr><td class=t>壓力【小】</td><td class=n>10</td><td>魔物的交易價格上升30％</td></tr>
+<tr></tr><tr><th colspan=5>其他系</th></tr>
+<tr class=l><td class=g>育成</td><td class=g>×</td><td class=t>育成</td><td class=n>
+10</td><td>萬能園地豬掉落的道具等級UP。狩獵鷹掉落物品的概率上升</td></tr>
+<tr class=l><td class=g>羈絆</td><td class=g>×</td><td class=t>羈絆</td><td class=n>10</td><td>
+男女混合PT時，男性獵人為武器倍率+5<br>男女混合PT時，女性獵人為防御力+40</td></tr>
+<tr class=l><td class=g>靈光一現</td><td class=g>×</td><td class=t>靈光一現</td><td class=n>
+10</td><td>任務出發時，隨機發動以下的效果<table><tr><th>技能</th><th>信息</th><th>
+發動確率</th></tr><tr><td>各耐性＋５</td><td>各耐性變強！</td><td>30%</td></tr><tr><td>
+耐暑＆耐寒</td><td>氣候変化耐性變強！</td><td>16%</td></tr><tr><td>暈眩無效</td><td>
+不會眩暈！</td><td>16%</td></tr><tr><td>挑發</td><td>容易被魔物攻擊了…</td><td>
+15%</td></tr><tr><td>快吃</td><td>變為快吃！</td><td>12%</td></tr><tr><td>
+各耐性-20</td><td>各耐性變弱了…</td><td>7%</td></tr><tr><td>狀態異常無效</td><td>
+状態異常變強！</td><td>4%</td></tr></table></td></tr>
+<tr class=l><td class=g>救援</td><td class=g>×</td><td class=t>救援</td><td class=n>
+10</td><td>賴狩人、フォスタ、狩獵鷹的歸還時間變為一半。傳奇賴狩人的歸還時間不變</td></tr>
+<tr class=l><td class=g rowspan=2>捕獲高手</td><td class=g rowspan=2>○</td><td class=t>
+捕獲名人</td><td class=n>20</td><td>捕獲高手的基礎上，魔物能夠捕獲時，地圖上的標記會閃爍</td></tr>
+<tr><td class=t>捕獲高手</td><td class=n>10</td><td>捕獲魔物時、成為寵物的概率上升30％</td></tr>
+<tr class=l><td class=g rowspan=3>慰勞</td><td class=g rowspan=3>×</td><td class=t>
+慰勞+3</td><td class=n>45</td><td>在Ｇ級任務也發動慰勞+2的效果</td></tr>
+<tr><td class=t>慰勞+2</td><td class=n>25</td><td>
+慰勞+1的基礎上，攻擊到獵人時，不會造成硬直<br>※Ｇ級任務下不會發動</td></tr>
+<tr><td class=t>慰勞+1</td><td class=n>10</td><td>
+頼狩人或者破狩人的攻撃，不會擊中獵人。<br>同時，獵人的攻撃也不會擊中頼狩人或破狩人</td></tr>
+<tr class=l><td class=g rowspan=2>移動速度</td><td class=g rowspan=2>×</td><td class=t>
+移動速度ＵＰ+2</td><td class=n>20</td><td>納刀時的移動速度上升1.15倍。這個效果在ダッシュ時也適用。<br>
+※與瞬歩的実共用時，這個技能的效果優先</td></tr>
+<tr><td class=t>移動速度ＵＰ+1</td><td class=n>10</td><td>
+納刀時的移動速度上升為1.08倍。此效果在ダッシュ時也適用。<br>※與瞬歩的実共用時，瞬歩的実的效果優先</td></tr>
+<tr class=l><td class=g rowspan=2>喝彩</td><td class=g rowspan=2>×</td><td class=t>
+
+赤魂</td><td class=n>10</td><td>自己的攻撃力(倍率)上升+15。<br>赤魂發動時攻撃己方隊友時<br>
+·２分間，己方隊友的攻撃力(倍率)+30上昇。<br>受到來自發動青魂玩家的攻撃時<br>
+·２分間，自身的攻撃力(倍率)+15上昇，防御力+100上昇<br>·攻撃時對魔物能夠產生暈眩效果</td></tr>
+
+<tr><td class=t>青魂</td><td class=n>-10</td><td>自身的防御力+50上昇。<br>青魂發動時攻擊己方隊友時<br>
+·解除己方隊友的毒、麻痺、腐食、磁力異常狀態<br>·２分間，己方隊員的防御力+100上昇。<br>
+受到來自發動赤魂玩家的攻撃時<br>·２分間，自身的攻撃力(倍率)+30上昇，防御力+50上昇<br>
+·受到來自魔物的攻撃時，有1/4的概率使傷害降為1</td></tr>
+
+<tr class=l><td class=g>支援</td><td class=g>×</td><td class=t>支援</td><td class=n>
+10</td><td>對一定範圍内的己方隊友產生「回復速度+2」、「狀態異常無效」、「絶倫」的效果。<br>
+此時，自身以及一定範圍内己方隊員的攻撃力(倍率)+20、防御力+50上昇。</td></tr>
+<tr class=l><td class=g rowspan=3>恩寵</td><td class=g rowspan=3>×</td><td class=t>
+
+恩寵+3</td><td class=n>30</td><td>發動包括「恩寵」在內3個以内技能時，發動以下的技能。<br>
+「攻撃力ＵＰ【絶大】」、「一閃+3」、「高級耳塞」、「風壓【大】無效」、「耐震+1」、<br>
+「迴避性能+1」、「防禦性能+1」、「女神的赦免」、「武器技術」<br>
+但是，即使發動相同系統的技能，技能的效果也不會重複，只適用上位效果。<br>
+另外，發動包括「恩寵」在內4個以上的技能時，「恩寵」的效果消失</td></tr>
+<tr><td class=t>恩寵+2</td><td class=n>20</td><td>
+發動包括「恩寵」在內2個以内技能時，發動以下的技能。<br>
+「攻撃力ＵＰ【絶大】」、「一閃+3」、「高級耳塞」、「風壓【大】無效」、「耐震+1」、<br>
+「迴避性能+1」、「防禦性能+1」、「女神的赦免」、「武器技術」<br>
+但是，即使發動相同系統的技能，技能的效果也不會重複，只適用上位效果。<br>
+另外，發動包括「恩寵」在內3個以上的技能時，「恩寵」的效果消失</td></tr>
+<tr><td class=t>恩寵+1</td><td class=n>10</td><td>只發動「恩寵」技能時，發動以下的技能。<br>
+「攻撃力ＵＰ【絶大】」、「一閃+3」、「高級耳塞」、「風壓【大】無效」、「耐震+1」、<br>
+「迴避性能+1」、「防禦性能+1」、「女神的赦免」、「武器技術」</td></tr>
+<tr class=l><td class=g>代償</td><td class=g>×</td><td class=t>代償</td><td class=n>
+10</td><td>同時發動「死神的擁抱」、「銳利度等級+1」、「攻撃力ＵＰ【絶大】」、「看破+4」、「迴避性能+2」<br>的效果。<br>
+但是，發動相同系統的技能時，效果較高的技能優先。<br>
+不過，只有「死神的擁抱」要比「審判」系統中其他的技能優先發動，即時刻發動「死神的擁抱」技能</td></tr>
+<tr class=l><td class=g>黑之命脈</td><td class=g>×</td><td class=t>最終的閃黑</td><td class=n>
+20</td><td>体力變為０時，<br>
+同時發動「火場+2」、「餓狼+2」、「防御力+120」、「砥匠」、「超高級耳塞」、「暴風壓無效」、「耐震+2」、「炎暑無效」、「寒冷無效」<br>
+的效果，保持干飛無効的状態原地復活。<br>（火場、餓狼不受体力耐力限制而發動）。<br>
+效果發動中体力不斷減少，体力為0時效果解除。<br>※技能『根性』與道具『根性札』的效果優先</td></tr>
+<tr class=l><td class=g rowspan=2>炎寵</td><td class=g rowspan=2>×</td><td class=t>
+紅焔的威光+2</td><td class=n>15</td><td>同時發動「火事場+2」、「赤魂」、「炸彈客」、「火耐性+30」、「砲術神」、<br>
+「夏男夏女」、「地形傷害減【大】」、「火屬性攻擊強化【大】」、「火炎劍+3」、「爆擊劍+3」<br>的效果。<br>
+但是，發動相同系統的技能時，效果較高的技能優先</td></tr>
+<tr><td class=t>紅焔的威光+1</td><td class=n>10</td><td>
+同時發動「火事場+1」、「赤魂」、「炸彈客」、「火耐性+20」、「砲術王」、<br>
+「炎暑無效」、「地形傷害減【小】」、「火屬性攻擊強化【小】」、「火炎劍+2」、「爆擊劍+2」<br>的效果。<br>
+但是，發動相同系統的技能時，效果較高的技能優先</td></tr>
+</table>
+</body></html>

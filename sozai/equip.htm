@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<style type="text/css">
+<!--
+table {border-collapse:collapse;}
+th {text-align:center;font-weight:normal;background-color:silver;}
+th,td {vertical-align:top;white-space:nowrap;padding:2px;border:2px ridge #ffffff;}
+
+th,td {font-size:95%;}
+.l {text-align:center;background-color:silver;}
+-->
+</style>
+<title>装備搜索</title>
+</head>
+<body>
+<form name="ls" action="" onsubmit="document.getElementById('b_search').click();return false;" style="margin-bottom:1em;">
+搜索：<input type="text" value="" name="equip" id="equip" autocomplete=off style="ime-mode: active;">
+<input type="submit" name="b_search" id="b_search" value="搜索">
+</form>
+<table>
+ <tr><td style="padding:0px; vertical-align:top;" id="tblBuki">
+		<table>
+		<th style="width:7em;">武器種類</th><th style="width:10em;">武器名</th>
+		</tr></table></td>
+	<td style="padding:0px; vertical-align:top;" id="tblBougu">
+		<table>
+		<th style="width:4em;">部位</th><th style="width:10em;">防具名</th>
+		</tr></table></td>
+	<td style="padding:0px; vertical-align:top;" id="tblDec">
+		<table>
+		<th style="width:4em;">装飾品</th><th style="width:10em;">装飾名</th>
+		</tr></table></td>
+ </tr>
+</table>
+<script type="text/javascript" src="bougu_sozai.js"></script>
+<script type="text/javascript" src="buki_sozai.js"></script>
+<script type="text/javascript" src="equipForm.js"></script>
+</body>
+</html>

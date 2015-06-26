@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<style type="text/css">
+<!--
+th {white-space:nowrap;font-weight:normal;background-color:silver;}
+input#bou,input#tai {text-align:right}
+td {text-align:center}
+td.n {text-align:right;}
+-->
+</style>
+<title>玩家的傷害</title>
+</head><body>
+<div>受到的傷害(來自2dos的情報)</div>
+<p>
+·玩家受到傷害的計算式<br>
+　軽減率 ＝ 1 － (防禦力的一半 ÷ (防禦力的一半 ＋ 80))<br>
+　傷害 ＝ 魔物的攻擊力 × 軽減率 　　<small>※不同個體魔物的攻擊力倍率不一定相同·並且怒后攻擊倍率會増加</small>
+</p><p>
+·攻擊為附加属性攻擊的情況、與耐性的増減有關<br>
+　傷害 ＝ 傷害 × (1 － (耐性値 ÷ 100)) 　　<small>※耐性為負的情況，傷害當然増加<br><br>
+　　理論上，耐性値為100的情況下，附加属性傷害</small><font size="2">為0</font>
+</p>
+<table>
+<tr><td>
+防御力：<input id=bou type=text onfocus="this.select()" maxlength=4 size=4 value=0>
+耐性：<input id=tai type=text onfocus="this.select()" maxlength=3 size=3 value=0>
+<input type=button value="計算" OnClick="document.getElementById('mu').innerHTML = (10000 - Math.floor(document.getElementById('bou').value / 2 / (document.getElementById('bou').value / 2 + 80) * 10000)) / 100;document.getElementById('zo').innerHTML = Math.floor((10000 - Math.floor(document.getElementById('bou').value / 2 / (document.getElementById('bou').value / 2 + 80) * 10000)) * (100 - document.getElementById('tai').value) / 100) / 100;"></td>
+<td>無属性的傷害 減輕約</td><td class=n><span id=mu>100</span>%</td></tr>
+<tr><td></td><td>附加属性傷害 減輕約</td><td class=n><span id=zo>100</span>%</td></tr>
+</table>
+<div>防禦力與傷害軽減率的關係可以參照以下統計圖表。</div>
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><th>防御力</th><th>減輕率<br>(%)</th><th rowspan=22><img src="../img/damage.gif" alt="傷害表"></th></tr>
+<tr><td>1</td><td>99.3</td></tr>
+<tr><td>50</td><td>76.1</td></tr>
+<tr><td>100</td><td>61.5</td></tr>
+<tr><td>150</td><td>51.6</td></tr>
+<tr><td>200</td><td>44.4</td></tr>
+<tr><td>250</td><td>39</td></tr>
+<tr><td>300</td><td>34.7</td></tr>
+<tr><td>350</td><td>31.3</td></tr>
+<tr><td>400</td><td>28.5</td></tr>
+<tr><td>450</td><td>26.2</td></tr>
+<tr><td>500</td><td>24.2</td></tr>
+<tr><td>550</td><td>22.5</td></tr>
+<tr><td>600</td><td>21</td></tr>
+<tr><td>650</td><td>19.7</td></tr>
+<tr><td>700</td><td>18.6</td></tr>
+<tr><td>750</td><td>17.5</td></tr>
+<tr><td>800</td><td>16.6</td></tr>
+<tr><td>850</td><td>15.8</td></tr>
+<tr><td>900</td><td>15</td></tr>
+<tr><td>950</td><td>14.4</td></tr>
+<tr><td>1000</td><td>13.7</td></tr>
+</table>
+</body>
+</html>
